@@ -8702,3 +8702,17 @@ body:has(.audit-remus-page) .site-header {
   }
   .v3-legal-nav { position:relative; right:auto; bottom:auto; padding:26px 20px 34px; flex-wrap:wrap; justify-content:center; }
 }
+
+/* V3 adjustments — copper logo + Audit final card matching the transparent steps */
+.remus-header-logo-img {
+  filter: brightness(0) saturate(100%) invert(34%) sepia(91%) saturate(1260%) hue-rotate(352deg) brightness(88%) contrast(93%) !important;
+  opacity: 1 !important;
+}
+
+.audit-final-block {
+  background: rgba(3, 3, 3, .22) !important;
+  border-color: rgba(255, 255, 255, .14) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
