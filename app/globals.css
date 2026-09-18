@@ -8703,289 +8703,172 @@ body:has(.audit-remus-page) .site-header {
   .v3-legal-nav { position:relative; right:auto; bottom:auto; padding:26px 20px 34px; flex-wrap:wrap; justify-content:center; }
 }
 
-/* V3 adjustments — copper logo + Audit final card matching the transparent steps */
-.remus-header-logo-img {
-  filter: brightness(0) saturate(100%) invert(34%) sepia(91%) saturate(1260%) hue-rotate(352deg) brightness(88%) contrast(93%) !important;
-  opacity: 1 !important;
-}
-
-.audit-final-block {
-  background: rgba(3, 3, 3, .22) !important;
-  border-color: rgba(255, 255, 255, .14) !important;
-  box-shadow: none !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-}
-
 /* =========================================================
-   V3 — VALIDATIONS 19/09
-   - logo : cuivre EXACT des textes (#A94F16)
-   - accueil : même Terre que « Qui sommes-nous ? »
-   - cartes accueil : transparence validée de l'Audit
+   ACCUEIL V3 PROPRE — 19-09-2026
+   Une seule scène : image Terre plein écran + contenu dessus.
+   Aucun fond noir, aucun hero indépendant, aucun voile.
    ========================================================= */
-
-/* Le masque reprend exactement la silhouette/alpha du logo et applique
-   une couleur CSS unie : aucune approximation par filtre. */
-.remus-header-logo {
+.home-clean-v3 {
   position: relative !important;
-  flex: 0 0 auto;
-}
-.remus-header-logo-img {
-  opacity: 0 !important;
-  filter: none !important;
-}
-.remus-header-logo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--remus-copper) !important;
-  -webkit-mask: url('/visuals/remus-logo-final.png') center / contain no-repeat;
-  mask: url('/visuals/remus-logo-final.png') center / contain no-repeat;
-  pointer-events: none;
-}
-
-/* Accueil = exactement le même visuel Terre que Qui sommes-nous. */
-.home-reference,
-.about-page {
-  background-image: url('/visuals/remus-v2-earth-network-hd.jpg') !important;
-  background-color: var(--v3-black) !important;
-  background-size: cover !important;
-  background-position: center top !important;
-  background-repeat: no-repeat !important;
-}
-
-/* Même traitement transparent que les cartes Audit validées. */
-.home-feature,
-.home-feature-statement {
-  background: rgba(3, 3, 3, .22) !important;
-  border: 1px solid rgba(255, 255, 255, .14) !important;
-  box-shadow: none !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
-}
-.home-feature-strip {
+  min-height: 100vh !important;
+  width: 100% !important;
+  overflow: clip !important;
   background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* V3 FIX — Accueil : la Terre de « Qui sommes-nous ? » doit être réellement visible. */
-.home-reference {
-  background: transparent !important;
+  color: #fff !important;
   isolation: isolate !important;
 }
-.home-reference::before {
-  content: "" !important;
-  display: block !important;
+.home-clean-v3-bg {
   position: fixed !important;
   inset: 0 !important;
   z-index: -1 !important;
-  pointer-events: none !important;
-  background-image: url('/visuals/remus-v2-earth-network-hd.jpg') !important;
-  background-color: #030303 !important;
-  background-repeat: no-repeat !important;
-  background-position: center top !important;
-  background-size: cover !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  object-position: center center !important;
   opacity: 1 !important;
   filter: none !important;
-}
-.home-reference > section {
-  position: relative !important;
-  z-index: 1 !important;
-  background: transparent !important;
-}
-@media (max-width: 900px) {
-  .home-reference::before {
-    position: absolute !important;
-    background-position: center top !important;
-  }
-}
-
-/* =========================================================
-   V3 ACCUEIL — RÈGLE IMMERSIVE VALIDÉE
-   L'image est le fond complet ; tous les contenus passent au-dessus.
-   Aucun panneau noir opaque ne remplace le visuel.
-   ========================================================= */
-.home-reference {
-  position: relative !important;
-  z-index: 0 !important;
-  isolation: isolate !important;
-  min-height: 100vh !important;
-  background: #030303 url('/visuals/remus-v2-earth-network-hd.jpg') center top / cover fixed no-repeat !important;
-}
-
-/* Supprime l'ancien calque qui pouvait passer derrière le fond noir du site. */
-.home-reference::before {
-  content: none !important;
-  display: none !important;
-}
-
-.home-reference > section,
-.home-hero,
-.home-feature-strip {
-  position: relative !important;
-  z-index: 1 !important;
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Cartes posées SUR l'image : même logique transparente que l'Audit. */
-.home-feature,
-.home-feature-statement {
-  background: rgba(3,3,3,.10) !important;
-  border-color: rgba(255,255,255,.14) !important;
-  box-shadow: none !important;
-  backdrop-filter: blur(3px) !important;
-  -webkit-backdrop-filter: blur(3px) !important;
-}
-
-/* Le texte de l'accueil doit rester lisible directement sur l'image. */
-.home-title,
-.home-feature h2,
-.home-feature-statement strong { color:#fff !important; }
-.home-intro,
-.home-feature p { color:rgba(255,255,255,.72) !important; }
-.home-button--outline {
-  color:#fff !important;
-  background:rgba(3,3,3,.10) !important;
-}
-
-@media (max-width:900px) {
-  .home-reference {
-    background-attachment: scroll !important;
-    background-position: center top !important;
-  }
-}
-
-/* =========================================================
-   REMUS V3 — ARCHITECTURE IMMERSIVE DEFINITIVE
-   REGLE : 1 image = fond complet de la page ; tout le contenu au-dessus.
-   Aucun hero/section/footer ne possède de fond opaque.
-   ========================================================= */
-.home-reference,
-.audit-remus-page,
-.limes-page,
-.solutions-page,
-.rd-page,
-.about-page,
-.contact-page {
-  position: relative !important;
-  isolation: isolate !important;
-  min-height: 100vh !important;
-  background: transparent !important;
-  background-color: transparent !important;
-}
-
-/* Le visuel est un vrai calque de page, au-dessus du fond global noir. */
-.home-reference::before,
-.audit-remus-page::before,
-.limes-page::before,
-.solutions-page::before,
-.rd-page::before,
-.about-page::before,
-.contact-page::before {
-  content: "" !important;
-  display: block !important;
-  position: fixed !important;
-  inset: 0 !important;
-  z-index: 0 !important;
+  transform: none !important;
   pointer-events: none !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover !important;
-  opacity: 1 !important;
-  filter: none !important;
 }
-.home-reference::before { background-image: url('/visuals/remus-v2-earth-network-hd.jpg') !important; }
-.audit-remus-page::before { background-image: url('/visuals/audit-remus-v2-bg.jpg') !important; }
-.limes-page::before { background-image: url('/visuals/limes-hero-v2.jpeg') !important; }
-.solutions-page::before { background-image: url('/visuals/solutions-remus.png') !important; }
-.rd-page::before { background-image: url('/visuals/rd-hero.png') !important; }
-.about-page::before { background-image: url('/visuals/remus-v2-earth-network-hd.jpg') !important; }
-.contact-page::before { background-image: url('/visuals/remus-mail.jpg') !important; }
-
-/* Tout le contenu de chaque page passe devant son image. */
-.home-reference > *,
-.audit-remus-page > *,
-.limes-page > *,
-.solutions-page > *,
-.rd-page > *,
-.about-page > *,
-.contact-page > * {
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-/* Plus aucun "hero" ou section ne peint un rectangle noir. */
-.home-hero,
-.audit-premium-hero,
-.limes-hero-exact,
-.solutions-hero,
-.rd-hero,
-.about-hero,
-.contact-hero,
-.home-feature-strip,
-.audit-approach,
-.limes-capabilities,
-.solutions-grid,
-.solutions-closing,
-.research-axes,
-.contact-page > section,
-.panel-shell {
-  background: transparent !important;
+body:has(.home-clean-v3),
+body:has(.home-clean-v3) .site-shell,
+body:has(.home-clean-v3) main,
+body:has(.home-clean-v3) section,
+body:has(.home-clean-v3) article,
+body:has(.home-clean-v3) aside {
   background-color: transparent !important;
   background-image: none !important;
 }
-
-/* Cartes = verre transparent type Audit validé. */
-.home-feature,
-.home-feature-statement,
-.audit-step,
-.audit-final-block,
-.limes-capability,
-.solution-card,
-.research-row,
-.research-side,
-.contact-form-column {
-  background: rgba(3,3,3,.16) !important;
-  background-color: rgba(3,3,3,.16) !important;
-  border-color: rgba(255,255,255,.14) !important;
+body:has(.home-clean-v3) .site-header {
+  background: transparent !important;
+  border: 0 !important;
   box-shadow: none !important;
-  backdrop-filter: blur(4px) !important;
-  -webkit-backdrop-filter: blur(4px) !important;
+  backdrop-filter: none !important;
 }
-
-/* L'ancien visuel interne ne doit jamais doubler le fond de page. */
-.home-network,
-.audit-premium-visual,
-.limes-visual-exact,
-.solutions-hero-visual,
-.rd-visual,
-.contact-mail-hero {
-  display: none !important;
+.home-clean-v3-content {
+  position: relative !important;
+  z-index: 2 !important;
+  min-height: 100vh !important;
+  padding: 160px clamp(28px, 5vw, 96px) 70px !important;
 }
-
-/* Logo : cuivre exact de l'identité et des textes. */
-.remus-header-logo-img { opacity: 0 !important; filter: none !important; }
-.remus-header-logo::after {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
+.home-clean-v3-intro {
+  max-width: 690px !important;
+  min-height: calc(100vh - 190px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  padding: 20px 0 70px !important;
+  border: 0 !important;
+}
+.home-clean-v3-kicker {
+  margin: 0 0 28px !important;
+  color: #C97942 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: .18em !important;
+}
+.home-clean-v3-rule,
+.home-clean-v3-card-rule {
+  display: block !important;
+  width: 62px !important;
+  height: 1px !important;
   background: #A94F16 !important;
-  -webkit-mask: url('/visuals/remus-logo-final.png') center / contain no-repeat !important;
-  mask: url('/visuals/remus-logo-final.png') center / contain no-repeat !important;
-  pointer-events: none !important;
 }
-
-@media (max-width: 900px) {
-  .home-reference::before,
-  .audit-remus-page::before,
-  .limes-page::before,
-  .solutions-page::before,
-  .rd-page::before,
-  .about-page::before,
-  .contact-page::before {
-    position: fixed !important;
-    background-position: center center !important;
-  }
+.home-clean-v3-intro h1 {
+  margin: 46px 0 34px !important;
+  color: #fff !important;
+  font-size: clamp(46px, 5vw, 82px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.035em !important;
+  font-weight: 650 !important;
+  text-shadow: 0 3px 22px rgba(0,0,0,.72) !important;
 }
-\n\n/* =========================================================\n   ACCUEIL V3 — CORRECTION SÛRE DEPUIS LE DERNIER BUILD VALIDE\n   La Terre est un élément visuel fixe, visible sur toute la page.\n   Aucun fond noir/opaque sur les sections de l'accueil.\n   ========================================================= */\n.home-reference {\n  position: relative !important;\n  min-height: 100vh !important;\n  background: transparent !important;\n  background-color: transparent !important;\n  isolation: auto !important;\n}\n.home-reference::before,\n.home-reference::after {\n  content: none !important;\n  display: none !important;\n}\n.home-earth-background {\n  display: block !important;\n  position: fixed !important;\n  inset: 0 !important;\n  width: 100vw !important;\n  height: 100vh !important;\n  object-fit: cover !important;\n  object-position: center center !important;\n  z-index: 0 !important;\n  opacity: 1 !important;\n  filter: none !important;\n  pointer-events: none !important;\n}\n.home-reference > section {\n  position: relative !important;\n  z-index: 1 !important;\n  background: transparent !important;\n  background-color: transparent !important;\n  background-image: none !important;\n}\n.home-hero,\n.home-feature-strip,\n.home-copy {\n  background: transparent !important;\n  background-color: transparent !important;\n  background-image: none !important;\n}\n.home-network { display: none !important; }\n.home-feature,\n.home-feature-statement {\n  background: rgba(3,3,3,.12) !important;\n  background-color: rgba(3,3,3,.12) !important;\n  border-color: rgba(255,255,255,.16) !important;\n  box-shadow: none !important;\n  backdrop-filter: blur(3px) !important;\n  -webkit-backdrop-filter: blur(3px) !important;\n}\n
+.home-clean-v3-intro h1 strong {
+  display: inline-block !important;
+  margin-top: 14px !important;
+  color: #C97942 !important;
+  font-weight: 450 !important;
+}
+.home-clean-v3-lead {
+  max-width: 650px !important;
+  margin: 36px 0 0 !important;
+  color: rgba(255,255,255,.88) !important;
+  font-size: 17px !important;
+  line-height: 1.85 !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.9) !important;
+}
+.home-clean-v3-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 14px !important;
+  margin-top: 34px !important;
+}
+.home-clean-v3-actions a {
+  padding: 14px 18px !important;
+  border: 1px solid rgba(201,121,66,.65) !important;
+  background: rgba(0,0,0,.12) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: .08em !important;
+  backdrop-filter: blur(2px) !important;
+}
+.home-clean-v3-grid {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0,1fr)) !important;
+  gap: 14px !important;
+  padding: 0 0 40px !important;
+  border: 0 !important;
+}
+.home-clean-v3-grid article,
+.home-clean-v3-grid aside {
+  min-height: 260px !important;
+  padding: 32px 28px !important;
+  border: 1px solid rgba(255,255,255,.18) !important;
+  background: rgba(0,0,0,.10) !important;
+  backdrop-filter: blur(3px) !important;
+  box-shadow: none !important;
+}
+.home-clean-v3-number {
+  color: #C97942 !important;
+  font-size: 11px !important;
+  letter-spacing: .14em !important;
+}
+.home-clean-v3-grid h2 {
+  margin: 42px 0 20px !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  letter-spacing: .06em !important;
+}
+.home-clean-v3-grid p {
+  margin: 24px 0 0 !important;
+  color: rgba(255,255,255,.72) !important;
+  font-size: 13px !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 2px 10px rgba(0,0,0,.8) !important;
+}
+.home-clean-v3-grid aside {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 30px !important;
+}
+.home-clean-v3-grid aside strong {
+  color: #fff !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  letter-spacing: .08em !important;
+}
+@media (max-width: 1050px) {
+  .home-clean-v3-grid { grid-template-columns: repeat(2, minmax(0,1fr)) !important; }
+}
+@media (max-width: 700px) {
+  .home-clean-v3-content { padding: 120px 20px 40px !important; }
+  .home-clean-v3-intro { min-height: calc(100svh - 120px) !important; }
+  .home-clean-v3-intro h1 { font-size: clamp(40px, 12vw, 60px) !important; }
+  .home-clean-v3-grid { grid-template-columns: 1fr !important; }
+  .home-clean-v3-grid article,.home-clean-v3-grid aside { min-height: 220px !important; }
+  .home-clean-v3-bg { object-position: 62% center !important; }
+}
