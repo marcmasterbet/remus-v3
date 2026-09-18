@@ -8716,3 +8716,54 @@ body:has(.audit-remus-page) .site-header {
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
+
+/* =========================================================
+   V3 — VALIDATIONS 19/09
+   - logo : cuivre EXACT des textes (#A94F16)
+   - accueil : même Terre que « Qui sommes-nous ? »
+   - cartes accueil : transparence validée de l'Audit
+   ========================================================= */
+
+/* Le masque reprend exactement la silhouette/alpha du logo et applique
+   une couleur CSS unie : aucune approximation par filtre. */
+.remus-header-logo {
+  position: relative !important;
+  flex: 0 0 auto;
+}
+.remus-header-logo-img {
+  opacity: 0 !important;
+  filter: none !important;
+}
+.remus-header-logo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--remus-copper) !important;
+  -webkit-mask: url('/visuals/remus-logo-final.png') center / contain no-repeat;
+  mask: url('/visuals/remus-logo-final.png') center / contain no-repeat;
+  pointer-events: none;
+}
+
+/* Accueil = exactement le même visuel Terre que Qui sommes-nous. */
+.home-reference,
+.about-page {
+  background-image: url('/visuals/remus-v2-earth-network-hd.jpg') !important;
+  background-color: var(--v3-black) !important;
+  background-size: cover !important;
+  background-position: center top !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Même traitement transparent que les cartes Audit validées. */
+.home-feature,
+.home-feature-statement {
+  background: rgba(3, 3, 3, .22) !important;
+  border: 1px solid rgba(255, 255, 255, .14) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+.home-feature-strip {
+  background: transparent !important;
+  background-color: transparent !important;
+}
