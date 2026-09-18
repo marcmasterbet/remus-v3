@@ -8799,3 +8799,59 @@ body:has(.audit-remus-page) .site-header {
     background-position: center top !important;
   }
 }
+
+/* =========================================================
+   V3 ACCUEIL — RÈGLE IMMERSIVE VALIDÉE
+   L'image est le fond complet ; tous les contenus passent au-dessus.
+   Aucun panneau noir opaque ne remplace le visuel.
+   ========================================================= */
+.home-reference {
+  position: relative !important;
+  z-index: 0 !important;
+  isolation: isolate !important;
+  min-height: 100vh !important;
+  background: #030303 url('/visuals/remus-v2-earth-network-hd.jpg') center top / cover fixed no-repeat !important;
+}
+
+/* Supprime l'ancien calque qui pouvait passer derrière le fond noir du site. */
+.home-reference::before {
+  content: none !important;
+  display: none !important;
+}
+
+.home-reference > section,
+.home-hero,
+.home-feature-strip {
+  position: relative !important;
+  z-index: 1 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Cartes posées SUR l'image : même logique transparente que l'Audit. */
+.home-feature,
+.home-feature-statement {
+  background: rgba(3,3,3,.10) !important;
+  border-color: rgba(255,255,255,.14) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(3px) !important;
+  -webkit-backdrop-filter: blur(3px) !important;
+}
+
+/* Le texte de l'accueil doit rester lisible directement sur l'image. */
+.home-title,
+.home-feature h2,
+.home-feature-statement strong { color:#fff !important; }
+.home-intro,
+.home-feature p { color:rgba(255,255,255,.72) !important; }
+.home-button--outline {
+  color:#fff !important;
+  background:rgba(3,3,3,.10) !important;
+}
+
+@media (max-width:900px) {
+  .home-reference {
+    background-attachment: scroll !important;
+    background-position: center top !important;
+  }
+}
