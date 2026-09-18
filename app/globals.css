@@ -8767,3 +8767,35 @@ body:has(.audit-remus-page) .site-header {
   background: transparent !important;
   background-color: transparent !important;
 }
+
+/* V3 FIX — Accueil : la Terre de « Qui sommes-nous ? » doit être réellement visible. */
+.home-reference {
+  background: transparent !important;
+  isolation: isolate !important;
+}
+.home-reference::before {
+  content: "" !important;
+  display: block !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: -1 !important;
+  pointer-events: none !important;
+  background-image: url('/visuals/remus-v2-earth-network-hd.jpg') !important;
+  background-color: #030303 !important;
+  background-repeat: no-repeat !important;
+  background-position: center top !important;
+  background-size: cover !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+.home-reference > section {
+  position: relative !important;
+  z-index: 1 !important;
+  background: transparent !important;
+}
+@media (max-width: 900px) {
+  .home-reference::before {
+    position: absolute !important;
+    background-position: center top !important;
+  }
+}
