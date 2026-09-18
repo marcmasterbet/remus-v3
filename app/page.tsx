@@ -72,6 +72,9 @@ function FeatureIcon({ type }: { type: string }) {
 export default function Home() {
   return (
     <main className="home-reference">
+      <div className="home-page-bg" aria-hidden="true">
+        <img src="/visuals/remus-v2-earth-network-hd.jpg" alt="" />
+      </div>
 
       <section className="home-hero">
 
