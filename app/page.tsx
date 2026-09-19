@@ -45,14 +45,14 @@ export default function Home() {
 
         <section className="home-clean-v3-grid" aria-label="Expertises REMUS Systems">
           {features.map(([title, text], index) => (
-            <article key={title}>
+            <article key={title} className="home-clean-v3-card">
               <span className="home-clean-v3-number">0{index + 1}</span>
               <h2>{title}</h2>
               <span className="home-clean-v3-card-rule" />
               <p>{text}</p>
             </article>
           ))}
-          <aside>
+          <aside className="home-clean-v3-card">
             <span className="home-clean-v3-card-rule" />
             <strong>DES TECHNOLOGIES<br />AU SERVICE DE VOS<br />MISSIONS CRITIQUES.</strong>
             <span className="home-clean-v3-card-rule" />

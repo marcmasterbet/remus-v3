@@ -9131,3 +9131,14 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .solutions-page .solutions-closing {
   outline: 0 !important;
 }
+
+
+/* REMUS V3 — ACCUEIL : correction précise des contours */
+.home-clean-v3 .home-clean-v3-intro {
+  border: 0 !important;
+  outline: 0 !important;
+}
+.home-clean-v3 .home-clean-v3-card {
+  border: 1px solid rgba(255,255,255,.72) !important;
+  outline: 0 !important;
+}
