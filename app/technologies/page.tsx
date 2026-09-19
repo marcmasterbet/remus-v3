@@ -67,9 +67,13 @@ export default function TechnologiesPage() {
           <div className="limes-rule" />
 
           <h1>
-            L’intelligence au service
+            L’intelligence
             <br />
-            des <span>systèmes complexes.</span>
+            au service des
+            <br />
+            <span>systèmes</span>
+            <br />
+            <span>complexes.</span>
           </h1>
 
           <div className="limes-rule limes-rule--spaced" />
