@@ -144,7 +144,7 @@ button, input, textarea { font: inherit; }
   max-width: 580px;
   margin: 28px 0;
   line-height: 1.9;
-  color: #2f2d29;
+  color: #FFFFFF;
   font-size: 16px;
 }
 .hero-actions { display: flex; gap: 26px; flex-wrap: wrap; margin-top: 34px; }
@@ -852,7 +852,7 @@ body {
 .home-feature p {
   max-width: 205px;
   margin: 0;
-  color: #3d3935;
+  color: #FFFFFF;
   font-size: 9px;
   line-height: 2.05;
 }
@@ -1047,7 +1047,7 @@ body {
 
 .limes-copy-exact p {
   margin: 28px 0 0;
-  color: #272421;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 2.05;
 }
@@ -1230,7 +1230,7 @@ body {
 .limes-capability p {
   max-width: 215px;
   margin: 0;
-  color: #3d3935;
+  color: #FFFFFF;
   font-size: 9px;
   line-height: 2.05;
 }
@@ -1414,7 +1414,7 @@ body {
 .rd-copy p {
   max-width: 620px;
   margin-top: 35px;
-  color: #55514C;
+  color: #FFFFFF;
   font-size: 15px;
   line-height: 1.9;
 }
@@ -1607,7 +1607,7 @@ body {
 .research-side p {
   max-width: 370px;
   margin: 0;
-  color: #55514C;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 1.85;
 }
@@ -1980,7 +1980,7 @@ body {
 .audit-intro {
   max-width: 680px;
   margin: 38px 0 38px;
-  color: #5B514C;
+  color: #FFFFFF;
   font-size: 17px;
   line-height: 1.8;
 }
@@ -2139,7 +2139,7 @@ body {
 }
 
 .audit-step p {
-  color: #5B514C;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 1.65;
   max-width: 270px;
@@ -2188,7 +2188,7 @@ body {
 
 .audit-final-copy p {
   max-width: 700px;
-  color: #5B514C;
+  color: #FFFFFF;
   line-height: 1.75;
 }
 
@@ -4594,7 +4594,7 @@ body {
   display: inline-flex;
   padding: 5px 8px;
   border: 1px solid #D8CEC2;
-  color: #55514C;
+  color: #FFFFFF;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: .08em;
@@ -4619,7 +4619,7 @@ body {
   align-items: start !important;
   gap: 10px !important;
   margin: 4px 0 6px !important;
-  color: #55514C !important;
+  color: #FFFFFF !important;
   font-size: 12px !important;
   line-height: 1.55 !important;
   text-transform: none !important;
@@ -4702,7 +4702,7 @@ body {
 .cookie-consent p {
   margin: 0;
   max-width: 790px;
-  color: #55514C;
+  color: #FFFFFF;
   font-size: 13px;
   line-height: 1.65;
 }
@@ -7474,7 +7474,7 @@ form.contact-form {
   font-weight: 700;
 }
 .about-page .about-signature span {
-  color: #55514C;
+  color: #FFFFFF;
 }
 @media (max-width: 900px) {
   .about-page .about-simple-content {
@@ -8075,12 +8075,12 @@ body:has(.home-reference) {
   color: #111111 !important;
 }
 .home-reference .home-feature p {
-  color: #55514C !important;
+  color: #FFFFFF !important;
 }
 body:has(.home-reference) .footer {
   background: #F7F4EF !important;
   border-top: 1px solid #D8CEC2 !important;
-  color: #55514C !important;
+  color: #FFFFFF !important;
 }
 body:has(.home-reference) .footer-brand strong,
 body:has(.home-reference) .footer-column-title {
@@ -8090,7 +8090,7 @@ body:has(.home-reference) .footer-brand p,
 body:has(.home-reference) .footer-nav a,
 body:has(.home-reference) .footer-legal-links a,
 body:has(.home-reference) .footer-cookie-settings {
-  color: #55514C !important;
+  color: #FFFFFF !important;
 }
 body:has(.home-reference) .footer-nav a:hover,
 body:has(.home-reference) .footer-legal-links a:hover,
@@ -8119,7 +8119,7 @@ body:has(.audit-remus-page) {
   color: #111111 !important;
 }
 .audit-approach p {
-  color: #55514C !important;
+  color: #FFFFFF !important;
 }
 .audit-section-heading span,
 .audit-final-copy > span {
@@ -8133,7 +8133,7 @@ body:has(.audit-remus-page) {
   color: #111111 !important;
 }
 .audit-step p {
-  color: #55514C !important;
+  color: #FFFFFF !important;
 }
 .audit-step-symbol {
   border-color: rgba(169,79,22,.42) !important;
@@ -8150,11 +8150,11 @@ body:has(.audit-remus-page) {
   color: #A94F16 !important;
 }
 .audit-final-copy p {
-  color: #55514C !important;
+  color: #FFFFFF !important;
 }
 body:has(.audit-remus-page) .footer {
   background: #F7F4EF !important;
-  color: #55514C !important;
+  color: #FFFFFF !important;
   border-top: 1px solid #D8CEC2 !important;
 }
 body:has(.audit-remus-page) .footer h3,
@@ -8166,7 +8166,7 @@ body:has(.audit-remus-page) .footer-legal-title {
 body:has(.audit-remus-page) .footer a,
 body:has(.audit-remus-page) .footer p,
 body:has(.audit-remus-page) .footer button {
-  color: #55514C !important;
+  color: #FFFFFF !important;
 }
 body:has(.audit-remus-page) .footer a:hover,
 body:has(.audit-remus-page) .footer button:hover {
@@ -8309,7 +8309,7 @@ body:has(.audit-remus-page) .site-header {
 .main-nav a:hover,.main-nav a.is-active { color:#C97942 !important; }
 .mobile-menu-toggle span { background:#f4f1ed !important; }
 .mobile-menu { background:#050505 !important; color:#f4f1ed !important; }
-.mobile-menu-nav a { color:#f4f1ed !important; border-color:rgba(255,255,255,.08) !important; }
+.mobile-menu-nav a { color:#f4f1ed !important; border-color: #FFFFFF !important; }
 .mobile-menu-nav a span,.mobile-menu-nav a.is-active { color:#C97942 !important; }
 
 /* Toutes les zones de contenu passent en noir, avec profondeurs subtiles. */
@@ -8391,7 +8391,7 @@ body:has(.audit-remus-page) .footer a,
 body:has(.audit-remus-page) .footer p,
 body:has(.audit-remus-page) .footer button { color:rgba(244,241,237,.58) !important; }
 .footer a:hover,.footer button:hover { color:#C97942 !important; }
-.footer-bottom,body:has(.home-reference) .footer-bottom { border-top-color:rgba(255,255,255,.06) !important; color:rgba(244,241,237,.38) !important; }
+.footer-bottom,body:has(.home-reference) .footer-bottom { border-top-color: #FFFFFF !important; color:rgba(244,241,237,.38) !important; }
 
 /* TECHNOLOGIES : visuel LIMES plein écran, texte superposé, sans doublon LIMES en haut. */
 .limes-hero-exact {
@@ -8596,7 +8596,7 @@ body:has(.audit-remus-page) .site-header {
 }
 .main-nav { gap:clamp(14px,1.45vw,30px) !important; }
 .main-nav a {
-  color:rgba(255,255,255,.72) !important;
+  color: #FFFFFF !important;
   font-size:11px !important; letter-spacing:.11em !important; font-weight:600 !important;
   text-shadow:0 2px 18px rgba(0,0,0,.75);
 }
@@ -8670,12 +8670,12 @@ body:has(.audit-remus-page) .site-header {
 /* Content cards become glass-like outlines, never opaque blocks. */
 .home-feature,.audit-step,.limes-capability,.solution-card,.research-row,.research-side,.contact-form-column {
   background:rgba(3,3,3,.22) !important;
-  border-color:rgba(255,255,255,.14) !important;
+  border-color: #FFFFFF !important;
   box-shadow:none !important;
   backdrop-filter:blur(4px);
 }
 .home-feature h2,.audit-step h3,.limes-capability h2,.solution-card h2,.research-row,.contact-form-heading { color:#fff !important; }
-.home-feature p,.audit-step p,.limes-capability p,.solution-card p,.research-side p { color:rgba(255,255,255,.68) !important; }
+.home-feature p,.audit-step p,.limes-capability p,.solution-card p,.research-side p { color: #FFFFFF !important; }
 
 /* Legal access without a footer. */
 .v3-legal-nav {
@@ -8683,7 +8683,7 @@ body:has(.audit-remus-page) .site-header {
   display:flex; gap:16px; align-items:center;
   font-size:9px; letter-spacing:.09em; text-transform:uppercase;
 }
-.v3-legal-nav a { color:rgba(255,255,255,.42); text-decoration:none; text-shadow:0 2px 12px #000; }
+.v3-legal-nav a { color: #FFFFFF; text-decoration:none; text-shadow:0 2px 12px #000; }
 .v3-legal-nav a:hover { color:#fff; }
 
 @media (max-width:900px) {
@@ -8793,7 +8793,7 @@ body:has(.home-clean-v3) .site-header {
 .home-clean-v3-lead {
   max-width: 650px !important;
   margin: 36px 0 0 !important;
-  color: rgba(255,255,255,.88) !important;
+  color: #FFFFFF !important;
   font-size: 17px !important;
   line-height: 1.85 !important;
   text-shadow: 0 2px 14px rgba(0,0,0,.9) !important;
@@ -8844,7 +8844,7 @@ body:has(.home-clean-v3) .site-header {
 }
 .home-clean-v3-grid p {
   margin: 24px 0 0 !important;
-  color: rgba(255,255,255,.72) !important;
+  color: #FFFFFF !important;
   font-size: 13px !important;
   line-height: 1.8 !important;
   text-shadow: 0 2px 10px rgba(0,0,0,.8) !important;
@@ -8906,4 +8906,29 @@ body:has(.limes-page) .remus-header-logo {
   background: transparent !important;
   background-color: transparent !important;
   box-shadow: none !important;
+}
+
+/* V3 GLOBAL — contraste texte : tous les gris deviennent blanc pur.
+   Les accents cuivre et les fonds restent inchangés. */
+:root {
+  --muted: #FFFFFF;
+  --remus-graphite: #FFFFFF;
+}
+
+/* Couleurs grises historiques encore codées en dur */
+body :where(p, li, span, a, small, label, div)[style*="color: #FFFFFF"],
+body :where(p, li, span, a, small, label, div)[style*="color: #FFFFFF"] {
+  color: #FFFFFF !important;
+}
+
+/* Pages V3 immersives : textes secondaires en blanc franc */
+.home-clean-v3-lead,
+.home-clean-v3-grid p,
+.limes-page p,
+.audit-remus-page p,
+.solutions-page p,
+.rd-page p,
+.about-page p,
+.contact-page p {
+  color: #FFFFFF !important;
 }
