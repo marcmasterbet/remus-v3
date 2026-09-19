@@ -9142,3 +9142,57 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   border: 1px solid rgba(255,255,255,.72) !important;
   outline: 0 !important;
 }
+
+
+/* =========================================================
+   REMUS V3 — QUI SOMMES-NOUS ?
+   Fond plein écran, texte libre à gauche, aucun cadre.
+   ========================================================= */
+.about-page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background: transparent !important;
+  color: #fff;
+}
+.about-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/visuals/about-v3-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.about-page .about-hero,
+.about-page .about-hero.panel-shell,
+.about-page .about-simple-content {
+  background: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.about-page .about-hero {
+  display: block;
+}
+.about-page .about-simple-content {
+  width: min(660px, 46vw);
+  margin-left: 0;
+  margin-right: auto;
+}
+.about-page .about-simple-content h1,
+.about-page .about-simple-content p,
+.about-page .about-signature,
+.about-page .about-signature strong,
+.about-page .about-signature span {
+  color: #fff !important;
+}
+@media (max-width: 900px) {
+  .about-page::before {
+    background-position: 62% center;
+  }
+  .about-page .about-simple-content {
+    width: 100%;
+  }
+}
