@@ -18,6 +18,10 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [navHidden, setNavHidden] = useState(false);
+
+  const scrollNavPages = ["/", "/audit-remus", "/technologies"];
+  const scrollNavEnabled = scrollNavPages.includes(pathname);
 
   useEffect(() => {
     setMobileOpen(false);
@@ -29,6 +33,23 @@ export default function Header() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  useEffect(() => {
+    if (!scrollNavEnabled) {
+      setNavHidden(false);
+      return;
+    }
+
+    const handleScroll = () => {
+      // La navigation reste visible uniquement lorsque la page est tout en haut.
+      // Quelques pixels de tolérance évitent les micro-clignotements des trackpads.
+      setNavHidden(window.scrollY > 12);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [scrollNavEnabled, pathname]);
 
   return (
     <header className="site-header">
@@ -47,7 +68,7 @@ export default function Header() {
         />
       </Link>
 
-      <nav className="main-nav" aria-label="Navigation principale">
+      <nav className={`main-nav ${scrollNavEnabled && navHidden ? "is-scroll-hidden" : ""}`} aria-label="Navigation principale">
         {navItems.map((item) => {
           const active =
             item.href === "/"

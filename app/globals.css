@@ -8937,3 +8937,26 @@ body :where(p, li, span, a, small, label, div)[style*="color: #FFFFFF"] {
 body .limes-page .limes-hero-exact .limes-copy-exact p {
   color: #FFFFFF !important;
 }
+
+
+/* =========================================================
+   V3 — Navigation immersive au scroll (Accueil / Audit / Technologies)
+   Le logo reste en place. Les liens s'effacent dès que l'on quitte le haut
+   de page et reviennent uniquement lorsque l'on remonte complètement.
+   ========================================================= */
+.main-nav {
+  transition: opacity .32s ease, transform .32s ease, visibility .32s ease;
+}
+
+.main-nav.is-scroll-hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .main-nav {
+    transition: none;
+  }
+}
