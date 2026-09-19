@@ -8873,7 +8873,7 @@ body:has(.home-clean-v3) .site-header {
   .home-clean-v3-bg { object-position: 62% center !important; }
 }
 
-/* V3 Technologies — cadrage du fond : décale la scène vers la droite pour libérer la zone texte. */
+/* V3 Technologies — cadrage du fond : déplacement renforcé vers la droite pour libérer la zone texte. */
 .limes-page {
-  background-position: 38% top !important;
+  background-position: 15% top !important;
 }
