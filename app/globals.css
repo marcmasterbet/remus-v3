@@ -9206,7 +9206,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 /* REMUS V3 — CONTACT IMMERSIF */
 .contact-page{position:relative!important;isolation:isolate!important;min-height:100vh!important;background:transparent!important;color:#fff!important}
-.contact-page::before{content:"";position:fixed;inset:0;z-index:-2;background:url("/visuals/contact-v3-background.png") center 80%/cover no-repeat}
+.contact-page::before{content:"";position:fixed;inset:0;z-index:-2;background:url("/visuals/contact-v3-background.png") center 20%/cover no-repeat}
 .contact-page .contact-hero{min-height:100vh!important;padding:150px clamp(34px,4.5vw,88px) 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
 .contact-page .contact-hero-top{display:block!important;min-height:68vh!important}
 .contact-page .contact-intro{width:min(620px,42vw)!important;margin:0!important;position:relative!important;z-index:2!important}
@@ -9225,4 +9225,4 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .contact-page .contact-form input::placeholder,.contact-page .contact-form textarea::placeholder{color:rgba(255,255,255,.55)!important}
 .contact-page .contact-privacy-check,.contact-page .contact-privacy-check span,.contact-page .contact-privacy-check a,.contact-page .form-status{color:#fff!important}
 .contact-page .contact-privacy-check a{text-decoration-color:#c97942!important}
-@media(max-width:900px){.contact-page::before{background-position:center 80%!important}.contact-page .contact-hero{padding:118px 22px 60px!important}.contact-page .contact-hero-top{min-height:72svh!important}.contact-page .contact-intro,.contact-page .contact-form-column.contact-form-column--below{width:100%!important}.contact-page .contact-intro h1{font-size:clamp(46px,14vw,70px)!important}}
+@media(max-width:900px){.contact-page::before{background-position:center 20%!important}.contact-page .contact-hero{padding:118px 22px 60px!important}.contact-page .contact-hero-top{min-height:72svh!important}.contact-page .contact-intro,.contact-page .contact-form-column.contact-form-column--below{width:100%!important}.contact-page .contact-intro h1{font-size:clamp(46px,14vw,70px)!important}}
