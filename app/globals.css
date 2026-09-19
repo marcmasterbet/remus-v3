@@ -9014,6 +9014,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  filter: brightness(0.72);
 }
 .solutions-page .panel-shell,
 .solutions-page .solutions-hero,
