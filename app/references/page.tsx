@@ -17,10 +17,10 @@ const articles = [
 
 export default function ReferencesPage() {
   return (
-    <main className="references-page">
-      <section className="references-hero">
-        <div className="references-copy">
-          <span className="references-kicker">RÉFÉRENCES</span>
+    <main className="references-v3">
+      <section className="references-v3-hero">
+        <div className="references-v3-copy">
+          <span className="references-v3-kicker">RÉFÉRENCES</span>
           <h1>
             Comprendre aujourd’hui<br />
             pour anticiper<br />
@@ -35,15 +35,16 @@ export default function ReferencesPage() {
         </div>
       </section>
 
-      <section className="references-articles" aria-label="Articles REMUS SYSTEMS">
-        <div className="references-articles-head">
+      <section className="references-v3-list">
+        <header className="references-v3-list-head">
           <span>ANALYSES &amp; PERSPECTIVES</span>
           <h2>Nos références</h2>
-        </div>
-        <div className="references-article-list">
+        </header>
+
+        <div className="references-v3-grid">
           {articles.map((article, index) => (
-            <article className="references-article-card" key={article.slug}>
-              <span className="references-article-index">0{index + 1}</span>
+            <article className="references-v3-card" key={article.slug}>
+              <span className="references-v3-number">0{index + 1}</span>
               <h3>{article.title}</h3>
               <Link href={`/references/${article.slug}`}>
                 Lire l’article <span aria-hidden="true">→</span>

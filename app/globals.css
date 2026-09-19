@@ -9372,3 +9372,145 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   box-shadow: none !important;
   border: 1px solid rgba(255,255,255,.72) !important;
 }
+
+
+/* =========================================================
+   REMUS V3 — RÉFÉRENCES — RECONSTRUCTION PROPRE
+   Aucun flou. Aucun panneau. Aucun filtre backdrop.
+   ========================================================= */
+.references-v3 {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  color: #fff;
+  background: transparent;
+}
+.references-v3::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/visuals/references-v3-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: brightness(1.18) contrast(1.04);
+}
+.references-v3-hero {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 150px clamp(34px,5vw,92px) 90px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.references-v3-copy {
+  width: min(690px,48vw);
+  background: transparent;
+}
+.references-v3-kicker {
+  display: block;
+  margin-bottom: 38px;
+  color: #c97942;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .2em;
+}
+.references-v3-copy h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(52px,5.2vw,86px);
+  line-height: .98;
+  letter-spacing: -.045em;
+  font-weight: 500;
+}
+.references-v3-copy h1 em {
+  color: #c97942;
+  font-style: normal;
+}
+.references-v3-copy p {
+  max-width: 620px;
+  margin: 34px 0 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.references-v3-list {
+  position: relative;
+  padding: 110px clamp(34px,5vw,92px) 130px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.references-v3-list-head,
+.references-v3-grid,
+.references-v3-card {
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  filter: none;
+  box-shadow: none;
+}
+.references-v3-list-head span {
+  color: #c97942;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.references-v3-list-head h2 {
+  margin: 12px 0 50px;
+  color: #fff;
+  font-size: clamp(38px,4vw,64px);
+  font-weight: 500;
+  letter-spacing: -.035em;
+}
+.references-v3-grid {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 22px;
+}
+.references-v3-card {
+  min-height: 320px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255,255,255,.72);
+}
+.references-v3-number {
+  color: #c97942;
+  font-size: 12px;
+  letter-spacing: .16em;
+}
+.references-v3-card h3 {
+  margin: 42px 0 34px;
+  color: #fff;
+  font-size: clamp(22px,2vw,31px);
+  line-height: 1.16;
+  font-weight: 500;
+}
+.references-v3-card a {
+  margin-top: auto;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+}
+.references-v3-card a span {
+  margin-left: 8px;
+  color: #c97942;
+}
+@media (max-width: 900px) {
+  .references-v3::before { background-position: 62% center; }
+  .references-v3-hero {
+    min-height: 100svh;
+    padding: 118px 22px 70px;
+    align-items: flex-end;
+  }
+  .references-v3-copy { width: 100%; }
+  .references-v3-copy h1 { font-size: clamp(46px,14vw,70px); }
+  .references-v3-list { padding: 78px 22px 90px; }
+  .references-v3-grid { grid-template-columns: 1fr; }
+}
