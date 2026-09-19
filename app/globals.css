@@ -8960,3 +8960,34 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     transition: none;
   }
 }
+
+
+/* V3 — Logo : même disparition au scroll que la navigation, sur les 3 pages test. */
+.remus-header-logo {
+  transition: opacity .32s ease, transform .32s ease, visibility .32s ease;
+}
+.remus-header-logo.is-scroll-hidden {
+  opacity: 0 !important;
+  transform: translateY(-10px) !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .remus-header-logo { transition: none; }
+}
+
+
+/* V3 — liens légaux : même disparition immersive que le logo et la navigation
+   sur Accueil / Audit / Technologies uniquement. */
+.v3-legal-nav {
+  transition: opacity .32s ease, transform .32s ease, visibility .32s ease;
+}
+.v3-legal-nav.is-scroll-hidden {
+  opacity: 0 !important;
+  transform: translateY(10px) !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .v3-legal-nav { transition: none; }
+}

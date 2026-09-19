@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/Header";
 import CookieConsent from "../components/CookieConsent";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import V3LegalNav from "../components/V3LegalNav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.remussystems.fr"),
@@ -63,12 +64,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <div className="site-shell">
           <Header />
           {children}
-          <nav className="v3-legal-nav" aria-label="Informations légales">
-            <a href="/mentions-legales">Mentions légales</a>
-            <a href="/confidentialite">Confidentialité</a>
-            <a href="/cgu">CGU</a>
-            <a href="/cookies">Cookies</a>
-          </nav>
+          <V3LegalNav />
         </div>
         <GoogleAnalytics />
         <CookieConsent />

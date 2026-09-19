@@ -55,7 +55,7 @@ export default function Header() {
     <header className="site-header">
       <Link
         href="/"
-        className="remus-header-logo"
+        className={`remus-header-logo ${scrollNavEnabled && navHidden ? "is-scroll-hidden" : ""}`}
         aria-label="REMUS Systems — Accueil"
       >
         <Image
