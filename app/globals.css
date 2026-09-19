@@ -8900,3 +8900,10 @@ body:has(.limes-page) .remus-header-logo {
     padding-right: 24px !important;
   }
 }
+
+/* AUDIT V3 — bloc final transparent : laisse visible l'image de fond */
+.audit-remus-page .audit-final-block {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
