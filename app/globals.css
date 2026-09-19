@@ -9083,3 +9083,27 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .rd-page h3 {
   color: #fff;
 }
+
+
+
+
+/* =========================================================
+   REMUS V3 — RÈGLE GLOBALE DES CARTES
+   Contour blanc fin sur les cartes/blocs de contenu.
+   ========================================================= */
+.remus-inner-page .panel-shell,
+.home-page .panel-shell,
+.audit-remus-page .audit-step,
+.audit-remus-page .audit-final-block,
+.limes-page .limes-capability,
+.solutions-page .solution-card,
+.rd-page .research-row,
+.rd-page .research-side,
+.about-page .panel-shell,
+.contact-page .panel-shell,
+.contact-page .contact-card,
+.contact-page .contact-form,
+.contact-page form {
+  border: 1px solid rgba(255,255,255,.72) !important;
+  outline: 0 !important;
+}
