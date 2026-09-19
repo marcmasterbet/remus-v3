@@ -20,7 +20,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
 
-  const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions"];
+  const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d"];
   const scrollNavEnabled = scrollNavPages.includes(pathname);
 
   useEffect(() => {

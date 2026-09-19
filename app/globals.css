@@ -9038,3 +9038,48 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
+
+
+/* =========================================================
+   REMUS V3 — RECHERCHE & DÉVELOPPEMENT
+   Une seule image plein écran, contenu au-dessus.
+   ========================================================= */
+.rd-page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background: transparent !important;
+  color: #fff;
+}
+.rd-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/visuals/rd-v3-background.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.rd-page .panel-shell,
+.rd-page .rd-hero,
+.rd-page .research-axes,
+.rd-page .research-layout,
+.rd-page .research-row,
+.rd-page .research-side {
+  background: rgba(0,0,0,.08) !important;
+}
+.rd-page .rd-visual,
+.rd-page .rd-hero-image {
+  display: none !important;
+}
+.rd-page p,
+.rd-page .research-side p,
+.rd-page .research-row strong {
+  color: #fff !important;
+}
+.rd-page h1,
+.rd-page h2,
+.rd-page h3 {
+  color: #fff;
+}

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const scrollPages = ["/", "/audit-remus", "/technologies", "/solutions"];
+const scrollPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d"];
 
 export default function V3LegalNav() {
   const pathname = usePathname();

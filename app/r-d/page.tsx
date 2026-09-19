@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 
@@ -66,20 +65,6 @@ export default function RDPage() {
              La  recherche et le développement de REMUS Systems explore les interactions entre humains, IA et technologies afin de concevoir des architectures plus intelligentes, plus résilientes et mieux préparées aux défis de demain.
           </p>
         </div>
-
-        <div className="rd-visual">
-
-          <Image
-            src="/visuals/rd-hero.png"
-            alt="Réseau de recherche et développement REMUS Systems"
-            width={1536}
-            height={1024}
-            priority
-            className="rd-hero-image"
-          />
-
-        </div>
-
       </section>
 
       <section className="research-axes panel-shell">
