@@ -9087,23 +9087,47 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 
 
+
 /* =========================================================
-   REMUS V3 — RÈGLE GLOBALE DES CARTES
-   Contour blanc fin sur les cartes/blocs de contenu.
+   REMUS V3 — CONTOURS BLANCS : CARTES UNIQUEMENT
+   Aucun contour sur les sections / panel-shell.
    ========================================================= */
-.remus-inner-page .panel-shell,
-.home-page .panel-shell,
-.audit-remus-page .audit-step,
-.audit-remus-page .audit-final-block,
-.limes-page .limes-capability,
-.solutions-page .solution-card,
-.rd-page .research-row,
-.rd-page .research-side,
-.about-page .panel-shell,
-.contact-page .panel-shell,
-.contact-page .contact-card,
-.contact-page .contact-form,
-.contact-page form {
+
+/* Accueil : les 5 cartes */
+.home-clean-v3-grid > *,
+.home-clean-v3-intro {
   border: 1px solid rgba(255,255,255,.72) !important;
+}
+
+/* Audit : cartes/étapes uniquement */
+.audit-remus-page .audit-step,
+.audit-remus-page .audit-final-block {
+  border: 1px solid rgba(255,255,255,.72) !important;
+}
+
+/* Technologies : cartes uniquement */
+.limes-page .limes-capability,
+.limes-page .limes-capability-statement {
+  border: 1px solid rgba(255,255,255,.72) !important;
+}
+
+/* Solutions : cartes uniquement */
+.solutions-page .solution-card {
+  border: 1px solid rgba(255,255,255,.72) !important;
+}
+
+/* Recherche & Développement : lignes/cartes + bloc latéral uniquement */
+.rd-page .research-row,
+.rd-page .research-side {
+  border: 1px solid rgba(255,255,255,.72) !important;
+}
+
+/* Sécurité : les grands conteneurs ne reçoivent jamais la bordure carte */
+.remus-inner-page .panel-shell,
+.rd-page .rd-hero,
+.rd-page .research-axes,
+.solutions-page .solutions-hero,
+.solutions-page .solutions-grid,
+.solutions-page .solutions-closing {
   outline: 0 !important;
 }
