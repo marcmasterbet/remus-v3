@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 
@@ -98,16 +97,6 @@ export default function TechnologiesPage() {
               NOTRE VISION <span>→</span>
             </Link>
           </div>
-        </div>
-
-        <div className="limes-visual-exact" aria-hidden="true">
-          <Image
-            src="/visuals/limes-hero-v2.jpeg"
-            alt=""
-            fill
-            priority
-            sizes="(max-width: 900px) 100vw, 64vw"
-          />
         </div>
 
         <div className="limes-signature">
