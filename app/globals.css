@@ -9200,5 +9200,29 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 /* REMUS V3 — R&D : luminosité du fond uniquement */
 .rd-page::before {
-  filter: brightness(1.4) !important;
+  filter: brightness(1.25) !important;
 }
+
+
+/* REMUS V3 — CONTACT IMMERSIF */
+.contact-page{position:relative!important;isolation:isolate!important;min-height:100vh!important;background:transparent!important;color:#fff!important}
+.contact-page::before{content:"";position:fixed;inset:0;z-index:-2;background:url("/visuals/contact-v3-background.png") center center/cover no-repeat}
+.contact-page .contact-hero{min-height:100vh!important;padding:150px clamp(34px,4.5vw,88px) 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
+.contact-page .contact-hero-top{display:block!important;min-height:68vh!important}
+.contact-page .contact-intro{width:min(620px,42vw)!important;margin:0!important;position:relative!important;z-index:2!important}
+.contact-page .contact-eyebrow{color:#c97942!important}
+.contact-page .contact-intro h1{color:#fff!important;font-size:clamp(48px,5.1vw,82px)!important;line-height:.98!important;letter-spacing:-.045em!important;margin:54px 0 28px!important}
+.contact-page .contact-intro h1 span{color:#c97942!important}
+.contact-page .contact-lead{color:#fff!important;max-width:590px!important;line-height:1.75!important}
+.contact-page .contact-mail-hero{display:none!important}
+.contact-page .contact-form-column.contact-form-column--below{width:min(760px,68vw)!important;margin:0 auto!important;padding:38px 0 80px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;backdrop-filter:none!important}
+.contact-page .contact-form-heading{text-align:center!important;margin-bottom:38px!important}
+.contact-page .contact-form-heading span{color:#c97942!important;font-size:11px!important;letter-spacing:.18em!important}
+.contact-page .contact-form-heading h2{color:#fff!important;margin-top:14px!important;font-size:clamp(34px,3.1vw,54px)!important}
+.contact-page .contact-form{background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
+.contact-page .contact-form label{color:#fff!important}
+.contact-page .contact-form input:not([type="checkbox"]),.contact-page .contact-form textarea{color:#fff!important;background:rgba(0,0,0,.10)!important;border:0!important;border-bottom:1px solid rgba(201,121,66,.78)!important;border-radius:0!important;box-shadow:none!important}
+.contact-page .contact-form input::placeholder,.contact-page .contact-form textarea::placeholder{color:rgba(255,255,255,.55)!important}
+.contact-page .contact-privacy-check,.contact-page .contact-privacy-check span,.contact-page .contact-privacy-check a,.contact-page .form-status{color:#fff!important}
+.contact-page .contact-privacy-check a{text-decoration-color:#c97942!important}
+@media(max-width:900px){.contact-page::before{background-position:62% center!important}.contact-page .contact-hero{padding:118px 22px 60px!important}.contact-page .contact-hero-top{min-height:72svh!important}.contact-page .contact-intro,.contact-page .contact-form-column.contact-form-column--below{width:100%!important}.contact-page .contact-intro h1{font-size:clamp(46px,14vw,70px)!important}}

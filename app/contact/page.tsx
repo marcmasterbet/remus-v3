@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import ContactForm from "../../components/ContactForm";
 
 
@@ -58,15 +57,6 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="contact-mail-hero" aria-hidden="true">
-            <Image
-              src="/visuals/remus-mail-transparent.png"
-              alt=""
-              fill
-              sizes="(max-width: 900px) 100vw, 48vw"
-              priority
-            />
-          </div>
         </div>
 
         <div className="contact-form-column contact-form-column--below">
