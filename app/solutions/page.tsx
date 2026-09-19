@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 
@@ -89,16 +88,6 @@ export default function SolutionsPage() {
             systèmes, données et expertise humaine convergent pour répondre aux
             enjeux des environnements critiques.
           </p>
-        </div>
-
-        <div className="solutions-hero-visual" aria-hidden="true">
-          <Image
-            src="/visuals/solutions-remus.png"
-            alt=""
-            fill
-            priority
-            sizes="(max-width: 900px) 100vw, 48vw"
-          />
         </div>
       </section>
 

@@ -8991,3 +8991,49 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 @media (prefers-reduced-motion: reduce) {
   .v3-legal-nav { transition: none; }
 }
+
+
+/* =========================================================
+   REMUS V3 — SOLUTIONS
+   Une seule image de fond plein écran. Tout le contenu passe
+   au-dessus, sans second visuel ni panneaux noirs opaques.
+   ========================================================= */
+.solutions-page {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background: transparent !important;
+  color: #fff;
+}
+.solutions-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/visuals/solutions-v3-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.solutions-page .panel-shell,
+.solutions-page .solutions-hero,
+.solutions-page .solutions-grid,
+.solutions-page .solution-card {
+  background: rgba(0,0,0,.08) !important;
+}
+.solutions-page .solutions-hero-visual {
+  display: none !important;
+}
+.solutions-page p,
+.solutions-page .solution-card p {
+  color: #fff !important;
+}
+.solutions-page h1,
+.solutions-page h2,
+.solutions-page h3 {
+  color: #fff;
+}
+.solutions-page .solution-card {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
