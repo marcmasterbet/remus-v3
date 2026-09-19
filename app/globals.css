@@ -9318,3 +9318,26 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   box-shadow: none !important;
   border: 1px solid rgba(255,255,255,.72) !important;
 }
+
+
+/* REMUS V3 — RÉFÉRENCES : écran d'ouverture complet avant les articles */
+.references-page .references-hero {
+  min-height: 100vh !important;
+  height: 100vh !important;
+  box-sizing: border-box !important;
+}
+.references-page .references-articles {
+  position: relative !important;
+  margin-top: 0 !important;
+  transform: none !important;
+  padding-top: 110px !important;
+}
+@media (max-width: 900px) {
+  .references-page .references-hero {
+    min-height: 100svh !important;
+    height: 100svh !important;
+  }
+  .references-page .references-articles {
+    padding-top: 78px !important;
+  }
+}
