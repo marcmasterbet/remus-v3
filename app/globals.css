@@ -9341,3 +9341,34 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     padding-top: 78px !important;
   }
 }
+
+
+/* REMUS V3 — RÉFÉRENCES : aucun grand panneau, flou uniquement dans les 3 cartes */
+.references-page .references-articles,
+.references-page .references-articles::before,
+.references-page .references-articles::after,
+.references-page .references-articles-head,
+.references-page .references-articles-head::before,
+.references-page .references-articles-head::after,
+.references-page .references-article-list,
+.references-page .references-article-list::before,
+.references-page .references-article-list::after {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  filter: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.references-page .references-article-card {
+  background: rgba(0,0,0,.12) !important;
+  background-image: none !important;
+  backdrop-filter: blur(7px) !important;
+  -webkit-backdrop-filter: blur(7px) !important;
+  filter: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(255,255,255,.72) !important;
+}
