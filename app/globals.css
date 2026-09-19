@@ -9230,11 +9230,11 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 /* REMUS V3 — SOLUTIONS : visuel fortement descendu, luminosité conservée */
 .solutions-page::before {
-  background-position: center calc(50% + 180px) !important;
+  background-position: center calc(50% + 90px) !important;
   filter: brightness(0.85) !important;
 }
 @media (max-width: 900px) {
   .solutions-page::before {
-    background-position: center calc(50% + 110px) !important;
+    background-position: center calc(50% + 60px) !important;
   }
 }
