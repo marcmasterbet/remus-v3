@@ -9238,3 +9238,33 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     background-position: center calc(50% + 50px) !important;
   }
 }
+
+
+/* =========================================================
+   REMUS V3 — RÉFÉRENCES
+   ========================================================= */
+.references-page{position:relative;isolation:isolate;min-height:100vh;background:#050505;color:#fff}
+.references-page::before{content:"";position:fixed;inset:0;z-index:-2;background:url("/visuals/references-v3-background.png") center center/cover no-repeat}
+.references-hero{min-height:100vh;display:flex;align-items:center;padding:150px clamp(34px,5vw,92px) 90px;background:transparent}
+.references-copy{width:min(690px,48vw)}
+.references-kicker{display:block;color:#c97942;font-size:12px;font-weight:700;letter-spacing:.2em;margin-bottom:38px}
+.references-copy h1{margin:0;color:#fff;font-size:clamp(52px,5.2vw,86px);line-height:.98;letter-spacing:-.045em;font-weight:500}
+.references-copy h1 em{color:#c97942;font-style:normal}
+.references-copy p{max-width:620px;margin:34px 0 0;color:#fff;font-size:16px;line-height:1.75}
+.references-articles{position:relative;z-index:1;padding:110px clamp(34px,5vw,92px) 130px;background:rgba(5,5,5,.82);backdrop-filter:blur(4px)}
+.references-articles-head span{color:#c97942;font-size:11px;font-weight:700;letter-spacing:.18em}
+.references-articles-head h2{margin:12px 0 50px;color:#fff;font-size:clamp(38px,4vw,64px);font-weight:500;letter-spacing:-.035em}
+.references-article-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.references-article-card{min-height:320px;padding:30px;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.72);background:rgba(0,0,0,.08)}
+.references-article-index{color:#c97942;font-size:12px;letter-spacing:.16em}
+.references-article-card h3{margin:42px 0 34px;color:#fff;font-size:clamp(22px,2vw,31px);line-height:1.16;font-weight:500}
+.references-article-card a{margin-top:auto;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.04em}
+.references-article-card a span{color:#c97942;margin-left:8px}
+@media(max-width:900px){
+  .references-page::before{background-position:62% center}
+  .references-hero{padding:118px 22px 70px;align-items:flex-end}
+  .references-copy{width:100%}
+  .references-copy h1{font-size:clamp(46px,14vw,70px)}
+  .references-articles{padding:78px 22px 90px}
+  .references-article-list{grid-template-columns:1fr}
+}

@@ -11,6 +11,7 @@ const navItems = [
   { href: "/technologies", label: "TECHNOLOGIES" },
   { href: "/solutions", label: "SOLUTIONS" },
   { href: "/r-d", label: "RECHERCHE & DÉVELOPPEMENT" },
+  { href: "/references", label: "RÉFÉRENCES" },
   { href: "/a-propos", label: "QUI SOMMES-NOUS ?" },
   { href: "/contact", label: "CONTACT" },
 ];
@@ -20,7 +21,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
 
-  const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/a-propos", "/contact"];
+  const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/references", "/a-propos", "/contact"];
   const scrollNavEnabled = scrollNavPages.includes(pathname);
 
   useEffect(() => {
