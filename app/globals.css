@@ -9268,3 +9268,20 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   .references-articles{padding:78px 22px 90px}
   .references-article-list{grid-template-columns:1fr}
 }
+
+
+/* REMUS V3 — RÉFÉRENCES : section et cartes fondues dans le décor */
+.references-page .references-articles {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.references-page .references-article-card {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(255,255,255,.72) !important;
+}
