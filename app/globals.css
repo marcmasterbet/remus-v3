@@ -9196,3 +9196,9 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     width: 100%;
   }
 }
+
+
+/* REMUS V3 — R&D : luminosité du fond uniquement */
+.rd-page::before {
+  filter: brightness(1.15) !important;
+}
