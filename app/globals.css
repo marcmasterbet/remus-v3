@@ -8932,3 +8932,8 @@ body :where(p, li, span, a, small, label, div)[style*="color: #FFFFFF"] {
 .contact-page p {
   color: #FFFFFF !important;
 }
+
+/* TECHNOLOGIES V3 — paragraphe LIMES en blanc pur */
+body .limes-page .limes-hero-exact .limes-copy-exact p {
+  color: #FFFFFF !important;
+}
