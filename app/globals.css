@@ -9239,162 +9239,13 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   }
 }
 
-
 /* =========================================================
-   REMUS V3 — RÉFÉRENCES
-   ========================================================= */
-.references-page{position:relative;isolation:isolate;min-height:100vh;background:#050505;color:#fff}
-.references-page::before{content:"";position:fixed;inset:0;z-index:-2;background:url("/visuals/references-v3-background.png") center center/cover no-repeat}
-.references-hero{min-height:100vh;display:flex;align-items:center;padding:150px clamp(34px,5vw,92px) 90px;background:transparent}
-.references-copy{width:min(690px,48vw)}
-.references-kicker{display:block;color:#c97942;font-size:12px;font-weight:700;letter-spacing:.2em;margin-bottom:38px}
-.references-copy h1{margin:0;color:#fff;font-size:clamp(52px,5.2vw,86px);line-height:.98;letter-spacing:-.045em;font-weight:500}
-.references-copy h1 em{color:#c97942;font-style:normal}
-.references-copy p{max-width:620px;margin:34px 0 0;color:#fff;font-size:16px;line-height:1.75}
-.references-articles{position:relative;z-index:1;padding:110px clamp(34px,5vw,92px) 130px;background:rgba(5,5,5,.82);backdrop-filter:blur(4px)}
-.references-articles-head span{color:#c97942;font-size:11px;font-weight:700;letter-spacing:.18em}
-.references-articles-head h2{margin:12px 0 50px;color:#fff;font-size:clamp(38px,4vw,64px);font-weight:500;letter-spacing:-.035em}
-.references-article-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-.references-article-card{min-height:320px;padding:30px;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,.72);background:rgba(0,0,0,.08)}
-.references-article-index{color:#c97942;font-size:12px;letter-spacing:.16em}
-.references-article-card h3{margin:42px 0 34px;color:#fff;font-size:clamp(22px,2vw,31px);line-height:1.16;font-weight:500}
-.references-article-card a{margin-top:auto;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.04em}
-.references-article-card a span{color:#c97942;margin-left:8px}
-@media(max-width:900px){
-  .references-page::before{background-position:62% center}
-  .references-hero{padding:118px 22px 70px;align-items:flex-end}
-  .references-copy{width:100%}
-  .references-copy h1{font-size:clamp(46px,14vw,70px)}
-  .references-articles{padding:78px 22px 90px}
-  .references-article-list{grid-template-columns:1fr}
-}
-
-
-/* REMUS V3 — RÉFÉRENCES : section et cartes fondues dans le décor */
-.references-page .references-articles {
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: 0 !important;
-  box-shadow: none !important;
-}
-.references-page .references-article-card {
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(255,255,255,.72) !important;
-}
-
-
-/* REMUS V3 — RÉFÉRENCES : suppression de tout panneau résiduel + image plus lumineuse */
-.references-page::before {
-  filter: brightness(1.18) contrast(1.04) !important;
-}
-.references-page .references-articles,
-.references-page .references-articles::before,
-.references-page .references-articles::after,
-.references-page .references-articles-head,
-.references-page .references-articles-head::before,
-.references-page .references-articles-head::after,
-.references-page .references-article-list,
-.references-page .references-article-list::before,
-.references-page .references-article-list::after {
-  background: none !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  border: 0 !important;
-  outline: 0 !important;
-  box-shadow: none !important;
-}
-.references-page .references-article-card {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(255,255,255,.72) !important;
-}
-
-
-/* REMUS V3 — RÉFÉRENCES : écran d'ouverture complet avant les articles */
-.references-page .references-hero {
-  min-height: 100vh !important;
-  height: 100vh !important;
-  box-sizing: border-box !important;
-}
-.references-page .references-articles {
-  position: relative !important;
-  margin-top: 0 !important;
-  transform: none !important;
-  padding-top: 110px !important;
-}
-@media (max-width: 900px) {
-  .references-page .references-hero {
-    min-height: 100svh !important;
-    height: 100svh !important;
-  }
-  .references-page .references-articles {
-    padding-top: 78px !important;
-  }
-}
-
-
-/* REMUS V3 — RÉFÉRENCES : aucun grand panneau, flou uniquement dans les 3 cartes */
-.references-page .references-articles,
-.references-page .references-articles::before,
-.references-page .references-articles::after,
-.references-page .references-articles-head,
-.references-page .references-articles-head::before,
-.references-page .references-articles-head::after,
-.references-page .references-article-list,
-.references-page .references-article-list::before,
-.references-page .references-article-list::after {
-  background: transparent !important;
-  background-color: transparent !important;
-  background-image: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  filter: none !important;
-  box-shadow: none !important;
-  border: 0 !important;
-  outline: 0 !important;
-}
-.references-page .references-article-card {
-  background: rgba(0,0,0,.12) !important;
-  background-image: none !important;
-  backdrop-filter: blur(7px) !important;
-  -webkit-backdrop-filter: blur(7px) !important;
-  filter: none !important;
-  box-shadow: none !important;
-  border: 1px solid rgba(255,255,255,.72) !important;
-}
-
-
-/* =========================================================
-   REMUS V3 — RÉFÉRENCES — RECONSTRUCTION PROPRE
-   Aucun flou. Aucun panneau. Aucun filtre backdrop.
+   REMUS V3 — RÉFÉRENCES — VERSION CANONIQUE
    ========================================================= */
 .references-v3 {
-  position: relative;
-  isolation: isolate;
   min-height: 100vh;
   color: #fff;
-  background: transparent;
-}
-.references-v3::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background-image: url("/visuals/references-v3-background.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  filter: brightness(1.18) contrast(1.04);
+  background: url("/visuals/references-v3-background.png") center center / cover fixed no-repeat;
 }
 .references-v3-hero {
   min-height: 100vh;
@@ -9402,191 +9253,56 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   display: flex;
   align-items: center;
   padding: 150px clamp(34px,5vw,92px) 90px;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
 }
-.references-v3-copy {
-  width: min(690px,48vw);
-  background: transparent;
-}
+.references-v3-copy { width: min(690px,48vw); }
 .references-v3-kicker {
-  display: block;
-  margin-bottom: 38px;
-  color: #c97942;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .2em;
+  display:block;margin-bottom:38px;color:#c97942;font-size:12px;font-weight:700;letter-spacing:.2em;
 }
 .references-v3-copy h1 {
-  margin: 0;
-  color: #fff;
-  font-size: clamp(52px,5.2vw,86px);
-  line-height: .98;
-  letter-spacing: -.045em;
-  font-weight: 500;
+  margin:0;color:#fff;font-size:clamp(52px,5.2vw,86px);line-height:.98;letter-spacing:-.045em;font-weight:500;
 }
-.references-v3-copy h1 em {
-  color: #c97942;
-  font-style: normal;
-}
+.references-v3-copy h1 em { color:#c97942;font-style:normal; }
 .references-v3-copy p {
-  max-width: 620px;
-  margin: 34px 0 0;
-  color: #fff;
-  font-size: 16px;
-  line-height: 1.75;
+  max-width:620px;margin:34px 0 0;color:#fff;font-size:16px;line-height:1.75;
 }
 .references-v3-list {
-  position: relative;
-  padding: 110px clamp(34px,5vw,92px) 130px;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-}
-.references-v3-list-head,
-.references-v3-grid,
-.references-v3-card {
-  background: transparent;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  filter: none;
-  box-shadow: none;
+  padding:110px clamp(34px,5vw,92px) 130px;
+  background:transparent;
 }
 .references-v3-list-head span {
-  color: #c97942;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .18em;
+  color:#c97942;font-size:11px;font-weight:700;letter-spacing:.18em;
 }
 .references-v3-list-head h2 {
-  margin: 12px 0 50px;
-  color: #fff;
-  font-size: clamp(38px,4vw,64px);
-  font-weight: 500;
-  letter-spacing: -.035em;
+  margin:12px 0 50px;color:#fff;font-size:clamp(38px,4vw,64px);font-weight:500;letter-spacing:-.035em;
 }
 .references-v3-grid {
-  display: grid;
-  grid-template-columns: repeat(3,minmax(0,1fr));
-  gap: 22px;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;
 }
+/* Effet appliqué UNIQUEMENT aux trois articles */
 .references-v3-card {
-  min-height: 320px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(255,255,255,.72);
+  min-height:320px;
+  padding:30px;
+  display:flex;
+  flex-direction:column;
+  background:rgba(5,5,5,.10);
+  border:1px solid rgba(255,255,255,.72);
+  -webkit-backdrop-filter:blur(5px);
+  backdrop-filter:blur(5px);
+  box-shadow:none;
 }
-.references-v3-number {
-  color: #c97942;
-  font-size: 12px;
-  letter-spacing: .16em;
-}
+.references-v3-number { color:#c97942;font-size:12px;letter-spacing:.16em; }
 .references-v3-card h3 {
-  margin: 42px 0 34px;
-  color: #fff;
-  font-size: clamp(22px,2vw,31px);
-  line-height: 1.16;
-  font-weight: 500;
+  margin:42px 0 34px;color:#fff;font-size:clamp(22px,2vw,31px);line-height:1.16;font-weight:500;
 }
 .references-v3-card a {
-  margin-top: auto;
-  color: #fff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: .04em;
+  margin-top:auto;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.04em;
 }
-.references-v3-card a span {
-  margin-left: 8px;
-  color: #c97942;
-}
-@media (max-width: 900px) {
-  .references-v3::before { background-position: 62% center; }
-  .references-v3-hero {
-    min-height: 100svh;
-    padding: 118px 22px 70px;
-    align-items: flex-end;
-  }
-  .references-v3-copy { width: 100%; }
-  .references-v3-copy h1 { font-size: clamp(46px,14vw,70px); }
-  .references-v3-list { padding: 78px 22px 90px; }
-  .references-v3-grid { grid-template-columns: 1fr; }
-}
-
-
-/* REMUS V3 — RÉFÉRENCES : effet verre uniquement sur les trois articles */
-.references-v3-card {
-  background: rgba(0,0,0,.14) !important;
-  backdrop-filter: blur(2px) !important;
-  -webkit-backdrop-filter: blur(2px) !important;
-  border: 1px solid rgba(255,255,255,.72) !important;
-  box-shadow: none !important;
-}
-.references-v3-list,
-.references-v3-list-head,
-.references-v3-grid {
-  background: transparent !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-}
-
-
-/* REMUS V3 — REFERENCES — CARTES ARTICLES : traitement final */
-.references-v3 .references-v3-card {
-  background: rgba(5, 5, 5, 0.32) !important;
-  -webkit-backdrop-filter: blur(14px) saturate(115%) !important;
-  backdrop-filter: blur(14px) saturate(115%) !important;
-  border: 1px solid rgba(255,255,255,0.72) !important;
-  box-shadow: none !important;
-}
-.references-v3 .references-v3-list,
-.references-v3 .references-v3-list-head,
-.references-v3 .references-v3-grid,
-.references-v3 .references-v3-list::before,
-.references-v3 .references-v3-list::after,
-.references-v3 .references-v3-list-head::before,
-.references-v3 .references-v3-list-head::after,
-.references-v3 .references-v3-grid::before,
-.references-v3 .references-v3-grid::after {
-  background: transparent !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-  filter: none !important;
-  box-shadow: none !important;
-}
-
-/* REMUS V3 — REFERENCES : fond réel + verre visible sur les 3 cartes uniquement */
-.references-v3 {
-  background-image: url("/visuals/references-v3-background.png") !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}
-.references-v3::before {
-  content: none !important;
-  display: none !important;
-}
-.references-v3 .references-v3-list,
-.references-v3 .references-v3-list-head,
-.references-v3 .references-v3-grid {
-  background: transparent !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-}
-.references-v3 .references-v3-card {
-  background: rgba(7, 7, 7, 0.24) !important;
-  -webkit-backdrop-filter: blur(16px) saturate(115%) !important;
-  backdrop-filter: blur(16px) saturate(115%) !important;
-  border: 1px solid rgba(255,255,255,.72) !important;
-  box-shadow: none !important;
-}
-@media (max-width: 900px) {
-  .references-v3 {
-    background-attachment: scroll !important;
-    background-position: 62% center !important;
-  }
+.references-v3-card a span { margin-left:8px;color:#c97942; }
+@media (max-width:900px) {
+  .references-v3 { background-position:62% center;background-attachment:scroll; }
+  .references-v3-hero { min-height:100svh;padding:118px 22px 70px;align-items:flex-end; }
+  .references-v3-copy { width:100%; }
+  .references-v3-copy h1 { font-size:clamp(46px,14vw,70px); }
+  .references-v3-list { padding:78px 22px 90px; }
+  .references-v3-grid { grid-template-columns:1fr; }
 }
