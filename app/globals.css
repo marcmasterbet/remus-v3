@@ -9429,3 +9429,39 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   .remus-header-logo { width: 155px !important; height: 86px !important; flex-basis: 155px !important; }
   .remus-header-logo-img { width: 155px !important; max-width: 155px !important; }
 }
+
+/* =========================================================
+   REMUS V3 — REMONTER LES CONTENUS DES PAGES INTERNES
+   21-09-2026 : rapproche les titres/textes du header sur desktop
+   sans modifier l'accueil ni les sections suivantes.
+   ========================================================= */
+@media (min-width: 901px) {
+  .rd-page .rd-hero {
+    align-items: start !important;
+    padding-top: 105px !important;
+  }
+
+  .solutions-page .solutions-hero {
+    padding-top: 105px !important;
+  }
+
+  .about-page .about-hero {
+    padding-top: 105px !important;
+  }
+
+  .audit-remus-page .audit-premium-hero {
+    align-items: start !important;
+  }
+  .audit-remus-page .audit-premium-copy {
+    padding-top: 105px !important;
+  }
+
+  .limes-page .limes-copy-exact,
+  .limes-hero-exact .limes-copy-exact {
+    padding-top: 105px !important;
+  }
+
+  .contact-page .contact-hero {
+    padding-top: 105px !important;
+  }
+}
