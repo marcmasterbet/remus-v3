@@ -1373,7 +1373,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 46% 54%;
-  align-items: center;
+  align-items: start;
   min-height: 610px;
   padding: 55px clamp(20px, 2.3vw, 36px) 35px;
   gap: 25px;
@@ -7907,7 +7907,7 @@ body:has(.audit-remus-page) {
   isolation: isolate;
   min-height: calc(100vh - 92px) !important;
   display: flex !important;
-  align-items: center !important;
+  align-items: flex-start !important;
   overflow: hidden !important;
   background: #050505 !important;
 }
@@ -8649,9 +8649,15 @@ body:has(.audit-remus-page) .site-header {
 }
 
 /* Hero: full viewport and text directly over the scene. */
-.home-hero,.audit-premium-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
+.home-hero {
   min-height:100vh !important;
   padding-top:150px !important;
+  background:transparent !important;
+  border:0 !important;
+}
+.audit-premium-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
+  min-height:100vh !important;
+  padding-top:82px !important;
   background:transparent !important;
   border:0 !important;
 }
@@ -9428,40 +9434,4 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 @media (max-width: 900px) {
   .remus-header-logo { width: 155px !important; height: 86px !important; flex-basis: 155px !important; }
   .remus-header-logo-img { width: 155px !important; max-width: 155px !important; }
-}
-
-/* =========================================================
-   REMUS V3 — REMONTER LES CONTENUS DES PAGES INTERNES
-   21-09-2026 : rapproche les titres/textes du header sur desktop
-   sans modifier l'accueil ni les sections suivantes.
-   ========================================================= */
-@media (min-width: 901px) {
-  .rd-page .rd-hero {
-    align-items: start !important;
-    padding-top: 105px !important;
-  }
-
-  .solutions-page .solutions-hero {
-    padding-top: 105px !important;
-  }
-
-  .about-page .about-hero {
-    padding-top: 105px !important;
-  }
-
-  .audit-remus-page .audit-premium-hero {
-    align-items: start !important;
-  }
-  .audit-remus-page .audit-premium-copy {
-    padding-top: 105px !important;
-  }
-
-  .limes-page .limes-copy-exact,
-  .limes-hero-exact .limes-copy-exact {
-    padding-top: 105px !important;
-  }
-
-  .contact-page .contact-hero {
-    padding-top: 105px !important;
-  }
 }
