@@ -9396,3 +9396,38 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   .references-v3-list { padding: 78px 22px 90px; }
   .references-v3-grid { grid-template-columns: 1fr; }
 }
+
+/* =========================================================
+   REMUS V3 — NOUVEAU LOGO 2026
+   Le nouveau logo possède déjà son fond noir : ne jamais lui
+   appliquer l'ancien filtre blanc, qui transformait le noir en blanc.
+   ========================================================= */
+.remus-header-logo {
+  width: 92px !important;
+  height: 92px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: transparent !important;
+  flex: 0 0 92px !important;
+}
+.remus-header-logo-img {
+  width: 92px !important;
+  height: 92px !important;
+  max-width: 92px !important;
+  object-fit: contain !important;
+  filter: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+  mix-blend-mode: normal !important;
+}
+@media (max-width: 900px) {
+  .remus-header-logo,
+  .remus-header-logo-img {
+    width: 76px !important;
+    height: 76px !important;
+    max-width: 76px !important;
+  }
+  .remus-header-logo { flex-basis: 76px !important; }
+}
