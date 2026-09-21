@@ -4066,7 +4066,8 @@ body {
 /* Navigation légèrement recentrée verticalement */
 .main-nav {
   align-self: center !important;
-  padding-top: 4px !important;
+  padding-top: 0 !important;
+  transform: translateY(-18px) !important;
 }
 
 /* Bouton contact aligné avec la navigation */
@@ -8876,29 +8877,6 @@ body:has(.home-clean-v3) .site-header {
 /* V3 Technologies — cadrage du fond : déplacement renforcé vers la droite pour libérer la zone texte. */
 .limes-page {
   background-position: 15% top !important;
-}
-
-/* V3 Technologies — alignement gauche uniquement (19-09-2026)
-   Déplace le logo du header et tout le bloc de contenu vers la gauche.
-   Aucune modification de taille ni de l'image de fond. */
-body:has(.limes-page) .site-header {
-  padding-left: 8px !important;
-}
-body:has(.limes-page) .remus-header-logo {
-  margin-left: 0 !important;
-}
-.limes-hero-exact .limes-copy-exact {
-  padding-left: clamp(18px, 2.5vw, 40px) !important;
-}
-
-@media (max-width: 900px) {
-  body:has(.limes-page) .site-header {
-    padding-left: 6px !important;
-  }
-  .limes-hero-exact .limes-copy-exact {
-    padding-left: 12px !important;
-    padding-right: 24px !important;
-  }
 }
 
 /* AUDIT V3 — bloc final transparent : laisse visible l'image de fond */
