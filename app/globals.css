@@ -2712,7 +2712,7 @@ body {
   content: "";
   position: absolute;
   right: 18px;
-  bottom: 18px;
+  bottom: 36px;
   width: 20px;
   height: 20px;
   border-right: 1px solid rgba(169,79,22,.25);
@@ -3761,6 +3761,9 @@ body {
   flex-shrink: 0;
 
   text-decoration: none;
+
+  /* Logo légèrement décalé à gauche sur toutes les pages. */
+  transform: translateX(-22px);
 }
 
 /*
@@ -3810,7 +3813,7 @@ body {
 
 .main-nav a {
   position: relative;
-  padding: 49px 0 33px;
+  padding: 31px 0 51px;
 
   color: var(--remus-black);
   white-space: nowrap;
@@ -3827,7 +3830,7 @@ body {
   position: absolute;
 
   left: 50%;
-  bottom: 21px;
+  bottom: 39px;
 
   width: 0;
   height: 1px;
