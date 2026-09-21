@@ -560,7 +560,7 @@ body {
 }
 .main-nav a:hover::after,
 .main-nav a.is-active::after { width: 38px; }
-.main-nav a.is-active { color: var(--remus-copper-dark); }
+.main-nav a.is-active { color: #A94F16; }
 .main-nav a.is-active::before {
   content: "";
   position: absolute;
@@ -581,7 +581,7 @@ body {
   justify-content: center;
   gap: 17px;
   border: 1px solid rgba(169,79,22,.65);
-  color: var(--remus-copper-dark);
+  color: #A94F16;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: .14em;
@@ -617,7 +617,7 @@ body {
 }
 .home-kicker {
   margin: 0;
-  color: var(--remus-copper-dark);
+  color: #A94F16;
   font-size: 10px;
   line-height: 1;
   font-weight: 700;
@@ -824,7 +824,7 @@ body {
   position: absolute;
   left: 0;
 }
-.home-feature-icon--layers > span::before { top: -7px; border-color: var(--remus-copper-light); }
+.home-feature-icon--layers > span::before { top: -7px; border-color: #A94F16; }
 .home-feature-icon--layers > span::after { top: 7px; }
 .home-feature-icon--dot {
   border-radius: 50%;
@@ -1205,7 +1205,7 @@ body {
   position: absolute;
   left: 0;
 }
-.limes-capability-icon--layers > span::before { top: -7px; border-color: #c97942; }
+.limes-capability-icon--layers > span::before { top: -7px; border-color: #A94F16; }
 .limes-capability-icon--layers > span::after { top: 7px; }
 .limes-capability-icon--dot { border-radius: 50%; clip-path: none; }
 .limes-capability-icon--dot > span {
@@ -3873,7 +3873,7 @@ body {
 
   border: 1px solid rgba(169,79,22,.58);
 
-  color: var(--remus-copper-dark);
+  color: #A94F16;
   background: transparent;
 
   font-size: 10px;
@@ -4070,7 +4070,7 @@ body {
 .main-nav {
   align-self: center !important;
   padding-top: 0 !important;
-  transform: translateY(-18px) !important;
+  transform: translateY(-30px) !important;
 }
 
 /* Bouton contact aligné avec la navigation */
@@ -4807,7 +4807,7 @@ body {
 
 .cookie-btn-solid:hover {
   background: #80380F;
-  border-color: #80380F;
+  border-color: #A94F16;
 }
 
 .footer-cookie-settings {
@@ -6370,7 +6370,7 @@ form.contact-form {
   }
 
   .mobile-menu-signature small {
-    color: #80380F;
+    color: #A94F16;
     font-size: 8px;
     letter-spacing: .2em;
   }
@@ -7807,7 +7807,7 @@ body:has(.home-reference) .footer {
 }
 body:has(.home-reference) .footer-brand strong,
 body:has(.home-reference) .footer-column-title {
-  color: #C97942 !important;
+  color: #A94F16 !important;
 }
 body:has(.home-reference) .footer-brand p,
 body:has(.home-reference) .footer-nav a,
@@ -7818,7 +7818,7 @@ body:has(.home-reference) .footer-cookie-settings {
 body:has(.home-reference) .footer-nav a:hover,
 body:has(.home-reference) .footer-legal-links a:hover,
 body:has(.home-reference) .footer-cookie-settings:hover {
-  color: #C97942 !important;
+  color: #A94F16 !important;
 }
 body:has(.home-reference) .footer-bottom {
   border-top-color: rgba(201,121,66,.16) !important;
@@ -7892,7 +7892,7 @@ body:has(.home-reference) .footer-bottom {
 
 /* REMUS V2 — texte d'introduction hero en cuivre */
 .home-reference .home-intro {
-  color: #C97942 !important;
+  color: #A94F16 !important;
 }
 
 /* =========================================================
@@ -7965,24 +7965,24 @@ body:has(.audit-remus-page) {
   position: relative !important;
   z-index: 5 !important;
 }
-.audit-kicker { color: #c97942 !important; }
+.audit-kicker { color: #A94F16 !important; }
 .audit-small-line { background: #c97942 !important; }
 .audit-premium-copy h1 { color: #f7f4ef !important; text-shadow: 0 3px 24px rgba(0,0,0,.45); }
-.audit-premium-copy h1 strong { color: #c97942 !important; }
-.audit-intro { color: #c97942 !important; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
+.audit-premium-copy h1 strong { color: #A94F16 !important; }
+.audit-intro { color: #A94F16 !important; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
 .audit-approach {
   background: radial-gradient(circle at 70% 0%, rgba(169,79,22,.10), transparent 32%), #050505 !important;
   color: #f7f4ef !important;
 }
 .audit-approach p { color: rgba(247,244,239,.68) !important; }
 .audit-section-heading span,
-.audit-final-copy > span { color: #c97942 !important; }
+.audit-final-copy > span { color: #A94F16 !important; }
 .audit-step { background: #0b0b0b !important; border-color: rgba(201,121,66,.20) !important; }
 .audit-step h2 { color: #f7f4ef !important; }
-.audit-step-symbol { border-color: rgba(201,121,66,.45) !important; color: #c97942 !important; }
+.audit-step-symbol { border-color: rgba(201,121,66,.45) !important; color: #A94F16 !important; }
 .audit-final-block { background: #090909 !important; border-color: rgba(201,121,66,.18) !important; }
 .audit-final-copy h2 { color: #f7f4ef !important; }
-.audit-final-copy h2 strong { color: #c97942 !important; }
+.audit-final-copy h2 strong { color: #A94F16 !important; }
 body:has(.audit-remus-page) .footer {
   background: #050505 !important;
   color: #f7f4ef !important;
@@ -7991,7 +7991,7 @@ body:has(.audit-remus-page) .footer {
 body:has(.audit-remus-page) .footer h3,
 body:has(.audit-remus-page) .footer-title,
 body:has(.audit-remus-page) .footer-nav-title,
-body:has(.audit-remus-page) .footer-legal-title { color: #c97942 !important; }
+body:has(.audit-remus-page) .footer-legal-title { color: #A94F16 !important; }
 body:has(.audit-remus-page) .footer a,
 body:has(.audit-remus-page) .footer p,
 body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !important; }
@@ -8203,7 +8203,7 @@ body:has(.audit-remus-page) .footer button:hover {
   padding:105px 0 90px clamp(24px, 5.5vw, 92px) !important;
   color:#F7F4EF !important;
 }
-.limes-hero-exact .limes-eyebrow { color:#C97942 !important; }
+.limes-hero-exact .limes-eyebrow { color:#A94F16 !important; }
 .limes-hero-exact .limes-rule { background:#A94F16 !important; }
 .limes-hero-exact .limes-logo-text { color:#F7F4EF !important; }
 .limes-hero-exact .limes-copy-exact h1 {
@@ -8217,7 +8217,7 @@ body:has(.audit-remus-page) .footer button:hover {
   text-transform:none !important;
 }
 .limes-hero-exact .limes-copy-exact h1 span {
-  color:#C97942 !important;
+  color:#A94F16 !important;
   font-weight:400 !important;
   letter-spacing:-.025em !important;
 }
@@ -8310,11 +8310,11 @@ body:has(.audit-remus-page) .site-header {
   opacity:.96 !important;
 }
 .main-nav a { color:rgba(244,241,237,.72) !important; }
-.main-nav a:hover,.main-nav a.is-active { color:#C97942 !important; }
+.main-nav a:hover,.main-nav a.is-active { color:#A94F16 !important; }
 .mobile-menu-toggle span { background:#f4f1ed !important; }
 .mobile-menu { background:#050505 !important; color:#f4f1ed !important; }
 .mobile-menu-nav a { color:#f4f1ed !important; border-color: #FFFFFF !important; }
-.mobile-menu-nav a span,.mobile-menu-nav a.is-active { color:#C97942 !important; }
+.mobile-menu-nav a span,.mobile-menu-nav a.is-active { color:#A94F16 !important; }
 
 /* Toutes les zones de contenu passent en noir, avec profondeurs subtiles. */
 .home-reference,
@@ -8365,11 +8365,11 @@ section h1, section h2, section h3 { color:#f4f1ed !important; }
 section p { color:rgba(244,241,237,.66) !important; }
 .eyebrow,
 .audit-section-heading span,
-.audit-final-copy > span { color:#C97942 !important; }
+.audit-final-copy > span { color:#A94F16 !important; }
 
 /* Boutons : cuivre réservé aux actions importantes. */
 .button-outline { background:transparent !important; color:#f4f1ed !important; border-color:rgba(201,121,66,.55) !important; }
-.button-outline:hover { border-color:#C97942 !important; background:rgba(201,121,66,.06) !important; }
+.button-outline:hover { border-color:#A94F16 !important; background:rgba(201,121,66,.06) !important; }
 
 /* Footer noir sur tout le site. */
 .footer,
@@ -8394,7 +8394,7 @@ body:has(.home-reference) .footer-cookie-settings,
 body:has(.audit-remus-page) .footer a,
 body:has(.audit-remus-page) .footer p,
 body:has(.audit-remus-page) .footer button { color:rgba(244,241,237,.58) !important; }
-.footer a:hover,.footer button:hover { color:#C97942 !important; }
+.footer a:hover,.footer button:hover { color:#A94F16 !important; }
 .footer-bottom,body:has(.home-reference) .footer-bottom { border-top-color: #FFFFFF !important; color:rgba(244,241,237,.38) !important; }
 
 /* TECHNOLOGIES : visuel LIMES plein écran, texte superposé, sans doublon LIMES en haut. */
@@ -8767,7 +8767,7 @@ body:has(.home-clean-v3) .site-header {
 }
 .home-clean-v3-kicker {
   margin: 0 0 28px !important;
-  color: #C97942 !important;
+  color: #A94F16 !important;
   font-size: 13px !important;
   font-weight: 700 !important;
   letter-spacing: .18em !important;
@@ -8791,7 +8791,7 @@ body:has(.home-clean-v3) .site-header {
 .home-clean-v3-intro h1 strong {
   display: inline-block !important;
   margin-top: 14px !important;
-  color: #C97942 !important;
+  color: #A94F16 !important;
   font-weight: 450 !important;
 }
 .home-clean-v3-lead {
@@ -8836,7 +8836,7 @@ body:has(.home-clean-v3) .site-header {
   box-shadow: none !important;
 }
 .home-clean-v3-number {
-  color: #C97942 !important;
+  color: #A94F16 !important;
   font-size: 11px !important;
   letter-spacing: .14em !important;
 }
@@ -9191,21 +9191,21 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .contact-page .contact-hero{min-height:100vh!important;padding:150px clamp(34px,4.5vw,88px) 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
 .contact-page .contact-hero-top{display:block!important;min-height:68vh!important}
 .contact-page .contact-intro{width:min(620px,42vw)!important;margin:0!important;position:relative!important;z-index:2!important}
-.contact-page .contact-eyebrow{color:#c97942!important}
+.contact-page .contact-eyebrow{color:#A94F16!important}
 .contact-page .contact-intro h1{color:#fff!important;font-size:clamp(48px,5.1vw,82px)!important;line-height:.98!important;letter-spacing:-.045em!important;margin:54px 0 28px!important}
-.contact-page .contact-intro h1 span{color:#c97942!important}
+.contact-page .contact-intro h1 span{color:#A94F16!important}
 .contact-page .contact-lead{color:#fff!important;max-width:590px!important;line-height:1.75!important}
 .contact-page .contact-mail-hero{display:none!important}
 .contact-page .contact-form-column.contact-form-column--below{width:min(760px,68vw)!important;margin:0 auto!important;padding:38px 0 80px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;backdrop-filter:none!important}
 .contact-page .contact-form-heading{text-align:center!important;margin-bottom:38px!important}
-.contact-page .contact-form-heading span{color:#c97942!important;font-size:11px!important;letter-spacing:.18em!important}
+.contact-page .contact-form-heading span{color:#A94F16!important;font-size:11px!important;letter-spacing:.18em!important}
 .contact-page .contact-form-heading h2{color:#fff!important;margin-top:14px!important;font-size:clamp(34px,3.1vw,54px)!important}
 .contact-page .contact-form{background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
 .contact-page .contact-form label{color:#fff!important}
 .contact-page .contact-form input:not([type="checkbox"]),.contact-page .contact-form textarea{color:#fff!important;background:rgba(0,0,0,.10)!important;border:0!important;border-bottom:1px solid rgba(201,121,66,.78)!important;border-radius:0!important;box-shadow:none!important}
 .contact-page .contact-form input::placeholder,.contact-page .contact-form textarea::placeholder{color:rgba(255,255,255,.55)!important}
 .contact-page .contact-privacy-check,.contact-page .contact-privacy-check span,.contact-page .contact-privacy-check a,.contact-page .form-status{color:#fff!important}
-.contact-page .contact-privacy-check a{text-decoration-color:#c97942!important}
+.contact-page .contact-privacy-check a{text-decoration-color:#A94F16!important}
 @media(max-width:900px){.contact-page::before{background-position:center calc(50% + 110px)!important}.contact-page .contact-hero{padding:118px 22px 60px!important}.contact-page .contact-hero-top{min-height:72svh!important}.contact-page .contact-intro,.contact-page .contact-form-column.contact-form-column--below{width:100%!important}.contact-page .contact-intro h1{font-size:clamp(46px,14vw,70px)!important}}
 
 
@@ -9267,7 +9267,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .references-v3-kicker {
   display: block;
   margin-bottom: 38px;
-  color: #c97942;
+  color: #A94F16;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .2em;
@@ -9283,7 +9283,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .references-v3-copy h1 em {
-  color: #c97942;
+  color: #A94F16;
   font-style: normal;
 }
 
@@ -9301,7 +9301,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .references-v3-list-head span {
-  color: #c97942;
+  color: #A94F16;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .18em;
@@ -9336,7 +9336,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .references-v3-number {
-  color: #c97942;
+  color: #A94F16;
   font-size: 12px;
   letter-spacing: .16em;
 }
@@ -9360,7 +9360,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .references-v3-card a span {
   margin-left: 8px;
-  color: #c97942;
+  color: #A94F16;
 }
 
 @media (max-width: 900px) {
