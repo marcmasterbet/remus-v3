@@ -3763,7 +3763,7 @@ body {
   text-decoration: none;
 
   /* Logo légèrement décalé à gauche sur toutes les pages. */
-  transform: translateX(-22px);
+  transform: translateX(-36px);
 }
 
 /*
@@ -3813,7 +3813,7 @@ body {
 
 .main-nav a {
   position: relative;
-  padding: 31px 0 51px;
+  padding: 23px 0 67px;
 
   color: var(--remus-black);
   white-space: nowrap;
