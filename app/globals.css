@@ -1373,7 +1373,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: 46% 54%;
-  align-items: start;
+  align-items: center;
   min-height: 610px;
   padding: 55px clamp(20px, 2.3vw, 36px) 35px;
   gap: 25px;
@@ -7907,7 +7907,7 @@ body:has(.audit-remus-page) {
   isolation: isolate;
   min-height: calc(100vh - 92px) !important;
   display: flex !important;
-  align-items: flex-start !important;
+  align-items: center !important;
   overflow: hidden !important;
   background: #050505 !important;
 }
@@ -8649,15 +8649,9 @@ body:has(.audit-remus-page) .site-header {
 }
 
 /* Hero: full viewport and text directly over the scene. */
-.home-hero {
+.home-hero,.audit-premium-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
   min-height:100vh !important;
   padding-top:150px !important;
-  background:transparent !important;
-  border:0 !important;
-}
-.audit-premium-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
-  min-height:100vh !important;
-  padding-top:82px !important;
   background:transparent !important;
   border:0 !important;
 }
