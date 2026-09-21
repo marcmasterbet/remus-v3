@@ -9246,7 +9246,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   position: relative;
   isolation: isolate;
   min-height: 100vh;
-  color: #fff;
+  color: #FFFFFF;
   background: #050505;
 }
 
@@ -9294,7 +9294,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .references-v3-copy h1 {
   margin: 0;
-  color: #fff;
+  color: #FFFFFF;
   font-size: clamp(52px,5.2vw,86px);
   line-height: .98;
   letter-spacing: -.045em;
@@ -9309,7 +9309,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .references-v3-copy p {
   max-width: 620px;
   margin: 34px 0 0;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -9327,7 +9327,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .references-v3-list-head h2 {
   margin: 12px 0 50px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: clamp(38px,4vw,64px);
   font-weight: 500;
   letter-spacing: -.035em;
@@ -9361,7 +9361,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .references-v3-card h3 {
   margin: 42px 0 34px;
-  color: #fff;
+  color: #FFFFFF;
   font-size: clamp(22px,2vw,31px);
   line-height: 1.16;
   font-weight: 500;
@@ -9369,7 +9369,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .references-v3-card a {
   margin-top: auto;
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 13px;
   font-weight: 700;
