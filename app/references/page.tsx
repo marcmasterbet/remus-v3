@@ -38,7 +38,6 @@ export default function ReferencesPage() {
       <section className="references-v3-list">
         <header className="references-v3-list-head">
           <span>ANALYSES &amp; PERSPECTIVES</span>
-          <h2>Nos références</h2>
         </header>
 
         <div className="references-v3-grid">
