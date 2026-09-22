@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const articles = [
   {
-    slug: "ia-et-gouvernance-decisionnelle",
-    title: "IA et gouvernance décisionnelle",
+    slug: "ia-gouvernance-decisionnelle",
+    title: "IA ET GOUVERNANCE DÉCISIONNELLE",
   },
   {
     slug: "analyse-systemique-en-entreprise",

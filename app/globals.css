@@ -9412,52 +9412,182 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 /* =========================================================
-   REMUS — ARTICLE : IA ET GOUVERNANCE DÉCISIONNELLE
+   REMUS — ARTICLE / IA ET GOUVERNANCE DÉCISIONNELLE
+   Construit depuis la base saine, sans reprendre l'ancien article.
    ========================================================= */
-.remus-article { background:#f2eee6; color:#171512; min-height:100vh; }
-.remus-article-hero { position:relative; min-height:100svh; background:url('/visuals/articles/ia-gouvernance-decisionnelle.jpeg') center center/cover no-repeat; display:flex; align-items:flex-end; overflow:hidden; }
-.remus-article-hero-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(5,5,5,.86) 0%,rgba(5,5,5,.60) 36%,rgba(5,5,5,.08) 68%,rgba(5,5,5,.02) 100%),linear-gradient(0deg,rgba(0,0,0,.50),transparent 44%); }
-.remus-article-hero-copy { position:relative; z-index:2; width:min(700px,48vw); margin:0 0 9vh clamp(42px,7vw,120px); color:#f8f5ef; }
-.remus-article-author { color:#A94F16; font-size:12px; font-weight:700; letter-spacing:.22em; }
-.remus-article-hero h1 { margin:22px 0 20px; font-size:clamp(48px,5.6vw,88px); line-height:.94; letter-spacing:-.045em; font-weight:600; color:#fff; }
-.remus-article-hero-copy>p { max-width:520px; font-size:clamp(18px,1.5vw,25px); line-height:1.45; color:#f5f0e9; }
-.remus-article-tags { margin-top:42px; display:flex; align-items:center; gap:12px; color:#d7c8b9; font-size:9px; letter-spacing:.2em; }
-.remus-article-tags i { width:28px; height:1px; background:#A94F16; }
-.remus-article-body { max-width:1220px; margin:auto; padding:90px clamp(28px,6vw,86px) 110px; }
-.remus-article-intro { max-width:880px; margin:0 auto 95px; font-size:18px; line-height:1.78; }
-.remus-article-intro p { margin:0 0 18px; }
-.remus-article-question { font-size:clamp(25px,2.3vw,36px); line-height:1.2; font-weight:600; margin:34px 0 !important; }
-.remus-article-callout { margin:50px 0 0; padding:30px 34px; border-left:3px solid #A94F16; background:#e9e2d7; display:grid; gap:8px; }
-.remus-article-callout span { color:#705f50; font-size:10px; letter-spacing:.14em; font-weight:700; }
-.remus-article-callout strong { font-size:20px; line-height:1.35; }
-.remus-article-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:74px 70px; }
-.remus-article-grid section:nth-child(3) { grid-column:1 / -1; max-width:760px; margin:0 auto; }
-.remus-article-section-no { color:#A94F16; font-size:11px; letter-spacing:.18em; font-weight:800; }
-.remus-article-grid h2 { margin:12px 0 25px; font-size:clamp(25px,2.2vw,34px); line-height:1.08; letter-spacing:-.025em; color:#171512; }
-.remus-article-grid p,.remus-article-grid li { font-size:16px; line-height:1.72; }
-.remus-article-grid p { margin:0 0 17px; }
-.remus-article-grid ul { padding-left:20px; margin:18px 0 25px; }
-.remus-article-grid li { margin:6px 0; }
-.remus-article-grid blockquote { margin:28px 0; padding:20px 22px; border-left:3px solid #A94F16; background:#e8e1d6; font-size:18px; line-height:1.5; font-weight:650; }
-.remus-article-conclusion { background:#080808; color:#f5f1ea; padding:90px clamp(28px,8vw,130px) 100px; }
-.remus-article-conclusion>div { max-width:1040px; margin:auto; }
-.remus-article-conclusion>div>p { max-width:760px; font-size:19px; line-height:1.65; color:#d8d2c9; }
-.remus-article-manifesto { margin:52px 0 65px; display:grid; gap:8px; }
-.remus-article-manifesto strong { font-size:clamp(28px,3.3vw,52px); line-height:1.08; letter-spacing:-.035em; font-weight:500; }
-.remus-article-manifesto strong:nth-child(3) { color:#A94F16; }
-.remus-article-conclusion footer { border-top:1px solid rgba(255,255,255,.18); padding-top:30px; display:grid; gap:5px; }
-.remus-article-conclusion footer b { font-size:15px; }
-.remus-article-conclusion footer span { color:#bdb4a9; font-size:13px; }
-.remus-article-conclusion footer small { margin-top:22px; color:#8d8175; line-height:1.6; }
-@media (max-width:900px){
- .remus-article-hero { min-height:92svh; background-position:62% center; }
- .remus-article-hero-shade { background:linear-gradient(0deg,rgba(5,5,5,.92) 0%,rgba(5,5,5,.56) 48%,rgba(5,5,5,.05) 80%); }
- .remus-article-hero-copy { width:auto; margin:0 22px 58px; }
- .remus-article-hero h1 { font-size:clamp(42px,12vw,66px); }
- .remus-article-tags { flex-wrap:wrap; }
- .remus-article-body { padding:65px 22px 80px; }
- .remus-article-intro { margin-bottom:70px; font-size:17px; }
- .remus-article-grid { grid-template-columns:1fr; gap:62px; }
- .remus-article-grid section:nth-child(3) { grid-column:auto; }
- .remus-article-conclusion { padding:70px 22px 80px; }
+.remus-article {
+  --article-ivory: #f1eee5;
+  --article-ink: #121212;
+  --article-copper: #A94F16;
+  background: #090909;
+  color: var(--article-ink);
+}
+
+.remus-article-cover {
+  background: #090909;
+  padding: 118px 24px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.remus-article-cover-image {
+  display: block;
+  width: auto;
+  height: min(68vh, 720px);
+  max-width: min(100%, 720px);
+  object-fit: contain;
+  object-position: center;
+}
+
+.remus-article-paper {
+  background: var(--article-ivory);
+  padding: 72px max(24px, calc((100vw - 1120px) / 2)) 92px;
+}
+
+.remus-article-heading {
+  max-width: 900px;
+  margin-bottom: 54px;
+  border-top: 1px solid rgba(169,79,22,.55);
+  padding-top: 18px;
+}
+
+.remus-article-label {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--article-copper);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .24em;
+}
+
+.remus-article-heading h1 {
+  margin: 0;
+  max-width: 820px;
+  color: var(--article-ink) !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(40px, 5.2vw, 76px);
+  line-height: .98;
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+
+.remus-article-deck {
+  max-width: 720px;
+  margin: 24px 0 0;
+  color: var(--article-copper) !important;
+  font-size: clamp(18px, 2vw, 27px);
+  line-height: 1.3;
+}
+
+.remus-article-intro {
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.remus-article p { color: var(--article-ink); }
+.remus-article-intro p { margin: 0 0 15px; }
+.remus-article-question,
+.remus-article-quote {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 2.5vw, 32px);
+  line-height: 1.28;
+}
+.remus-article-quote { color: var(--article-copper) !important; }
+
+.remus-article-divider {
+  margin: 52px 0;
+  color: var(--article-copper);
+  letter-spacing: .2em;
+}
+
+.remus-article-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 70px;
+}
+
+.remus-article-section h2 {
+  margin: 0 0 22px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(169,79,22,.45);
+  color: var(--article-ink) !important;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 2.5vw, 37px);
+  line-height: 1.08;
+  font-weight: 600;
+}
+
+.remus-article-section p {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.remus-article-dashes { line-height: 1.9 !important; }
+.remus-article-emphasis { font-weight: 700; }
+.remus-article-section-wide { margin-top: 0; }
+.remus-article-columns-inner { gap: 54px; }
+
+.remus-article-conclusion {
+  background: #090909;
+  padding: 76px 24px 84px;
+}
+.remus-article-conclusion-inner {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+}
+.remus-article-conclusion p {
+  max-width: 820px;
+  color: #eee9df !important;
+  font-size: 17px;
+  line-height: 1.65;
+}
+.remus-article-manifesto {
+  margin: 42px 0;
+  padding: 28px 0 28px 26px;
+  border-left: 2px solid var(--article-copper);
+  display: grid;
+  gap: 8px;
+}
+.remus-article-manifesto strong {
+  color: #f4efe6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 52px);
+  line-height: 1.05;
+  font-weight: 400;
+}
+.remus-article-manifesto strong:nth-child(3) { color: var(--article-copper); }
+.remus-article-author {
+  margin-top: 50px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(169,79,22,.5);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #f4efe6;
+}
+.remus-article-author strong { font-size: 16px; }
+.remus-article-author span { color: #b8b0a4; font-size: 13px; }
+.remus-article-tags {
+  margin-top: 30px;
+  color: var(--article-copper) !important;
+  font-size: 12px !important;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+  .remus-article-cover { padding: 102px 14px 0; }
+  .remus-article-cover-image {
+    width: auto;
+    height: min(66vh, 600px);
+    max-width: 100%;
+  }
+  .remus-article-paper { padding: 54px 22px 68px; }
+  .remus-article-heading { margin-bottom: 40px; }
+  .remus-article-columns { grid-template-columns: 1fr; gap: 44px; }
+  .remus-article-columns-inner { gap: 12px; }
+  .remus-article-intro { font-size: 16px; }
+  .remus-article-section p { font-size: 15px; }
+  .remus-article-divider { margin: 40px 0; }
+  .remus-article-conclusion { padding: 58px 22px 68px; }
 }
