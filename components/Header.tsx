@@ -23,6 +23,7 @@ export default function Header() {
 
   const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/references", "/a-propos", "/contact"];
   const scrollNavEnabled = scrollNavPages.some((page) => page === "/" ? pathname === "/" : pathname.startsWith(page));
+  const articlePage = pathname.startsWith("/references/");
 
   useEffect(() => {
     setMobileOpen(false);
@@ -46,14 +47,18 @@ export default function Header() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY <= 12) {
-        setNavHidden(false);
-      } else if (currentScrollY > lastScrollY) {
-        // En descendant : le logo et la navigation disparaissent.
-        setNavHidden(true);
-      } else if (currentScrollY < lastScrollY) {
-        // Dès que l’utilisateur remonte : ils réapparaissent.
-        setNavHidden(false);
+      if (articlePage) {
+        // Articles : le header n'est visible qu'au sommet de la page.
+        // Remonter au milieu de l'article ne le fait pas réapparaître.
+        setNavHidden(currentScrollY > 12);
+      } else {
+        if (currentScrollY <= 12) {
+          setNavHidden(false);
+        } else if (currentScrollY > lastScrollY) {
+          setNavHidden(true);
+        } else if (currentScrollY < lastScrollY) {
+          setNavHidden(false);
+        }
       }
 
       lastScrollY = currentScrollY;
@@ -62,10 +67,10 @@ export default function Header() {
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollNavEnabled, pathname]);
+  }, [scrollNavEnabled, pathname, articlePage]);
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${articlePage && navHidden ? "is-article-scroll-hidden" : ""}`}>
       <Link
         href="/"
         className={`remus-header-logo ${scrollNavEnabled && navHidden ? "is-scroll-hidden" : ""}`}

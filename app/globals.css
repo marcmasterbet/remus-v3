@@ -9593,3 +9593,16 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   .remus-article-divider { margin: 40px 0; }
   .remus-article-conclusion { padding: 58px 22px 68px; }
 }
+
+
+/* Articles REMUS : le header complet n'est visible qu'au sommet. */
+.site-header.is-article-scroll-hidden {
+  opacity: 0 !important;
+  transform: translateY(-100%) !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity .28s ease, transform .28s ease, visibility .28s ease !important;
+}
+.site-header {
+  transition: opacity .28s ease, transform .28s ease, visibility .28s ease;
+}

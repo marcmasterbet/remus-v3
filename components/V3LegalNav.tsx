@@ -9,6 +9,7 @@ const scrollPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d",
 export default function V3LegalNav() {
   const pathname = usePathname();
   const [hidden, setHidden] = useState(false);
+  const articlePage = pathname.startsWith("/references/");
   const enabled = scrollPages.includes(pathname);
 
   useEffect(() => {
@@ -21,6 +22,8 @@ export default function V3LegalNav() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [enabled, pathname]);
+
+  if (articlePage) return null;
 
   return (
     <nav className={`v3-legal-nav ${enabled && hidden ? "is-scroll-hidden" : ""}`} aria-label="Informations légales">

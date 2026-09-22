@@ -98,6 +98,7 @@ export default function IAGouvernanceDecisionnellePage() {
             <strong>Alexandre Flamand</strong>
             <span>Architecte en systèmes complexes</span>
           </footer>
+          <p className="remus-article-tags">#IntelligenceArtificielle #GouvernanceIA #ArchitectureSystème #SystèmesComplexes #AideÀLaDécision #InnovationResponsable</p>
         </div>
       </section>
     </main>
