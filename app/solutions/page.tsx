@@ -37,26 +37,32 @@ export const metadata: Metadata = {
 
 const solutions = [
   [
+    "01",
     "SÉCURITÉ & RÉSILIENCE",
     "Identifier les vulnérabilités, dépendances et points critiques afin de préserver la continuité des systèmes."
   ],
   [
+    "02",
     "ARCHITECTURES MODULAIRES",
     "Concevoir des architectures évolutives, interopérables et adaptées aux contraintes opérationnelles."
   ],
   [
+    "03",
     "SUPERVISION INTELLIGENTE",
     "Transformer les données et signaux dispersés en une compréhension exploitable pour accélérer la décision."
   ],
   [
+    "04",
     "DÉCISION AUGMENTÉE",
     "Associer expertise humaine, données et intelligence artificielle pour éclairer l’analyse et agir avec davantage de précision."
   ],
   [
+    "05",
     "SYSTÈMES ADAPTATIFS",
     "Faire évoluer les solutions en fonction de leur environnement, de leurs contraintes et des usages terrain."
   ],
   [
+    "06",
     "GOUVERNANCE & ORCHESTRATION",
     "Structurer les responsabilités, les flux d’information et les mécanismes d’arbitrage autour d’une vision commune."
   ]

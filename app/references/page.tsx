@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const articles = [
   {
-    slug: "ia-gouvernance-decisionnelle",
+    slug: "ia-et-gouvernance-decisionnelle",
     title: "IA et gouvernance décisionnelle",
   },
   {

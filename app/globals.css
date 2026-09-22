@@ -9412,7 +9412,52 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 /* =========================================================
-   REMUS — ARTICLE ÉDITORIAL : IA & GOUVERNANCE DÉCISIONNELLE
+   REMUS — ARTICLE : IA ET GOUVERNANCE DÉCISIONNELLE
    ========================================================= */
-.remus-article{background:#0a0a0a;color:#151311;min-height:100vh;font-family:Arial,Helvetica,sans-serif}.remus-article-hero{position:relative;min-height:620px;background:radial-gradient(circle at 76% 35%,rgba(169,79,22,.24),transparent 24%),linear-gradient(105deg,#050505 0%,#090909 54%,#17110d 100%);overflow:hidden;color:#f5f1ea}.remus-article-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.12),rgba(0,0,0,0) 55%,rgba(0,0,0,.28));pointer-events:none}.remus-article-hero-orbit{position:absolute;width:520px;height:520px;right:7%;top:48%;transform:translateY(-50%);border:1px solid rgba(201,121,66,.32);border-radius:50%;box-shadow:0 0 80px rgba(169,79,22,.13),inset 0 0 80px rgba(169,79,22,.08)}.remus-article-hero-orbit:before,.remus-article-hero-orbit:after{content:"";position:absolute;border:1px solid rgba(220,220,215,.15);border-radius:50%;inset:60px}.remus-article-hero-orbit:after{inset:150px;border-color:rgba(169,79,22,.4)}.remus-article-hero-inner{position:relative;z-index:1;width:min(1180px,calc(100% - 80px));margin:auto;padding:190px 0 70px}.remus-article-author{font-size:12px;letter-spacing:.24em;color:#c9c3ba;margin:0 0 50px}.remus-article-hero h1{font-size:clamp(46px,6vw,82px);line-height:.96;letter-spacing:-.035em;margin:0;max-width:800px;color:#fff}.remus-article-deck{font-family:Georgia,serif;font-size:20px;line-height:1.45;color:#ded8cf;margin:35px 0 70px}.remus-article-tags{font-size:10px;letter-spacing:.2em;color:#A94F16;font-weight:700}.remus-article-tags span{display:inline-block;width:34px;height:1px;background:#A94F16;margin:0 12px 3px}.remus-article-paper{background:#f0ece4;padding:72px max(28px,calc((100vw - 1180px)/2)) 95px}.remus-article-intro{max-width:1030px;font-family:Georgia,serif;font-size:17px;line-height:1.72;margin-bottom:52px}.remus-article-intro p{margin:0 0 16px}.remus-article-columns{display:grid;grid-template-columns:1fr 1fr;gap:68px;border-top:1px solid rgba(25,20,16,.16);padding-top:34px}.remus-article-columns section{break-inside:avoid;margin:0 0 44px}.remus-article-columns h2{font-size:19px;line-height:1.08;letter-spacing:.01em;margin:0 0 17px;color:#17130f}.remus-article-columns p{font-family:Georgia,serif;font-size:14.5px;line-height:1.62;color:#312d28;margin:0 0 14px}.remus-article-quote{background:#e8e1d7;border-left:3px solid #A94F16;margin:20px 0;padding:17px 18px;font-family:Georgia,serif;font-size:15px;font-weight:700;line-height:1.42;color:#201b17}.remus-decision-stack{background:#0c0b0a;padding:10px;margin:20px 0 18px;display:grid;gap:4px}.remus-decision-stack span{display:block;text-align:center;border:1px solid #6c6259;padding:8px 6px;color:#eee8df;font-size:10px;letter-spacing:.12em}.remus-decision-stack span:nth-child(3){border-color:#A94F16;color:#c98a62}.remus-article-final{margin-top:25px;background:#0a0908;color:#f1ece4;border-top:2px solid #A94F16;padding:22px;font-size:12px;line-height:1.6;letter-spacing:.06em}.remus-article-final strong{color:#A94F16}.remus-article-footer{background:#080808;color:#f2ede5;padding:42px max(28px,calc((100vw - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:30px;font-size:12px;letter-spacing:.06em}.remus-article-footer span{color:#aaa29a;font-size:10px}.remus-article-footer a{color:#A94F16;text-decoration:none;font-weight:700}
-@media(max-width:900px){.remus-article-hero{min-height:680px}.remus-article-hero-inner{width:calc(100% - 44px);padding:150px 0 60px}.remus-article-hero-orbit{width:420px;height:420px;right:-210px;opacity:.6}.remus-article-author{margin-bottom:34px}.remus-article-hero h1{font-size:clamp(43px,12vw,64px)}.remus-article-deck{font-size:18px;margin-bottom:48px}.remus-article-paper{padding:55px 22px 70px}.remus-article-intro{font-size:16px}.remus-article-columns{grid-template-columns:1fr;gap:0}.remus-article-footer{flex-direction:column;align-items:flex-start}}
+.remus-article { background:#f2eee6; color:#171512; min-height:100vh; }
+.remus-article-hero { position:relative; min-height:100svh; background:url('/visuals/articles/ia-gouvernance-decisionnelle.jpeg') center center/cover no-repeat; display:flex; align-items:flex-end; overflow:hidden; }
+.remus-article-hero-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(5,5,5,.86) 0%,rgba(5,5,5,.60) 36%,rgba(5,5,5,.08) 68%,rgba(5,5,5,.02) 100%),linear-gradient(0deg,rgba(0,0,0,.50),transparent 44%); }
+.remus-article-hero-copy { position:relative; z-index:2; width:min(700px,48vw); margin:0 0 9vh clamp(42px,7vw,120px); color:#f8f5ef; }
+.remus-article-author { color:#A94F16; font-size:12px; font-weight:700; letter-spacing:.22em; }
+.remus-article-hero h1 { margin:22px 0 20px; font-size:clamp(48px,5.6vw,88px); line-height:.94; letter-spacing:-.045em; font-weight:600; color:#fff; }
+.remus-article-hero-copy>p { max-width:520px; font-size:clamp(18px,1.5vw,25px); line-height:1.45; color:#f5f0e9; }
+.remus-article-tags { margin-top:42px; display:flex; align-items:center; gap:12px; color:#d7c8b9; font-size:9px; letter-spacing:.2em; }
+.remus-article-tags i { width:28px; height:1px; background:#A94F16; }
+.remus-article-body { max-width:1220px; margin:auto; padding:90px clamp(28px,6vw,86px) 110px; }
+.remus-article-intro { max-width:880px; margin:0 auto 95px; font-size:18px; line-height:1.78; }
+.remus-article-intro p { margin:0 0 18px; }
+.remus-article-question { font-size:clamp(25px,2.3vw,36px); line-height:1.2; font-weight:600; margin:34px 0 !important; }
+.remus-article-callout { margin:50px 0 0; padding:30px 34px; border-left:3px solid #A94F16; background:#e9e2d7; display:grid; gap:8px; }
+.remus-article-callout span { color:#705f50; font-size:10px; letter-spacing:.14em; font-weight:700; }
+.remus-article-callout strong { font-size:20px; line-height:1.35; }
+.remus-article-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:74px 70px; }
+.remus-article-grid section:nth-child(3) { grid-column:1 / -1; max-width:760px; margin:0 auto; }
+.remus-article-section-no { color:#A94F16; font-size:11px; letter-spacing:.18em; font-weight:800; }
+.remus-article-grid h2 { margin:12px 0 25px; font-size:clamp(25px,2.2vw,34px); line-height:1.08; letter-spacing:-.025em; color:#171512; }
+.remus-article-grid p,.remus-article-grid li { font-size:16px; line-height:1.72; }
+.remus-article-grid p { margin:0 0 17px; }
+.remus-article-grid ul { padding-left:20px; margin:18px 0 25px; }
+.remus-article-grid li { margin:6px 0; }
+.remus-article-grid blockquote { margin:28px 0; padding:20px 22px; border-left:3px solid #A94F16; background:#e8e1d6; font-size:18px; line-height:1.5; font-weight:650; }
+.remus-article-conclusion { background:#080808; color:#f5f1ea; padding:90px clamp(28px,8vw,130px) 100px; }
+.remus-article-conclusion>div { max-width:1040px; margin:auto; }
+.remus-article-conclusion>div>p { max-width:760px; font-size:19px; line-height:1.65; color:#d8d2c9; }
+.remus-article-manifesto { margin:52px 0 65px; display:grid; gap:8px; }
+.remus-article-manifesto strong { font-size:clamp(28px,3.3vw,52px); line-height:1.08; letter-spacing:-.035em; font-weight:500; }
+.remus-article-manifesto strong:nth-child(3) { color:#A94F16; }
+.remus-article-conclusion footer { border-top:1px solid rgba(255,255,255,.18); padding-top:30px; display:grid; gap:5px; }
+.remus-article-conclusion footer b { font-size:15px; }
+.remus-article-conclusion footer span { color:#bdb4a9; font-size:13px; }
+.remus-article-conclusion footer small { margin-top:22px; color:#8d8175; line-height:1.6; }
+@media (max-width:900px){
+ .remus-article-hero { min-height:92svh; background-position:62% center; }
+ .remus-article-hero-shade { background:linear-gradient(0deg,rgba(5,5,5,.92) 0%,rgba(5,5,5,.56) 48%,rgba(5,5,5,.05) 80%); }
+ .remus-article-hero-copy { width:auto; margin:0 22px 58px; }
+ .remus-article-hero h1 { font-size:clamp(42px,12vw,66px); }
+ .remus-article-tags { flex-wrap:wrap; }
+ .remus-article-body { padding:65px 22px 80px; }
+ .remus-article-intro { margin-bottom:70px; font-size:17px; }
+ .remus-article-grid { grid-template-columns:1fr; gap:62px; }
+ .remus-article-grid section:nth-child(3) { grid-column:auto; }
+ .remus-article-conclusion { padding:70px 22px 80px; }
+}
