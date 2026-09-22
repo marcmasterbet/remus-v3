@@ -22,7 +22,7 @@ export default function Header() {
   const [navHidden, setNavHidden] = useState(false);
 
   const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/references", "/a-propos", "/contact"];
-  const scrollNavEnabled = scrollNavPages.includes(pathname);
+  const scrollNavEnabled = scrollNavPages.some((page) => page === "/" ? pathname === "/" : pathname.startsWith(page));
 
   useEffect(() => {
     setMobileOpen(false);
@@ -41,10 +41,22 @@ export default function Header() {
       return;
     }
 
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      // La navigation reste visible uniquement lorsque la page est tout en haut.
-      // Quelques pixels de tolérance évitent les micro-clignotements des trackpads.
-      setNavHidden(window.scrollY > 12);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 12) {
+        setNavHidden(false);
+      } else if (currentScrollY > lastScrollY) {
+        // En descendant : le logo et la navigation disparaissent.
+        setNavHidden(true);
+      } else if (currentScrollY < lastScrollY) {
+        // Dès que l’utilisateur remonte : ils réapparaissent.
+        setNavHidden(false);
+      }
+
+      lastScrollY = currentScrollY;
     };
 
     handleScroll();

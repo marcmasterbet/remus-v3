@@ -9432,9 +9432,9 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .remus-article-cover-image {
   display: block;
-  width: auto;
-  height: min(68vh, 720px);
-  max-width: min(100%, 720px);
+  width: min(100%, 1320px);
+  height: auto;
+  max-height: 72vh;
   object-fit: contain;
   object-position: center;
 }
@@ -9485,7 +9485,9 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   line-height: 1.72;
 }
 
-.remus-article p { color: var(--article-ink); }
+.remus-article-paper p,
+.remus-article-paper li,
+.remus-article-paper span { color: var(--article-ink) !important; }
 .remus-article-intro p { margin: 0 0 15px; }
 .remus-article-question,
 .remus-article-quote {
@@ -9578,9 +9580,9 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 @media (max-width: 760px) {
   .remus-article-cover { padding: 102px 14px 0; }
   .remus-article-cover-image {
-    width: auto;
-    height: min(66vh, 600px);
-    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: none;
   }
   .remus-article-paper { padding: 54px 22px 68px; }
   .remus-article-heading { margin-bottom: 40px; }

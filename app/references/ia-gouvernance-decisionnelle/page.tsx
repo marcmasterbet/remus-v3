@@ -11,10 +11,10 @@ export default function IAGouvernanceDecisionnellePage() {
     <main className="remus-article">
       <section className="remus-article-cover" aria-label="Illustration de l’article">
         <Image
-          src="/visuals/articles/ia-gouvernance-decisionnelle.jpeg"
+          src="/visuals/articles/ia-gouvernance-decisionnelle.png"
           alt="Architecture complexe suspendue au-dessus d’une personne"
-          width={1024}
-          height={1536}
+          width={1536}
+          height={1024}
           priority
           className="remus-article-cover-image"
         />
