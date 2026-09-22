@@ -90,7 +90,6 @@ export default function IAGouvernanceDecisionnellePage() {
           <footer>
             <b>Alexandre Flamand</b>
             <span>Architecte en systèmes complexes</span>
-            <small>#IntelligenceArtificielle #GouvernanceIA #ArchitectureSystème #SystèmesComplexes #AideÀLaDécision #InnovationResponsable</small>
           </footer>
         </div>
       </section>
