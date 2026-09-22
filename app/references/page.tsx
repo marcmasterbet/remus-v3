@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const articles = [
   {
-    slug: "audit-ia-en-entreprise",
-    title: "Audit IA en entreprise : méthode, risques et points de contrôle",
+    slug: "ia-gouvernance-decisionnelle",
+    title: "IA et gouvernance décisionnelle",
   },
   {
     slug: "analyse-systemique-en-entreprise",
