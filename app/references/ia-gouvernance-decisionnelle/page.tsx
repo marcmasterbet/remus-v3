@@ -11,7 +11,7 @@ export default function IAGouvernanceDecisionnellePage() {
     <main className="remus-article">
       <section className="remus-article-cover" aria-label="Illustration de l’article">
         <Image
-          src="/visuals/articles/ia-gouvernance-decisionnelle.png"
+          src="/visuals/articles/ia-gouvernance-decisionnelle.webp"
           alt="Architecture complexe suspendue au-dessus d’une personne"
           width={1536}
           height={1024}
@@ -98,7 +98,6 @@ export default function IAGouvernanceDecisionnellePage() {
             <strong>Alexandre Flamand</strong>
             <span>Architecte en systèmes complexes</span>
           </footer>
-          <p className="remus-article-tags">#IntelligenceArtificielle #GouvernanceIA #ArchitectureSystème #SystèmesComplexes #AideÀLaDécision #InnovationResponsable</p>
         </div>
       </section>
     </main>
