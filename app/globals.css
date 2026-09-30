@@ -8665,7 +8665,7 @@ body:has(.audit-remus-page) .site-header {
 }
 .home-title,.audit-premium-copy h1,.limes-copy-exact h1,.solutions-hero-copy h1,.rd-copy h1,.about-page h1,.contact-intro h1 { color:#fff !important; }
 .home-intro,.audit-intro,.limes-copy-exact p,.solutions-hero-copy p,.rd-copy p,.about-simple-content p,.contact-lead { color:var(--v3-muted) !important; }
-.home-kicker,.audit-kicker,.limes-eyebrow,.panel-kicker,.contact-eyebrow { color:#CA7B3D !important; }
+.home-kicker,.audit-kicker,.limes-eyebrow,.panel-kicker,.contact-eyebrow { color:#d18a5b !important; }
 
 /* Existing hero illustration layers are removed: their images are now the background itself. */
 .home-network,.audit-premium-visual,.limes-visual-exact,.solutions-hero-visual,.rd-visual,.contact-mail-hero { display:none !important; }
@@ -9653,7 +9653,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 /* Article 03 — références scientifiques */
 .remus-article-references{margin-top:48px;padding-top:22px;border-top:1px solid rgba(198,123,70,.42);font-size:.84rem;line-height:1.65;color:rgba(255,255,255,.72)}
-.remus-article-references>strong{display:block;margin-bottom:12px;color:#CA7B3D;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem}
+.remus-article-references>strong{display:block;margin-bottom:12px;color:#c67b46;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem}
 .remus-article-references p{margin:6px 0}
 
 /* REMUS — correction contraste page Cookies */
@@ -9680,7 +9680,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .legal-page .cookie-badge-optional {
   background: rgba(184,113,66,.10);
   border-color: #CA7B3D;
-  color: #CA7B3D;
+  color: #d99a70;
 }
 .legal-page .legal-cookie-action .footer-cookie-settings {
   background: #111111;
@@ -9730,140 +9730,113 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 
 /* =========================================================
-   REMUS — UNIFORMISATION GLOBALE VALIDÉE 30/09/2026
-   - cuivre unique #CA7B3D
-   - même ligne de départ horizontale que le bord visible du logo
-   - même hauteur de départ des héros
-   - surtitres blancs + trait cuivre
+   REMUS — GRILLE GLOBALE PROPRE
+   Référence : bord gauche visuel du logo / même départ vertical.
    ========================================================= */
 :root {
-  --copper: #CA7B3D !important;
-  --copper-soft: #CA7B3D !important;
-  --copper-pale: #CA7B3D !important;
-  --remus-copper: #CA7B3D !important;
-  --remus-copper-dark: #CA7B3D !important;
-  --remus-copper-light: #CA7B3D !important;
-  --article-copper: #CA7B3D !important;
-  --remus-content-left: 56px;
-  --remus-content-right: 56px;
-  --remus-hero-start: 240px;
+  --copper: #CA7B3D;
+  --remus-copper: #CA7B3D;
+  --remus-page-x: clamp(34px, 4.1vw, 64px);
+  --remus-hero-top: 78px;
 }
 
-/* Une seule grille horizontale sur toutes les pages principales. */
-.home-hero,
-.audit-premium-hero,
+/* Une seule ligne de départ horizontale pour les premiers contenus. */
+.remus-inner-page,
 .limes-hero-exact,
-.solutions-hero,
-.rd-hero,
-.about-hero,
+.references-v3-hero,
 .contact-hero,
-.references-v3-hero {
-  padding-left: var(--remus-content-left) !important;
-  padding-right: var(--remus-content-right) !important;
-  box-sizing: border-box !important;
-}
-
-.home-copy,
-.audit-premium-copy,
-.limes-copy-exact,
-.solutions-hero-copy,
-.rd-copy,
-.about-simple-content,
-.contact-hero-top,
-.contact-intro,
-.references-v3-copy {
+.audit-premium-hero {
+  width: 100% !important;
+  max-width: none !important;
   margin-left: 0 !important;
-  padding-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-/* Même hauteur réelle pour le premier contenu de chaque page. */
-.home-hero,
-.audit-premium-hero,
-.limes-hero-exact,
-.solutions-hero,
-.rd-hero,
-.about-hero,
-.contact-hero,
-.references-v3-hero {
-  display: block !important;
-  padding-top: var(--remus-hero-start) !important;
-  min-height: 100vh !important;
-}
-
-/* Les blocs de copie démarrent tous sur la même verticale et sans recentrage parasite. */
-.home-copy,
 .audit-premium-copy,
 .limes-copy-exact,
 .solutions-hero-copy,
 .rd-copy,
 .about-simple-content,
-.contact-hero-top,
-.references-v3-copy {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  transform: none !important;
+.references-v3-copy,
+.contact-intro {
+  margin-left: 0 !important;
 }
-.home-copy { padding-top: 0 !important; }
 
-/* Surtitre uniforme : blanc partout ; le trait reste cuivre. */
-.home-kicker,
+.audit-premium-copy,
+.limes-copy-exact,
+.solutions-page .solutions-hero,
+.rd-page .rd-hero,
+.about-page .about-hero,
+.references-v3-hero,
+.contact-hero-top {
+  padding-left: var(--remus-page-x) !important;
+  padding-right: var(--remus-page-x) !important;
+}
+
+/* Même hauteur de départ du premier repère éditorial sur les pages principales. */
+.audit-premium-copy,
+.limes-copy-exact,
+.solutions-page .solutions-hero,
+.rd-page .rd-hero,
+.about-page .about-hero,
+.references-v3-hero,
+.contact-hero-top {
+  padding-top: var(--remus-hero-top) !important;
+}
+
+/* Surtitres : blanc partout. Le trait reste cuivre REMUS. */
 .audit-kicker,
 .limes-eyebrow,
-.panel-kicker,
+.solutions-page .panel-kicker,
+.rd-page .panel-kicker,
+.references-v3-kicker,
 .contact-eyebrow,
-.references-v3-kicker {
+.home-kicker,
+.eyebrow {
   color: #FFFFFF !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: .14em !important;
-  line-height: 1.2 !important;
-  text-transform: uppercase !important;
 }
-.micro-line,
+
 .audit-small-line,
 .limes-rule,
-.references-v3-kicker::after {
+.limes-small-rule,
+.solutions-page .micro-line,
+.rd-page .micro-line,
+.contact-rule,
+.eyebrow::after {
   background: #CA7B3D !important;
   border-color: #CA7B3D !important;
 }
 
-/* Le cuivre du contenu et des composants utilise la même référence. */
-.home-title span,
-.audit-premium-copy h1 strong,
-.limes-copy-exact h1 span,
-.solutions-hero-copy h1 strong,
-.rd-copy h1 strong,
-.references-v3-copy h1 em,
-.method-number,
-.method-icon,
-.team-body > span,
-.mission-band a {
-  color: #CA7B3D !important;
-  border-color: #CA7B3D !important;
-}
-
-/* Pages juridiques : même marge horizontale générale, sans casser leur
-   hauteur spécifique déjà validée sous le logo. */
-.legal-page .page-hero,
-.legal-page .legal-content,
-.legal-page .legal-copy {
-  padding-left: var(--remus-content-left) !important;
-  padding-right: var(--remus-content-right) !important;
-  box-sizing: border-box !important;
+/* Le titre cuivre "QUI SOMMES-NOUS ?" a été retiré du JSX.
+   Son vrai titre commence sur la même grille que les autres pages. */
+.about-page .about-simple-content {
+  width: min(660px, 46vw) !important;
 }
 
 @media (max-width: 900px) {
   :root {
-    --remus-content-left: 32px;
-    --remus-content-right: 32px;
-    --remus-hero-start: 205px;
+    --remus-page-x: 24px;
+    --remus-hero-top: 54px;
   }
+  .about-page .about-simple-content { width: 100% !important; }
 }
+
 @media (max-width: 620px) {
   :root {
-    --remus-content-left: 20px;
-    --remus-content-right: 20px;
-    --remus-hero-start: 175px;
+    --remus-page-x: 18px;
+    --remus-hero-top: 42px;
   }
+}
+
+/* Verrouillage vertical : le premier texte ne doit plus être recentré par page. */
+.audit-premium-hero,
+.rd-page .rd-hero,
+.solutions-page .solutions-hero {
+  align-items: start !important;
+}
+.references-v3-hero {
+  align-items: flex-start !important;
+}
+.audit-premium-copy {
+  padding-top: var(--remus-hero-top) !important;
 }
