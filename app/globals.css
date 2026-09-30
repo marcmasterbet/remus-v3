@@ -9655,3 +9655,41 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .remus-article-references{margin-top:48px;padding-top:22px;border-top:1px solid rgba(198,123,70,.42);font-size:.84rem;line-height:1.65;color:rgba(255,255,255,.72)}
 .remus-article-references>strong{display:block;margin-bottom:12px;color:#c67b46;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem}
 .remus-article-references p{margin:6px 0}
+
+/* REMUS — correction contraste page Cookies */
+.legal-page .cookie-status-card {
+  background: #111111;
+  border: 1px solid rgba(184, 113, 66, .62);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, .12);
+}
+.legal-page .cookie-status-card > strong {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: .01em;
+}
+.legal-page .cookie-status-card p {
+  color: #f2ece3;
+  opacity: 1;
+}
+.legal-page .cookie-badge {
+  background: rgba(255,255,255,.04);
+  border-color: rgba(242,236,227,.55);
+  color: #f8f4ee;
+}
+.legal-page .cookie-badge-on,
+.legal-page .cookie-badge-optional {
+  background: rgba(184,113,66,.10);
+  border-color: #b87142;
+  color: #d99a70;
+}
+.legal-page .legal-cookie-action .footer-cookie-settings {
+  background: #111111;
+  border-color: #b87142;
+  color: #f2ece3;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.legal-page .legal-cookie-action .footer-cookie-settings:hover {
+  background: #b87142;
+  color: #090909;
+  border-color: #b87142;
+}
