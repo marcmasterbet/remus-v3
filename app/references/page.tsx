@@ -10,8 +10,8 @@ const articles = [
     title: "ALLIER TECHNOLOGIE ET IMPACT DURABLE",
   },
   {
-    slug: "signaux-faibles-en-entreprise",
-    title: "Signaux faibles en entreprise : les détecter avant qu’ils deviennent critiques",
+    slug: "quantique-intelligence-artificielle",
+    title: "QUANTIQUE ET INTELLIGENCE ARTIFICIELLE",
   },
 ];
 
