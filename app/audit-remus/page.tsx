@@ -119,11 +119,6 @@ export default function AuditRemusPage() {
               key={step.title}
             >
 
-              {/* Numéro uniquement dans le symbole */}
-              <div className="audit-step-symbol">
-                <span>{index + 1}</span>
-              </div>
-
               <h2>
                 {step.title}
               </h2>
