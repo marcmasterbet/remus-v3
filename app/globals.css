@@ -9717,3 +9717,13 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     min-height: 370px !important;
   }
 }
+
+/* =========================================================
+   REMUS — HEADER GLOBAL REMONTÉ UNIFORMÉMENT
+   Même décalage sur toutes les pages : accueil, pages internes,
+   articles et pages juridiques. Le comportement de masquage au
+   scroll reste prioritaire lorsqu'il est actif.
+   ========================================================= */
+.site-header {
+  transform: translateY(-12px) !important;
+}
