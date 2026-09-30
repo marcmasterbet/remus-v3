@@ -9693,3 +9693,27 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   color: #090909;
   border-color: #b87142;
 }
+
+/* =========================================================
+   REMUS — PAGES JURIDIQUES : TITRES SOUS LE LOGO
+   Correction ciblée sur Mentions légales / Confidentialité / Cookies.
+   Le header et le logo ne bougent pas : seul le hero juridique descend.
+   ========================================================= */
+.legal-page .page-hero.compact {
+  padding-top: 190px !important;
+  min-height: 430px !important;
+}
+
+@media (max-width: 900px) {
+  .legal-page .page-hero.compact {
+    padding-top: 165px !important;
+    min-height: 390px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .legal-page .page-hero.compact {
+    padding-top: 150px !important;
+    min-height: 370px !important;
+  }
+}
