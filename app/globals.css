@@ -8753,7 +8753,7 @@ body:has(.home-clean-v3) .site-header {
   position: relative !important;
   z-index: 2 !important;
   min-height: 100vh !important;
-  padding: 160px clamp(28px, 5vw, 96px) 70px !important;
+  padding: 160px clamp(28px, 2.8vw, 54px) 70px !important;
 }
 .home-clean-v3-intro {
   max-width: 690px !important;
