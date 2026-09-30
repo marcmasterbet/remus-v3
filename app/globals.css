@@ -9380,35 +9380,35 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 /* =========================================================
    REMUS V3 — LOGO TRANSPARENT 2026
-   Taille réduite de moitié, position basse conservée.
+   Ajustement final : légèrement plus grand, plus haut et décalé à droite.
    ========================================================= */
 .remus-header-logo {
-  width: 115px !important;
+  width: 130px !important;
   height: 112px !important;
   overflow: visible !important;
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
   background: transparent !important;
-  flex: 0 0 115px !important;
+  flex: 0 0 130px !important;
 }
 .remus-header-logo-img {
-  width: 115px !important;
+  width: 130px !important;
   height: auto !important;
-  max-width: 115px !important;
+  max-width: 130px !important;
   object-fit: contain !important;
   filter: none !important;
   opacity: 1 !important;
-  transform: translateY(16px) !important;
+  transform: translate(10px, 10px) !important;
   mix-blend-mode: normal !important;
 }
 @media (max-width: 1100px) {
-  .remus-header-logo { width: 93px !important; height: 96px !important; flex-basis: 93px !important; }
-  .remus-header-logo-img { width: 93px !important; max-width: 93px !important; transform: translateY(13px) !important; }
+  .remus-header-logo { width: 104px !important; height: 96px !important; flex-basis: 104px !important; }
+  .remus-header-logo-img { width: 104px !important; max-width: 104px !important; transform: translate(8px, 8px) !important; }
 }
 @media (max-width: 900px) {
-  .remus-header-logo { width: 83px !important; height: 86px !important; flex-basis: 83px !important; }
-  .remus-header-logo-img { width: 83px !important; max-width: 83px !important; transform: translateY(10px) !important; }
+  .remus-header-logo { width: 92px !important; height: 86px !important; flex-basis: 92px !important; }
+  .remus-header-logo-img { width: 92px !important; max-width: 92px !important; transform: translate(6px, 6px) !important; }
 }
 
 /* =========================================================
