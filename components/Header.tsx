@@ -79,8 +79,8 @@ export default function Header() {
         <Image
           src="/visuals/remus-logo-final.png"
           alt="REMUS Systems"
-          width={1536}
-          height={1024}
+          width={1374}
+          height={1145}
           priority
           className="remus-header-logo-img"
         />
