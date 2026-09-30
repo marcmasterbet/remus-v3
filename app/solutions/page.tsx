@@ -91,16 +91,6 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      <section className="solutions-grid panel-shell">
-        {solutions.map(({ title, lead, text }) => (
-          <article className="solution-card" key={title}>
-            <h2>{title}</h2>
-            <p className="solution-lead">{lead}</p>
-            <p>{text}</p>
-          </article>
-        ))}
-      </section>
-
       <section className="solutions-closing panel-shell">
         <div>
           <div className="panel-kicker">
@@ -125,6 +115,16 @@ export default function SolutionsPage() {
         >
           DÉCOUVRIR L’AUDIT REMUS <span>→</span>
         </Link>
+      </section>
+
+      <section className="solutions-grid panel-shell">
+        {solutions.map(({ title, lead, text }) => (
+          <article className="solution-card" key={title}>
+            <h2>{title}</h2>
+            <p className="solution-lead">{lead}</p>
+            <p>{text}</p>
+          </article>
+        ))}
       </section>
 
     </main>
