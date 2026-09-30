@@ -9650,3 +9650,8 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   .remus-article-flow { padding: 26px 16px; }
   .remus-article-flow span { font-size: 11px; letter-spacing: .04em; }
 }
+
+/* Article 03 — références scientifiques */
+.remus-article-references{margin-top:48px;padding-top:22px;border-top:1px solid rgba(198,123,70,.42);font-size:.84rem;line-height:1.65;color:rgba(255,255,255,.72)}
+.remus-article-references>strong{display:block;margin-bottom:12px;color:#c67b46;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem}
+.remus-article-references p{margin:6px 0}
