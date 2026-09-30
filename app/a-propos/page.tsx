@@ -39,8 +39,6 @@ export default function AboutPage() {
   return (
     <main className="remus-inner-page about-page">
       <section className="about-hero panel-shell">
-        <div className="panel-kicker">QUI SOMMES-NOUS ?</div>
-
         <div className="about-simple-content">
           <h1>Qui sommes-nous ?</h1>
 
