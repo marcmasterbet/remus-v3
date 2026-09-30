@@ -2108,29 +2108,8 @@ body {
   border-right: none;
 }
 
-.audit-step-number {
-  color: #A94F16;
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  margin-bottom: 25px;
-}
 
-.audit-step-symbol {
-  width: 46px;
-  height: 46px;
-  border: 1px solid #C97942;
-  transform: rotate(45deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 28px;
-}
 
-.audit-step-symbol span {
-  transform: rotate(-45deg);
-  color: #A94F16;
-  font-size: 12px;
-}
 
 .audit-step h2 {
   font-size: 13px;
@@ -7961,12 +7940,12 @@ body:has(.audit-remus-page) {
 .audit-visual-light { display: none !important; }
 .audit-premium-copy {
   width: min(690px, 46vw) !important;
-  padding: 72px 0 72px 4.2vw !important;
+  padding: 160px 0 72px clamp(28px, 2.8vw, 54px) !important;
   position: relative !important;
   z-index: 5 !important;
 }
-.audit-kicker { color: #A94F16 !important; }
-.audit-small-line { background: #c97942 !important; }
+.audit-kicker { color: #CA7B3D !important; }
+.audit-small-line { background: #CA7B3D !important; }
 .audit-premium-copy h1 { color: #f7f4ef !important; text-shadow: 0 3px 24px rgba(0,0,0,.45); }
 .audit-premium-copy h1 strong { color: #A94F16 !important; }
 .audit-intro { color: #A94F16 !important; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
@@ -8004,7 +7983,7 @@ body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !impor
   }
   .audit-premium-copy {
     width: 100% !important;
-    padding: 62px 26px 350px !important;
+    padding: 120px 20px 350px !important;
   }
   .audit-premium-visual {
     position: absolute !important;
@@ -8022,7 +8001,7 @@ body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !impor
 }
 @media (max-width: 620px) {
   .audit-premium-hero { min-height: 880px !important; }
-  .audit-premium-copy { padding: 48px 22px 390px !important; }
+  .audit-premium-copy { padding: 120px 20px 390px !important; }
   .audit-cube-image { object-position: 62% 72% !important; }
 }
 
@@ -8653,7 +8632,7 @@ body:has(.audit-remus-page) .site-header {
 }
 
 /* Hero: full viewport and text directly over the scene. */
-.home-hero,.audit-premium-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
+.home-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
   min-height:100vh !important;
   padding-top:150px !important;
   background:transparent !important;
@@ -8665,7 +8644,7 @@ body:has(.audit-remus-page) .site-header {
 }
 .home-title,.audit-premium-copy h1,.limes-copy-exact h1,.solutions-hero-copy h1,.rd-copy h1,.about-page h1,.contact-intro h1 { color:#fff !important; }
 .home-intro,.audit-intro,.limes-copy-exact p,.solutions-hero-copy p,.rd-copy p,.about-simple-content p,.contact-lead { color:var(--v3-muted) !important; }
-.home-kicker,.audit-kicker,.limes-eyebrow,.panel-kicker,.contact-eyebrow { color:#d18a5b !important; }
+.home-kicker,.limes-eyebrow,.panel-kicker,.contact-eyebrow { color:#d18a5b !important; }
 
 /* Existing hero illustration layers are removed: their images are now the background itself. */
 .home-network,.audit-premium-visual,.limes-visual-exact,.solutions-hero-visual,.rd-visual,.contact-mail-hero { display:none !important; }
@@ -8701,7 +8680,7 @@ body:has(.audit-remus-page) .site-header {
     background-attachment:scroll !important;
     background-position:center top !important;
   }
-  .home-hero,.audit-premium-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
+  .home-hero,.limes-hero-exact,.solutions-hero,.rd-hero,.about-hero,.contact-hero {
     min-height:100svh !important; padding-top:118px !important;
   }
   .v3-legal-nav { position:relative; right:auto; bottom:auto; padding:26px 20px 34px; flex-wrap:wrap; justify-content:center; }
@@ -9727,4 +9706,3 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .site-header {
   transform: translateY(-12px) !important;
 }
-\n\n/* =========================================================\n   AUDIT REMUS — ALIGNEMENT VALIDÉ SUR L’ACCUEIL\n   Correction ciblée : marge/hauteur du kicker, cuivre officiel,\n   suppression visuelle des losanges/numéros (retirés du JSX).\n   ========================================================= */\n.audit-remus-page .audit-premium-hero {\n  align-items: flex-start !important;\n}\n.audit-remus-page .audit-premium-copy {\n  width: min(690px, 46vw) !important;\n  padding: 60px 0 72px clamp(28px, 2.8vw, 54px) !important;\n}\n.audit-remus-page .audit-kicker {\n  color: #CA7B3D !important;\n}\n.audit-remus-page .audit-small-line {\n  background: #CA7B3D !important;\n}\n\n@media (max-width: 900px) {\n  .audit-remus-page .audit-premium-copy {\n    width: min(690px, 100%) !important;\n    padding: 54px 28px 64px !important;\n  }\n}\n\n@media (max-width: 620px) {\n  .audit-remus-page .audit-premium-copy {\n    padding: 44px 20px 54px !important;\n  }\n}\n
