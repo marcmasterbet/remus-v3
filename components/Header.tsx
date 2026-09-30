@@ -25,7 +25,7 @@ export default function Header() {
   const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/references", "/a-propos", "/contact"];
   const scrollNavEnabled = scrollNavPages.some((page) => page === "/" ? pathname === "/" : pathname.startsWith(page));
   const articlePage = pathname.startsWith("/references/");
-  const topOnlyHeaderPage = articlePage || pathname === "/audit-remus" || pathname === "/technologies" || pathname === "/solutions";
+  const topOnlyHeaderPage = articlePage || pathname === "/audit-remus" || pathname === "/technologies" || pathname === "/solutions" || pathname === "/r-d";
   const legalPage = ["/mentions-legales", "/confidentialite", "/cookies"].includes(pathname);
 
   useEffect(() => {
