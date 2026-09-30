@@ -3941,7 +3941,7 @@ body {
   }
 
   .remus-header-logo-img {
-    width: 220px !important;
+    width: 230px !important;
     height: 220px !important;
     transform: scale(1.38);
   }
@@ -4166,7 +4166,7 @@ body {
 
 .remus-header-logo-img {
   position: static !important;
-  width: 220px !important;
+  width: 230px !important;
   height: auto !important;
   max-width: none !important;
   display: block !important;
@@ -4278,7 +4278,7 @@ body {
     padding: 0 18px !important;
   }
   .main-nav { display: none !important; }
-  .remus-header-logo { width: 220px !important; height: 110px !important; }
+  .remus-header-logo { width: 230px !important; height: 110px !important; }
   .remus-header-logo-img {
     width: 165px !important;
     transform: translateY(8px) !important;
@@ -4340,7 +4340,7 @@ body {
 .remus-header-logo-img {
   position: static !important;
 
-  width: 220px !important;
+  width: 230px !important;
   height: auto !important;
   max-width: none !important;
 
@@ -4464,7 +4464,7 @@ body {
   }
 
   .remus-header-logo-img {
-    width: 198px !important;
+    width: 207px !important;
     transform: translateY(2px) !important;
   }
 
@@ -4495,7 +4495,7 @@ body {
   }
 
   .remus-header-logo-img {
-    width: 178px !important;
+    width: 186px !important;
     transform: translateY(1px) !important;
   }
 
@@ -4514,7 +4514,7 @@ body {
   }
 
   .remus-header-logo-img {
-    width: 160px !important;
+    width: 168px !important;
   }
 }
 
