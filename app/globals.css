@@ -9742,3 +9742,44 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     padding: 120px 20px 70px !important;
   }
 }
+
+
+/* =========================================================
+   REMUS — SOLUTIONS : réglages validés page par page
+   Même marge gauche que Accueil / Audit / Technologies.
+   Cartes sans numéros ni losanges, textes éditoriaux actualisés.
+   ========================================================= */
+.solutions-page .solutions-hero {
+  padding-left: clamp(28px, 2.8vw, 54px) !important;
+  padding-right: clamp(28px, 2.8vw, 54px) !important;
+}
+.solutions-page .solutions-grid {
+  padding-left: clamp(28px, 2.8vw, 54px) !important;
+  padding-right: clamp(28px, 2.8vw, 54px) !important;
+}
+.solutions-page .solutions-closing {
+  padding-left: clamp(28px, 2.8vw, 54px) !important;
+  padding-right: clamp(28px, 2.8vw, 54px) !important;
+}
+.solutions-page .solution-index,
+.solutions-page .solution-glyph {
+  display: none !important;
+}
+.solutions-page .solution-card {
+  padding-top: 34px !important;
+}
+.solutions-page .solution-lead {
+  margin: 0 0 14px !important;
+  color: #CA7B3D !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  font-weight: 600 !important;
+}
+@media (max-width: 900px) {
+  .solutions-page .solutions-hero,
+  .solutions-page .solutions-grid,
+  .solutions-page .solutions-closing {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}

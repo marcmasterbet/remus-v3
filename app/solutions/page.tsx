@@ -36,36 +36,36 @@ export const metadata: Metadata = {
 
 
 const solutions = [
-  [
-    "01",
-    "SÉCURITÉ & RÉSILIENCE",
-    "Identifier les vulnérabilités, dépendances et points critiques afin de préserver la continuité des systèmes."
-  ],
-  [
-    "02",
-    "ARCHITECTURES MODULAIRES",
-    "Concevoir des architectures évolutives, interopérables et adaptées aux contraintes opérationnelles."
-  ],
-  [
-    "03",
-    "SUPERVISION INTELLIGENTE",
-    "Transformer les données et signaux dispersés en une compréhension exploitable pour accélérer la décision."
-  ],
-  [
-    "04",
-    "DÉCISION AUGMENTÉE",
-    "Associer expertise humaine, données et intelligence artificielle pour éclairer l’analyse et agir avec davantage de précision."
-  ],
-  [
-    "05",
-    "SYSTÈMES ADAPTATIFS",
-    "Faire évoluer les solutions en fonction de leur environnement, de leurs contraintes et des usages terrain."
-  ],
-  [
-    "06",
-    "GOUVERNANCE & ORCHESTRATION",
-    "Structurer les responsabilités, les flux d’information et les mécanismes d’arbitrage autour d’une vision commune."
-  ]
+  {
+    title: "SÉCURITÉ & RÉSILIENCE",
+    lead: "Préserver ce qui doit continuer à fonctionner.",
+    text: "Identifier les vulnérabilités, dépendances sensibles et points critiques afin d’anticiper les ruptures, réduire les fragilités et renforcer la continuité du système."
+  },
+  {
+    title: "ARCHITECTURES MODULAIRES",
+    lead: "Concevoir des systèmes capables d’évoluer.",
+    text: "Structurer des architectures interopérables et adaptables, pensées pour intégrer de nouvelles contraintes, technologies ou usages sans remettre en cause l’ensemble du système."
+  },
+  {
+    title: "SUPERVISION INTELLIGENTE",
+    lead: "Transformer l’information en compréhension.",
+    text: "Relier les données, événements et signaux dispersés afin de faire émerger une lecture exploitable du système et d’améliorer la rapidité comme la qualité des décisions."
+  },
+  {
+    title: "DÉCISION AUGMENTÉE",
+    lead: "Renforcer l’analyse sans remplacer l’humain.",
+    text: "Associer expertise humaine, données et intelligence artificielle pour éclairer les choix, comparer les scénarios et agir avec davantage de précision dans des environnements complexes."
+  },
+  {
+    title: "SYSTÈMES ADAPTATIFS",
+    lead: "Faire évoluer la solution avec son environnement.",
+    text: "Concevoir des systèmes capables de s’ajuster aux usages, aux contraintes opérationnelles et aux changements de contexte sans perdre leur cohérence ni leur maîtrise."
+  },
+  {
+    title: "GOUVERNANCE & ORCHESTRATION",
+    lead: "Faire travailler les différentes composantes dans la même direction.",
+    text: "Structurer les responsabilités, les flux d’information, les règles d’interaction et les mécanismes d’arbitrage afin de maintenir une vision commune et une action coordonnée."
+  }
 ];
 
 export default function SolutionsPage() {
@@ -92,16 +92,10 @@ export default function SolutionsPage() {
       </section>
 
       <section className="solutions-grid panel-shell">
-        {solutions.map(([n, title, text]) => (
+        {solutions.map(({ title, lead, text }) => (
           <article className="solution-card" key={title}>
-            <span className="solution-index">{n}</span>
-
-            <div className="solution-glyph">
-              <span>◇</span>
-            </div>
-
             <h2>{title}</h2>
-
+            <p className="solution-lead">{lead}</p>
             <p>{text}</p>
           </article>
         ))}
