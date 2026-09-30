@@ -6,8 +6,8 @@ const articles = [
     title: "IA ET GOUVERNANCE DÉCISIONNELLE",
   },
   {
-    slug: "analyse-systemique-en-entreprise",
-    title: "Analyse systémique en entreprise : comprendre les interactions avant de décider",
+    slug: "allier-technologie-impact-durable",
+    title: "ALLIER TECHNOLOGIE ET IMPACT DURABLE",
   },
   {
     slug: "signaux-faibles-en-entreprise",
