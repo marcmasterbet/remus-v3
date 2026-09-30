@@ -4,9 +4,9 @@
   --black: #111111;
   --muted: #6d685f;
   --line: rgba(17,17,17,.14);
-  --copper: #CA7B3D;
-  --copper-soft: #CA7B3D;
-  --copper-pale: #CA7B3D;
+  --copper: #A94F16;
+  --copper-soft: #d69a68;
+  --copper-pale: #ead1bc;
   --max: 1500px;
 }
 
@@ -102,7 +102,7 @@ button, input, textarea { font: inherit; }
   transition: .2s ease;
 }
 .button:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(105,62,28,.08); }
-.button-copper { background: linear-gradient(110deg, #CA7B3D, #CA7B3D); color: white; }
+.button-copper { background: linear-gradient(110deg, #a85620, #cb7b37); color: white; }
 .button-outline { background: rgba(255,255,255,.35); color: var(--black); }
 
 .hero {
@@ -480,9 +480,9 @@ button, input, textarea { font: inherit; }
   --remus-cream: #FBF9F6;
   --remus-black: #111111;
   --remus-graphite: #55514C;
-  --remus-copper: #CA7B3D;
-  --remus-copper-dark: #CA7B3D;
-  --remus-copper-light: #CA7B3D;
+  --remus-copper: #A94F16;
+  --remus-copper-dark: #80380F;
+  --remus-copper-light: #C97942;
   --remus-line: #D8CEC2;
 }
 
@@ -560,7 +560,7 @@ body {
 }
 .main-nav a:hover::after,
 .main-nav a.is-active::after { width: 38px; }
-.main-nav a.is-active { color: #CA7B3D; }
+.main-nav a.is-active { color: #A94F16; }
 .main-nav a.is-active::before {
   content: "";
   position: absolute;
@@ -581,7 +581,7 @@ body {
   justify-content: center;
   gap: 17px;
   border: 1px solid rgba(169,79,22,.65);
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: .14em;
@@ -617,7 +617,7 @@ body {
 }
 .home-kicker {
   margin: 0;
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 10px;
   line-height: 1;
   font-weight: 700;
@@ -676,7 +676,7 @@ body {
 .home-button span { font-size: 17px; font-weight: 300; }
 .home-button--solid {
   color: #fff;
-  background: linear-gradient(105deg, #CA7B3D 0%, #CA7B3D 52%, #CA7B3D 100%);
+  background: linear-gradient(105deg, #9f400d 0%, #b95617 52%, #9a3a0a 100%);
 }
 .home-button--outline {
   color: var(--remus-black);
@@ -824,7 +824,7 @@ body {
   position: absolute;
   left: 0;
 }
-.home-feature-icon--layers > span::before { top: -7px; border-color: #CA7B3D; }
+.home-feature-icon--layers > span::before { top: -7px; border-color: #A94F16; }
 .home-feature-icon--layers > span::after { top: 7px; }
 .home-feature-icon--dot {
   border-radius: 50%;
@@ -991,7 +991,7 @@ body {
 }
 
 .limes-eyebrow {
-  color: #CA7B3D;
+  color: #a94f16;
   font-size: 12px;
   line-height: 1;
   font-weight: 700;
@@ -1002,7 +1002,7 @@ body {
 .limes-small-rule {
   width: 30px;
   height: 1px;
-  background: #CA7B3D;
+  background: #a94f16;
 }
 .limes-rule { margin-top: 28px; }
 .limes-rule--spaced { margin-top: 28px; }
@@ -1026,9 +1026,9 @@ body {
   flex: 0 0 .61em;
   color: transparent;
   background:
-    linear-gradient(#CA7B3D, #CA7B3D) left top / 100% 2px no-repeat,
-    linear-gradient(#CA7B3D, #CA7B3D) left center / 100% 2.5px no-repeat,
-    linear-gradient(#CA7B3D, #CA7B3D) left bottom / 100% 2.5px no-repeat;
+    linear-gradient(#A94F16, #A94F16) left top / 100% 2px no-repeat,
+    linear-gradient(#A94F16, #A94F16) left center / 100% 2.5px no-repeat,
+    linear-gradient(#A94F16, #A94F16) left bottom / 100% 2.5px no-repeat;
 }
 
 .limes-logo-text .limes-e::before,
@@ -1043,7 +1043,7 @@ body {
   letter-spacing: .09em;
   font-weight: 300;
 }
-.limes-copy-exact h1 span { color: #CA7B3D; }
+.limes-copy-exact h1 span { color: #a94f16; }
 
 .limes-copy-exact p {
   margin: 28px 0 0;
@@ -1064,7 +1064,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 19px;
-  border: 1px solid #CA7B3D;
+  border: 1px solid #a94f16;
   font-size: 10px;
   letter-spacing: .1em;
   font-weight: 700;
@@ -1073,7 +1073,7 @@ body {
 .limes-button--copper {
   min-width: 250px;
   color: #fff;
-  background: linear-gradient(105deg, #CA7B3D 0%, #CA7B3D 52%, #CA7B3D 100%);
+  background: linear-gradient(105deg, #9f400d 0%, #b95617 52%, #9a3a0a 100%);
 }
 .limes-button--outline {
   min-width: 159px;
@@ -1117,7 +1117,7 @@ body {
 .limes-signature strong,
 .limes-signature span { display: block; }
 .limes-signature strong {
-  color: #CA7B3D;
+  color: #a94f16;
   font-size: 20px;
   line-height: 1;
   font-weight: 400;
@@ -1135,7 +1135,7 @@ body {
   align-items: center;
   gap: 12px;
   margin-top: 27px;
-  color: #CA7B3D;
+  color: #a94f16;
   font-size: 21px;
   line-height: 1;
 }
@@ -1178,7 +1178,7 @@ body {
 .limes-capability-icon--lock > span {
   width: 11px;
   height: 14px;
-  border: 1.5px solid #CA7B3D;
+  border: 1.5px solid #a94f16;
 }
 .limes-capability-icon--lock > span::before {
   content: "";
@@ -1187,7 +1187,7 @@ body {
   top: -8px;
   width: 5px;
   height: 8px;
-  border: 1.5px solid #CA7B3D;
+  border: 1.5px solid #a94f16;
   border-bottom: 0;
   border-radius: 5px 5px 0 0;
 }
@@ -1205,19 +1205,19 @@ body {
   position: absolute;
   left: 0;
 }
-.limes-capability-icon--layers > span::before { top: -7px; border-color: #CA7B3D; }
+.limes-capability-icon--layers > span::before { top: -7px; border-color: #A94F16; }
 .limes-capability-icon--layers > span::after { top: 7px; }
 .limes-capability-icon--dot { border-radius: 50%; clip-path: none; }
 .limes-capability-icon--dot > span {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #CA7B3D;
+  background: #a94f16;
 }
 .limes-capability-icon--hex > span {
   width: 14px;
   height: 14px;
-  border: 1.5px solid #CA7B3D;
+  border: 1.5px solid #a94f16;
   clip-path: polygon(25% 6.7%,75% 6.7%,100% 50%,75% 93.3%,25% 93.3%,0 50%);
 }
 .limes-capability h2 {
@@ -1387,7 +1387,7 @@ body {
 }
 
 .rd-copy .panel-kicker {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .14em;
@@ -1407,7 +1407,7 @@ body {
 
 .rd-copy h1 strong {
   display: inline-block;
-  color: #CA7B3D;
+  color: #A94F16;
   font-weight: 350;
 }
 
@@ -1554,13 +1554,13 @@ body {
 }
 
 .research-index {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 11px;
   letter-spacing: .14em;
 }
 
 .research-symbol {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 22px;
   line-height: 1;
 }
@@ -1594,7 +1594,7 @@ body {
   height: 5px;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: #CA7B3D;
+  background: #A94F16;
 }
 
 .research-side {
@@ -1947,7 +1947,7 @@ body {
 }
 
 .audit-kicker {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.17em;
@@ -1958,7 +1958,7 @@ body {
   display: block;
   width: 34px;
   height: 1px;
-  background: #CA7B3D;
+  background: #A94F16;
   margin-bottom: 48px;
 }
 
@@ -1973,7 +1973,7 @@ body {
 
 .audit-premium-copy h1 strong {
   display: block;
-  color: #CA7B3D;
+  color: #A94F16;
   font-weight: 300;
 }
 
@@ -1996,9 +1996,9 @@ body {
   gap: 40px;
   background: linear-gradient(
     110deg,
-    #CA7B3D 0%,
-    #CA7B3D 45%,
-    #CA7B3D 100%
+    #80380F 0%,
+    #A94F16 45%,
+    #C97942 100%
   );
   color: #fff;
   text-decoration: none;
@@ -2078,7 +2078,7 @@ body {
 }
 
 .audit-section-heading span {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -2087,7 +2087,7 @@ body {
 .audit-section-heading div {
   width: 35px;
   height: 1px;
-  background: #CA7B3D;
+  background: #A94F16;
 }
 
 .audit-steps {
@@ -2109,7 +2109,7 @@ body {
 }
 
 .audit-step-number {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 11px;
   letter-spacing: 0.15em;
   margin-bottom: 25px;
@@ -2118,7 +2118,7 @@ body {
 .audit-step-symbol {
   width: 46px;
   height: 46px;
-  border: 1px solid #CA7B3D;
+  border: 1px solid #C97942;
   transform: rotate(45deg);
   display: flex;
   align-items: center;
@@ -2128,7 +2128,7 @@ body {
 
 .audit-step-symbol span {
   transform: rotate(-45deg);
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 12px;
 }
 
@@ -2150,7 +2150,7 @@ body {
   right: -8px;
   top: 50%;
   z-index: 3;
-  color: #CA7B3D;
+  color: #A94F16;
   background: #F7F4EF;
   padding: 8px 0;
 }
@@ -2168,7 +2168,7 @@ body {
 }
 
 .audit-final-copy > span {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -2182,7 +2182,7 @@ body {
 }
 
 .audit-final-copy h2 strong {
-  color: #CA7B3D;
+  color: #A94F16;
   font-weight: 300;
 }
 
@@ -3020,7 +3020,7 @@ body {
   width: 26px;
   height: 1px;
   margin-top: 17px;
-  background: #CA7B3D;
+  background: #a94f16;
 }
 
 .limes-capability p {
@@ -3164,7 +3164,7 @@ body {
 
 /* Kicker Accueil : même style que Audit REMUS, plus présent */
 .home-kicker {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
   font-size: 13px !important;
   font-weight: 700 !important;
   letter-spacing: .13em !important;
@@ -3195,14 +3195,14 @@ body {
 
 /* =========================================================
    REMUS — CUIVRE UNIFIÉ SUR TOUTES LES PAGES
-   Référence exacte : ACCUEIL #CA7B3D
+   Référence exacte : ACCUEIL #A94F16
    Mise en page / tailles / visuels inchangés
    ========================================================= */
 
 /* Variables principales */
 :root {
-  --copper: #CA7B3D !important;
-  --remus-copper: #CA7B3D !important;
+  --copper: #A94F16 !important;
+  --remus-copper: #A94F16 !important;
 }
 
 /* Technologies / LIMES */
@@ -3214,14 +3214,14 @@ body {
 .limes-capability-icon--lock > span::before,
 .limes-capability-icon--dot > span,
 .limes-capability-icon--hex > span {
-  color: #CA7B3D !important;
-  border-color: #CA7B3D !important;
+  color: #A94F16 !important;
+  border-color: #A94F16 !important;
 }
 
 .limes-rule,
 .limes-small-rule,
 .limes-capability h2::after {
-  background: #CA7B3D !important;
+  background: #A94F16 !important;
 }
 
 /* Audit REMUS */
@@ -3232,20 +3232,20 @@ body {
 .audit-section-heading span,
 .audit-final-copy > span,
 .audit-final-copy h2 strong {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 
 .audit-small-line,
 .audit-section-heading div,
 .audit-step h2::after,
 .method-step h2::after {
-  background: #CA7B3D !important;
+  background: #A94F16 !important;
 }
 
 .audit-step-symbol,
 .method-icon {
-  border-color: #CA7B3D !important;
-  color: #CA7B3D !important;
+  border-color: #A94F16 !important;
+  color: #A94F16 !important;
 }
 
 /* Solutions */
@@ -3253,15 +3253,15 @@ body {
 .solutions-hero h1 strong,
 .solution-index,
 .solution-glyph {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 
 .solution-glyph {
-  border-color: #CA7B3D !important;
+  border-color: #A94F16 !important;
 }
 
 .solution-card h2::after {
-  background: #CA7B3D !important;
+  background: #A94F16 !important;
 }
 
 /* Recherche & Développement */
@@ -3270,44 +3270,44 @@ body {
 .rd-copy h1 strong,
 .research-index,
 .research-symbol {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 
 .rd-copy .micro-line,
 .research-line::after {
-  background: #CA7B3D !important;
+  background: #A94F16 !important;
 }
 
 /* Qui sommes-nous ? */
 .about-page .panel-kicker,
 .about-page h1 strong,
 .team-body > span {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 
 .about-page .micro-line,
 .team-body h2::after {
-  background: #CA7B3D !important;
+  background: #A94F16 !important;
 }
 
 /* Contact */
 .contact-page .panel-kicker,
 .contact-page h1 strong,
 .contact-detail > span {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 
 .contact-page .micro-line {
-  background: #CA7B3D !important;
+  background: #A94F16 !important;
 }
 
 /* Boutons et liens cuivre des pages internes */
 .remus-inner-page .button-copper {
-  border-color: #CA7B3D !important;
+  border-color: #A94F16 !important;
 }
 
 .remus-inner-page a:hover {
-  color: #CA7B3D;
+  color: #A94F16;
 }
 
 
@@ -3572,7 +3572,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 12px;
   font-weight: 600;
 }
@@ -3590,7 +3590,7 @@ body {
 .footer-column-title {
   display: block;
   margin-bottom: 22px;
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: .17em;
@@ -3614,7 +3614,7 @@ body {
 
 .footer-nav a:hover,
 .footer-legal-links a:hover {
-  color: #CA7B3D;
+  color: #A94F16;
   transform: translateX(3px);
 }
 
@@ -3873,7 +3873,7 @@ body {
 
   border: 1px solid rgba(169,79,22,.58);
 
-  color: #CA7B3D;
+  color: #A94F16;
   background: transparent;
 
   font-size: 10px;
@@ -4203,7 +4203,7 @@ body {
 
 .main-nav a:hover,
 .main-nav a.is-active {
-  color: var(--remus-copper, #CA7B3D) !important;
+  color: var(--remus-copper, #a94f16) !important;
 }
 
 .main-nav a::after {
@@ -4213,7 +4213,7 @@ body {
   bottom: 20px !important;
   width: 0 !important;
   height: 1px !important;
-  background: var(--remus-copper, #CA7B3D) !important;
+  background: var(--remus-copper, #a94f16) !important;
   transform: translateX(-50%) !important;
   transition: width .22s ease !important;
 }
@@ -4231,7 +4231,7 @@ body {
   width: 5px !important;
   height: 5px !important;
   border-radius: 50% !important;
-  background: var(--remus-copper, #CA7B3D) !important;
+  background: var(--remus-copper, #a94f16) !important;
   transform: translateX(-50%) !important;
 }
 
@@ -4243,7 +4243,7 @@ body {
   justify-content: center !important;
   gap: 18px !important;
   border: 1px solid rgba(169, 79, 22, .55) !important;
-  color: var(--remus-copper-dark, #CA7B3D) !important;
+  color: var(--remus-copper-dark, #80380f) !important;
   background: transparent !important;
   font-size: 10px !important;
   font-weight: 700 !important;
@@ -4253,7 +4253,7 @@ body {
 
 .header-contact:hover {
   color: #fff !important;
-  background: var(--remus-copper, #CA7B3D) !important;
+  background: var(--remus-copper, #a94f16) !important;
 }
 
 @media (max-width: 1180px) {
@@ -4400,7 +4400,7 @@ body {
 
 .main-nav a:hover,
 .main-nav a.is-active {
-  color: var(--remus-copper, #CA7B3D) !important;
+  color: var(--remus-copper, #A94F16) !important;
 }
 
 /* trait actif */
@@ -4414,7 +4414,7 @@ body {
   width: 0 !important;
   height: 1px !important;
 
-  background: var(--remus-copper, #CA7B3D) !important;
+  background: var(--remus-copper, #A94F16) !important;
 
   transform: translateX(-50%) !important;
   transition: width .22s ease !important;
@@ -4437,7 +4437,7 @@ body {
   height: 5px !important;
 
   border-radius: 50% !important;
-  background: var(--remus-copper, #CA7B3D) !important;
+  background: var(--remus-copper, #A94F16) !important;
 
   transform: translateX(-50%) !important;
 }
@@ -4552,19 +4552,19 @@ body {
 }
 
 .legal-copy a {
-  color: #CA7B3D;
+  color: #A94F16;
   text-decoration: none;
   border-bottom: 1px solid rgba(169, 79, 22, .28);
 }
 
 .legal-copy a:hover {
-  border-bottom-color: #CA7B3D;
+  border-bottom-color: #A94F16;
 }
 
 .legal-note {
   margin-top: 44px !important;
   padding: 18px 20px;
-  border-left: 2px solid #CA7B3D;
+  border-left: 2px solid #A94F16;
   background: rgba(169, 79, 22, .055);
 }
 
@@ -4606,7 +4606,7 @@ body {
 
 .cookie-badge-on {
   border-color: rgba(169, 79, 22, .35);
-  color: #CA7B3D;
+  color: #A94F16;
 }
 
 .contact-honeypot {
@@ -4634,11 +4634,11 @@ body {
   width: 16px !important;
   height: 16px !important;
   margin-top: 2px !important;
-  accent-color: #CA7B3D;
+  accent-color: #A94F16;
 }
 
 .contact-privacy-check a {
-  color: #CA7B3D;
+  color: #A94F16;
 }
 
 .contact-form button:disabled {
@@ -4689,7 +4689,7 @@ body {
 .cookie-consent-kicker {
   display: block;
   margin-bottom: 7px;
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: .16em;
@@ -4714,7 +4714,7 @@ body {
 .cookie-consent-link {
   display: inline-block;
   margin-top: 10px;
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 11px;
   text-decoration: none;
   border-bottom: 1px solid rgba(169, 79, 22, .32);
@@ -4754,7 +4754,7 @@ body {
 }
 
 .cookie-preference-required {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 9px;
   font-weight: 800;
   letter-spacing: .09em;
@@ -4768,7 +4768,7 @@ body {
 .cookie-preference-toggle input {
   width: 42px;
   height: 22px;
-  accent-color: #CA7B3D;
+  accent-color: #A94F16;
   cursor: pointer;
 }
 
@@ -4784,7 +4784,7 @@ body {
 .cookie-btn {
   min-height: 42px;
   padding: 0 17px;
-  border: 1px solid #CA7B3D;
+  border: 1px solid #A94F16;
   background: transparent;
   color: #111111;
   font: inherit;
@@ -4801,13 +4801,13 @@ body {
 }
 
 .cookie-btn-solid {
-  background: #CA7B3D;
+  background: #A94F16;
   color: #FFFFFF;
 }
 
 .cookie-btn-solid:hover {
-  background: #CA7B3D;
-  border-color: #CA7B3D;
+  background: #80380F;
+  border-color: #A94F16;
 }
 
 .footer-cookie-settings {
@@ -4823,7 +4823,7 @@ body {
 }
 
 .footer-cookie-settings:hover {
-  color: #CA7B3D;
+  color: #A94F16;
 }
 
 .legal-cookie-action {
@@ -4832,8 +4832,8 @@ body {
 
 .legal-cookie-action .footer-cookie-settings {
   padding: 12px 16px;
-  border: 1px solid #CA7B3D;
-  color: #CA7B3D;
+  border: 1px solid #A94F16;
+  color: #A94F16;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .08em;
@@ -4841,7 +4841,7 @@ body {
 
 .cookie-badge-optional {
   border-color: rgba(169, 79, 22, .35);
-  color: #CA7B3D;
+  color: #A94F16;
 }
 
 .cookie-status-card code {
@@ -4946,7 +4946,7 @@ body {
   align-items: center;
   gap: 9px;
   margin-top: 18px;
-  color: var(--remus-copper, #CA7B3D);
+  color: var(--remus-copper, #A94F16);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .08em;
@@ -4959,7 +4959,7 @@ body {
 
 .partner-website:hover {
   gap: 13px;
-  border-color: var(--remus-copper, #CA7B3D);
+  border-color: var(--remus-copper, #A94F16);
 }
 
 /* =========================================
@@ -4988,7 +4988,7 @@ body {
 
 .contact-eyebrow {
   margin: 0 0 15px;
-  color: var(--remus-copper, #CA7B3D);
+  color: var(--remus-copper, #A94F16);
   font-size: 12px;
   font-weight: 800;
   letter-spacing: .18em;
@@ -4999,7 +4999,7 @@ body {
   width: 42px;
   height: 1px;
   margin-bottom: 31px;
-  background: var(--remus-copper, #CA7B3D);
+  background: var(--remus-copper, #A94F16);
 }
 
 .contact-intro h1 {
@@ -5011,7 +5011,7 @@ body {
 }
 
 .contact-intro h1 span {
-  color: var(--remus-copper, #CA7B3D);
+  color: var(--remus-copper, #A94F16);
 }
 
 .contact-lead {
@@ -5050,7 +5050,7 @@ body {
 }
 
 .contact-write-copy > span {
-  color: var(--remus-copper, #CA7B3D);
+  color: var(--remus-copper, #A94F16);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .19em;
@@ -5069,9 +5069,9 @@ body {
 }
 
 .contact-write-copy a:hover {
-  color: var(--remus-copper, #CA7B3D);
+  color: var(--remus-copper, #A94F16);
   gap: 18px;
-  border-color: var(--remus-copper, #CA7B3D);
+  border-color: var(--remus-copper, #A94F16);
 }
 
 .contact-form-column {
@@ -5088,7 +5088,7 @@ body {
 .contact-form-heading > span {
   display: block;
   margin-bottom: 11px;
-  color: var(--remus-copper, #CA7B3D);
+  color: var(--remus-copper, #A94F16);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: .18em;
@@ -5158,7 +5158,7 @@ form.contact-form {
 .contact-form input:focus,
 .contact-form textarea:focus,
 .contact-form select:focus {
-  border-bottom-color: var(--remus-copper, #CA7B3D) !important;
+  border-bottom-color: var(--remus-copper, #A94F16) !important;
 }
 
 .contact-form textarea {
@@ -5171,9 +5171,9 @@ form.contact-form {
   min-width: 205px !important;
   margin-top: 12px !important;
   padding: 16px 24px !important;
-  border: 1px solid var(--remus-copper, #CA7B3D) !important;
+  border: 1px solid var(--remus-copper, #A94F16) !important;
   border-radius: 0 !important;
-  background: var(--remus-copper, #CA7B3D) !important;
+  background: var(--remus-copper, #A94F16) !important;
   color: #fff !important;
   font-size: 10px !important;
   font-weight: 800 !important;
@@ -5185,7 +5185,7 @@ form.contact-form {
 
 .contact-form button[type="submit"]:hover {
   background: transparent !important;
-  color: var(--remus-copper, #CA7B3D) !important;
+  color: var(--remus-copper, #A94F16) !important;
 }
 
 .contact-form .form-status,
@@ -6348,13 +6348,13 @@ form.contact-form {
   }
 
   .mobile-menu-nav a > span {
-    color: #CA7B3D;
+    color: #A94F16;
     font-size: 9px;
     letter-spacing: .12em;
   }
 
   .mobile-menu-nav a.is-active {
-    color: #CA7B3D;
+    color: #A94F16;
   }
 
   .mobile-menu-signature {
@@ -6370,7 +6370,7 @@ form.contact-form {
   }
 
   .mobile-menu-signature small {
-    color: #CA7B3D;
+    color: #A94F16;
     font-size: 8px;
     letter-spacing: .2em;
   }
@@ -7118,7 +7118,7 @@ form.contact-form {
 .rd-copy h1 strong,
 .about-page h1 strong,
 .contact-intro h1 span {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
   font-weight: 700 !important;
   font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
 }
@@ -7172,7 +7172,7 @@ form.contact-form {
   .rd-copy h1 strong,
   .about-page h1 strong,
   .contact-intro h1 span {
-    color: #CA7B3D !important;
+    color: #A94F16 !important;
     font-weight: 700 !important;
   }
 }
@@ -7208,7 +7208,7 @@ form.contact-form {
 .rd-copy h1 strong,
 .about-page h1 strong,
 .contact-intro h1 span {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
   font-family: "Segoe UI", Arial, Helvetica, sans-serif !important;
   font-weight: 400 !important;
   text-transform: none !important;
@@ -7500,8 +7500,8 @@ form.contact-form {
 .home-reference {
   --v2-black: #050607;
   --v2-black-soft: #0b0c0d;
-  --v2-copper: #CA7B3D;
-  --v2-copper-light: #CA7B3D;
+  --v2-copper: #A94F16;
+  --v2-copper-light: #C97942;
   background: var(--v2-black) !important;
   color: #f7f4ef;
 }
@@ -7807,7 +7807,7 @@ body:has(.home-reference) .footer {
 }
 body:has(.home-reference) .footer-brand strong,
 body:has(.home-reference) .footer-column-title {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 body:has(.home-reference) .footer-brand p,
 body:has(.home-reference) .footer-nav a,
@@ -7818,7 +7818,7 @@ body:has(.home-reference) .footer-cookie-settings {
 body:has(.home-reference) .footer-nav a:hover,
 body:has(.home-reference) .footer-legal-links a:hover,
 body:has(.home-reference) .footer-cookie-settings:hover {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 body:has(.home-reference) .footer-bottom {
   border-top-color: rgba(201,121,66,.16) !important;
@@ -7892,7 +7892,7 @@ body:has(.home-reference) .footer-bottom {
 
 /* REMUS V2 — texte d'introduction hero en cuivre */
 .home-reference .home-intro {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 
 /* =========================================================
@@ -7965,24 +7965,24 @@ body:has(.audit-remus-page) {
   position: relative !important;
   z-index: 5 !important;
 }
-.audit-kicker { color: #CA7B3D !important; }
-.audit-small-line { background: #CA7B3D !important; }
+.audit-kicker { color: #A94F16 !important; }
+.audit-small-line { background: #c97942 !important; }
 .audit-premium-copy h1 { color: #f7f4ef !important; text-shadow: 0 3px 24px rgba(0,0,0,.45); }
-.audit-premium-copy h1 strong { color: #CA7B3D !important; }
-.audit-intro { color: #CA7B3D !important; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
+.audit-premium-copy h1 strong { color: #A94F16 !important; }
+.audit-intro { color: #A94F16 !important; text-shadow: 0 2px 16px rgba(0,0,0,.55); }
 .audit-approach {
   background: radial-gradient(circle at 70% 0%, rgba(169,79,22,.10), transparent 32%), #050505 !important;
   color: #f7f4ef !important;
 }
 .audit-approach p { color: rgba(247,244,239,.68) !important; }
 .audit-section-heading span,
-.audit-final-copy > span { color: #CA7B3D !important; }
+.audit-final-copy > span { color: #A94F16 !important; }
 .audit-step { background: #0b0b0b !important; border-color: rgba(201,121,66,.20) !important; }
 .audit-step h2 { color: #f7f4ef !important; }
-.audit-step-symbol { border-color: rgba(201,121,66,.45) !important; color: #CA7B3D !important; }
+.audit-step-symbol { border-color: rgba(201,121,66,.45) !important; color: #A94F16 !important; }
 .audit-final-block { background: #090909 !important; border-color: rgba(201,121,66,.18) !important; }
 .audit-final-copy h2 { color: #f7f4ef !important; }
-.audit-final-copy h2 strong { color: #CA7B3D !important; }
+.audit-final-copy h2 strong { color: #A94F16 !important; }
 body:has(.audit-remus-page) .footer {
   background: #050505 !important;
   color: #f7f4ef !important;
@@ -7991,7 +7991,7 @@ body:has(.audit-remus-page) .footer {
 body:has(.audit-remus-page) .footer h3,
 body:has(.audit-remus-page) .footer-title,
 body:has(.audit-remus-page) .footer-nav-title,
-body:has(.audit-remus-page) .footer-legal-title { color: #CA7B3D !important; }
+body:has(.audit-remus-page) .footer-legal-title { color: #A94F16 !important; }
 body:has(.audit-remus-page) .footer a,
 body:has(.audit-remus-page) .footer p,
 body:has(.audit-remus-page) .footer button { color: rgba(247,244,239,.78) !important; }
@@ -8099,7 +8099,7 @@ body:has(.home-reference) .footer-cookie-settings {
 body:has(.home-reference) .footer-nav a:hover,
 body:has(.home-reference) .footer-legal-links a:hover,
 body:has(.home-reference) .footer-cookie-settings:hover {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 body:has(.home-reference) .footer-bottom {
   border-top-color: #D8CEC2 !important;
@@ -8127,7 +8127,7 @@ body:has(.audit-remus-page) {
 }
 .audit-section-heading span,
 .audit-final-copy > span {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 .audit-step {
   background: #FBF9F6 !important;
@@ -8141,7 +8141,7 @@ body:has(.audit-remus-page) {
 }
 .audit-step-symbol {
   border-color: rgba(169,79,22,.42) !important;
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 .audit-final-block {
   background: #FBF9F6 !important;
@@ -8151,7 +8151,7 @@ body:has(.audit-remus-page) {
   color: #111111 !important;
 }
 .audit-final-copy h2 strong {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 .audit-final-copy p {
   color: #FFFFFF !important;
@@ -8174,7 +8174,7 @@ body:has(.audit-remus-page) .footer button {
 }
 body:has(.audit-remus-page) .footer a:hover,
 body:has(.audit-remus-page) .footer button:hover {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
 }
 
 /* =========================================================
@@ -8203,8 +8203,8 @@ body:has(.audit-remus-page) .footer button:hover {
   padding:105px 0 90px clamp(24px, 5.5vw, 92px) !important;
   color:#F7F4EF !important;
 }
-.limes-hero-exact .limes-eyebrow { color:#CA7B3D !important; }
-.limes-hero-exact .limes-rule { background:#CA7B3D !important; }
+.limes-hero-exact .limes-eyebrow { color:#A94F16 !important; }
+.limes-hero-exact .limes-rule { background:#A94F16 !important; }
 .limes-hero-exact .limes-logo-text { color:#F7F4EF !important; }
 .limes-hero-exact .limes-copy-exact h1 {
   margin:28px 0 0 !important;
@@ -8217,7 +8217,7 @@ body:has(.audit-remus-page) .footer button:hover {
   text-transform:none !important;
 }
 .limes-hero-exact .limes-copy-exact h1 span {
-  color:#CA7B3D !important;
+  color:#A94F16 !important;
   font-weight:400 !important;
   letter-spacing:-.025em !important;
 }
@@ -8228,7 +8228,7 @@ body:has(.audit-remus-page) .footer button:hover {
   max-width:570px !important;
 }
 .limes-hero-exact .limes-actions { position:relative !important; z-index:6 !important; }
-.limes-hero-exact .limes-button--outline { color:#F7F4EF !important; border-color:#CA7B3D !important; }
+.limes-hero-exact .limes-button--outline { color:#F7F4EF !important; border-color:#A94F16 !important; }
 
 .limes-hero-exact .limes-visual-exact {
   display:block !important;
@@ -8290,8 +8290,8 @@ body:has(.audit-remus-page) .footer button:hover {
   --black: #050505;
   --muted: rgba(244,241,237,.66);
   --line: rgba(201,121,66,.16);
-  --copper: #CA7B3D;
-  --copper-soft: #CA7B3D;
+  --copper: #A94F16;
+  --copper-soft: #C97942;
 }
 html, body { background:#050505 !important; color:#f4f1ed !important; }
 body { background-image:radial-gradient(circle at 70% 12%, rgba(169,79,22,.055), transparent 28%) !important; }
@@ -8310,11 +8310,11 @@ body:has(.audit-remus-page) .site-header {
   opacity:.96 !important;
 }
 .main-nav a { color:rgba(244,241,237,.72) !important; }
-.main-nav a:hover,.main-nav a.is-active { color:#CA7B3D !important; }
+.main-nav a:hover,.main-nav a.is-active { color:#A94F16 !important; }
 .mobile-menu-toggle span { background:#f4f1ed !important; }
 .mobile-menu { background:#050505 !important; color:#f4f1ed !important; }
 .mobile-menu-nav a { color:#f4f1ed !important; border-color: #FFFFFF !important; }
-.mobile-menu-nav a span,.mobile-menu-nav a.is-active { color:#CA7B3D !important; }
+.mobile-menu-nav a span,.mobile-menu-nav a.is-active { color:#A94F16 !important; }
 
 /* Toutes les zones de contenu passent en noir, avec profondeurs subtiles. */
 .home-reference,
@@ -8365,11 +8365,11 @@ section h1, section h2, section h3 { color:#f4f1ed !important; }
 section p { color:rgba(244,241,237,.66) !important; }
 .eyebrow,
 .audit-section-heading span,
-.audit-final-copy > span { color:#CA7B3D !important; }
+.audit-final-copy > span { color:#A94F16 !important; }
 
 /* Boutons : cuivre réservé aux actions importantes. */
 .button-outline { background:transparent !important; color:#f4f1ed !important; border-color:rgba(201,121,66,.55) !important; }
-.button-outline:hover { border-color:#CA7B3D !important; background:rgba(201,121,66,.06) !important; }
+.button-outline:hover { border-color:#A94F16 !important; background:rgba(201,121,66,.06) !important; }
 
 /* Footer noir sur tout le site. */
 .footer,
@@ -8394,7 +8394,7 @@ body:has(.home-reference) .footer-cookie-settings,
 body:has(.audit-remus-page) .footer a,
 body:has(.audit-remus-page) .footer p,
 body:has(.audit-remus-page) .footer button { color:rgba(244,241,237,.58) !important; }
-.footer a:hover,.footer button:hover { color:#CA7B3D !important; }
+.footer a:hover,.footer button:hover { color:#A94F16 !important; }
 .footer-bottom,body:has(.home-reference) .footer-bottom { border-top-color: #FFFFFF !important; color:rgba(244,241,237,.38) !important; }
 
 /* TECHNOLOGIES : visuel LIMES plein écran, texte superposé, sans doublon LIMES en haut. */
@@ -8571,7 +8571,7 @@ html,body,.site-shell,main { background:#050505 !important; color:#f4f1ed !impor
   --v3-black:#030303;
   --v3-white:#f7f7f4;
   --v3-muted:rgba(247,247,244,.70);
-  --v3-copper:#CA7B3D;
+  --v3-copper:#A94F16;
   --v3-line:rgba(255,255,255,.16);
 }
 html,body { background:var(--v3-black) !important; color:var(--v3-white) !important; }
@@ -8767,7 +8767,7 @@ body:has(.home-clean-v3) .site-header {
 }
 .home-clean-v3-kicker {
   margin: 0 0 28px !important;
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
   font-size: 13px !important;
   font-weight: 700 !important;
   letter-spacing: .18em !important;
@@ -8777,7 +8777,7 @@ body:has(.home-clean-v3) .site-header {
   display: block !important;
   width: 62px !important;
   height: 1px !important;
-  background: #CA7B3D !important;
+  background: #A94F16 !important;
 }
 .home-clean-v3-intro h1 {
   margin: 46px 0 34px !important;
@@ -8791,7 +8791,7 @@ body:has(.home-clean-v3) .site-header {
 .home-clean-v3-intro h1 strong {
   display: inline-block !important;
   margin-top: 14px !important;
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
   font-weight: 450 !important;
 }
 .home-clean-v3-lead {
@@ -8836,7 +8836,7 @@ body:has(.home-clean-v3) .site-header {
   box-shadow: none !important;
 }
 .home-clean-v3-number {
-  color: #CA7B3D !important;
+  color: #A94F16 !important;
   font-size: 11px !important;
   letter-spacing: .14em !important;
 }
@@ -9191,21 +9191,21 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .contact-page .contact-hero{min-height:100vh!important;padding:150px clamp(34px,4.5vw,88px) 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
 .contact-page .contact-hero-top{display:block!important;min-height:68vh!important}
 .contact-page .contact-intro{width:min(620px,42vw)!important;margin:0!important;position:relative!important;z-index:2!important}
-.contact-page .contact-eyebrow{color:#CA7B3D!important}
+.contact-page .contact-eyebrow{color:#A94F16!important}
 .contact-page .contact-intro h1{color:#fff!important;font-size:clamp(48px,5.1vw,82px)!important;line-height:.98!important;letter-spacing:-.045em!important;margin:54px 0 28px!important}
-.contact-page .contact-intro h1 span{color:#CA7B3D!important}
+.contact-page .contact-intro h1 span{color:#A94F16!important}
 .contact-page .contact-lead{color:#fff!important;max-width:590px!important;line-height:1.75!important}
 .contact-page .contact-mail-hero{display:none!important}
 .contact-page .contact-form-column.contact-form-column--below{width:min(760px,68vw)!important;margin:0 auto!important;padding:38px 0 80px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;backdrop-filter:none!important}
 .contact-page .contact-form-heading{text-align:center!important;margin-bottom:38px!important}
-.contact-page .contact-form-heading span{color:#CA7B3D!important;font-size:11px!important;letter-spacing:.18em!important}
+.contact-page .contact-form-heading span{color:#A94F16!important;font-size:11px!important;letter-spacing:.18em!important}
 .contact-page .contact-form-heading h2{color:#fff!important;margin-top:14px!important;font-size:clamp(34px,3.1vw,54px)!important}
 .contact-page .contact-form{background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
 .contact-page .contact-form label{color:#fff!important}
 .contact-page .contact-form input:not([type="checkbox"]),.contact-page .contact-form textarea{color:#fff!important;background:rgba(0,0,0,.10)!important;border:0!important;border-bottom:1px solid rgba(201,121,66,.78)!important;border-radius:0!important;box-shadow:none!important}
 .contact-page .contact-form input::placeholder,.contact-page .contact-form textarea::placeholder{color:rgba(255,255,255,.55)!important}
 .contact-page .contact-privacy-check,.contact-page .contact-privacy-check span,.contact-page .contact-privacy-check a,.contact-page .form-status{color:#fff!important}
-.contact-page .contact-privacy-check a{text-decoration-color:#CA7B3D!important}
+.contact-page .contact-privacy-check a{text-decoration-color:#A94F16!important}
 @media(max-width:900px){.contact-page::before{background-position:center calc(50% + 110px)!important}.contact-page .contact-hero{padding:118px 22px 60px!important}.contact-page .contact-hero-top{min-height:72svh!important}.contact-page .contact-intro,.contact-page .contact-form-column.contact-form-column--below{width:100%!important}.contact-page .contact-intro h1{font-size:clamp(46px,14vw,70px)!important}}
 
 
@@ -9267,7 +9267,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .references-v3-kicker {
   display: block;
   margin-bottom: 38px;
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .2em;
@@ -9283,7 +9283,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .references-v3-copy h1 em {
-  color: #CA7B3D;
+  color: #A94F16;
   font-style: normal;
 }
 
@@ -9301,7 +9301,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .references-v3-list-head span {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .18em;
@@ -9336,7 +9336,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .references-v3-number {
-  color: #CA7B3D;
+  color: #A94F16;
   font-size: 12px;
   letter-spacing: .16em;
 }
@@ -9360,7 +9360,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .references-v3-card a span {
   margin-left: 8px;
-  color: #CA7B3D;
+  color: #A94F16;
 }
 
 @media (max-width: 900px) {
@@ -9418,7 +9418,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .remus-article {
   --article-ivory: #f1eee5;
   --article-ink: #121212;
-  --article-copper: #CA7B3D;
+  --article-copper: #A94F16;
   background: #090909;
   color: var(--article-ink);
 }
@@ -9679,19 +9679,19 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .legal-page .cookie-badge-on,
 .legal-page .cookie-badge-optional {
   background: rgba(184,113,66,.10);
-  border-color: #CA7B3D;
+  border-color: #b87142;
   color: #d99a70;
 }
 .legal-page .legal-cookie-action .footer-cookie-settings {
   background: #111111;
-  border-color: #CA7B3D;
+  border-color: #b87142;
   color: #f2ece3;
   transition: background .2s ease, color .2s ease, border-color .2s ease;
 }
 .legal-page .legal-cookie-action .footer-cookie-settings:hover {
-  background: #CA7B3D;
+  background: #b87142;
   color: #090909;
-  border-color: #CA7B3D;
+  border-color: #b87142;
 }
 
 /* =========================================================
@@ -9726,117 +9726,4 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
    ========================================================= */
 .site-header {
   transform: translateY(-12px) !important;
-}
-
-
-/* =========================================================
-   REMUS — GRILLE GLOBALE PROPRE
-   Référence : bord gauche visuel du logo / même départ vertical.
-   ========================================================= */
-:root {
-  --copper: #CA7B3D;
-  --remus-copper: #CA7B3D;
-  --remus-page-x: clamp(34px, 4.1vw, 64px);
-  --remus-hero-top: 78px;
-}
-
-/* Une seule ligne de départ horizontale pour les premiers contenus. */
-.remus-inner-page,
-.limes-hero-exact,
-.references-v3-hero,
-.contact-hero,
-.audit-premium-hero {
-  width: 100% !important;
-  max-width: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.audit-premium-copy,
-.limes-copy-exact,
-.solutions-hero-copy,
-.rd-copy,
-.about-simple-content,
-.references-v3-copy,
-.contact-intro {
-  margin-left: 0 !important;
-}
-
-.audit-premium-copy,
-.limes-copy-exact,
-.solutions-page .solutions-hero,
-.rd-page .rd-hero,
-.about-page .about-hero,
-.references-v3-hero,
-.contact-hero-top {
-  padding-left: var(--remus-page-x) !important;
-  padding-right: var(--remus-page-x) !important;
-}
-
-/* Même hauteur de départ du premier repère éditorial sur les pages principales. */
-.audit-premium-copy,
-.limes-copy-exact,
-.solutions-page .solutions-hero,
-.rd-page .rd-hero,
-.about-page .about-hero,
-.references-v3-hero,
-.contact-hero-top {
-  padding-top: var(--remus-hero-top) !important;
-}
-
-/* Surtitres : blanc partout. Le trait reste cuivre REMUS. */
-.audit-kicker,
-.limes-eyebrow,
-.solutions-page .panel-kicker,
-.rd-page .panel-kicker,
-.references-v3-kicker,
-.contact-eyebrow,
-.home-kicker,
-.eyebrow {
-  color: #FFFFFF !important;
-}
-
-.audit-small-line,
-.limes-rule,
-.limes-small-rule,
-.solutions-page .micro-line,
-.rd-page .micro-line,
-.contact-rule,
-.eyebrow::after {
-  background: #CA7B3D !important;
-  border-color: #CA7B3D !important;
-}
-
-/* Le titre cuivre "QUI SOMMES-NOUS ?" a été retiré du JSX.
-   Son vrai titre commence sur la même grille que les autres pages. */
-.about-page .about-simple-content {
-  width: min(660px, 46vw) !important;
-}
-
-@media (max-width: 900px) {
-  :root {
-    --remus-page-x: 24px;
-    --remus-hero-top: 54px;
-  }
-  .about-page .about-simple-content { width: 100% !important; }
-}
-
-@media (max-width: 620px) {
-  :root {
-    --remus-page-x: 18px;
-    --remus-hero-top: 42px;
-  }
-}
-
-/* Verrouillage vertical : le premier texte ne doit plus être recentré par page. */
-.audit-premium-hero,
-.rd-page .rd-hero,
-.solutions-page .solutions-hero {
-  align-items: start !important;
-}
-.references-v3-hero {
-  align-items: flex-start !important;
-}
-.audit-premium-copy {
-  padding-top: var(--remus-hero-top) !important;
 }
