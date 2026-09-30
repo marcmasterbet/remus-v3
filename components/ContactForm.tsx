@@ -39,7 +39,7 @@ export default function ContactForm() {
       form.reset();
       setStatus("Votre demande a bien été envoyée. Merci, nous vous répondrons dès que possible.");
     } catch {
-      setStatus("Impossible d’envoyer votre demande pour le moment. Vous pouvez écrire à contact@remussystems.fr.");
+      setStatus("Impossible d’envoyer votre demande pour le moment. Vous pouvez écrire à contact@remus-systems.com.");
     } finally {
       setSending(false);
     }

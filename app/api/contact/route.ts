@@ -29,13 +29,13 @@ export async function POST(request: Request) {
     }
 
     const apiKey = process.env.RESEND_API_KEY;
-    const to = process.env.CONTACT_TO_EMAIL || "contact@remussystems.fr";
+    const to = process.env.CONTACT_TO_EMAIL || "contact@remus-systems.com";
     const from = process.env.CONTACT_FROM_EMAIL;
 
     if (!apiKey || !from) {
       console.error("Configuration Resend manquante : RESEND_API_KEY / CONTACT_FROM_EMAIL");
       return NextResponse.json(
-        { error: "Le formulaire n’est pas encore configuré. Vous pouvez écrire à contact@remussystems.fr." },
+        { error: "Le formulaire n’est pas encore configuré. Vous pouvez écrire à contact@remus-systems.com." },
         { status: 503 }
       );
     }
@@ -66,7 +66,7 @@ export async function POST(request: Request) {
     if (!response.ok) {
       console.error("Resend error", response.status, await response.text());
       return NextResponse.json(
-        { error: "L’envoi a échoué. Vous pouvez écrire directement à contact@remussystems.fr." },
+        { error: "L’envoi a échoué. Vous pouvez écrire directement à contact@remus-systems.com." },
         { status: 502 }
       );
     }

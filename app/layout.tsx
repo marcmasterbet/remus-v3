@@ -57,7 +57,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"Organization\", \"@id\": \"https://www.remussystems.fr/#organization\", \"name\": \"REMUS Systems\", \"url\": \"https://www.remussystems.fr/\", \"email\": \"contact@remussystems.fr\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"11 rue de la Vieille Ill\", \"postalCode\": \"67640\", \"addressLocality\": \"Fegersheim\", \"addressCountry\": \"FR\"}}, {\"@type\": \"WebSite\", \"@id\": \"https://www.remussystems.fr/#website\", \"url\": \"https://www.remussystems.fr/\", \"name\": \"REMUS Systems\", \"inLanguage\": \"fr-FR\", \"publisher\": {\"@id\": \"https://www.remussystems.fr/#organization\"}}]}" }}
+          dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"Organization\", \"@id\": \"https://www.remussystems.fr/#organization\", \"name\": \"REMUS Systems\", \"url\": \"https://www.remussystems.fr/\", \"email\": \"contact@remus-systems.com\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"11 rue de la Vieille Ill\", \"postalCode\": \"67640\", \"addressLocality\": \"Fegersheim\", \"addressCountry\": \"FR\"}}, {\"@type\": \"WebSite\", \"@id\": \"https://www.remussystems.fr/#website\", \"url\": \"https://www.remussystems.fr/\", \"name\": \"REMUS Systems\", \"inLanguage\": \"fr-FR\", \"publisher\": {\"@id\": \"https://www.remussystems.fr/#organization\"}}]}" }}
         />
       </head>
       <body>

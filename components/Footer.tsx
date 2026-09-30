@@ -42,7 +42,6 @@ export default function Footer() {
         <nav className="footer-legal-links">
           <Link href="/mentions-legales">Mentions légales</Link>
           <Link href="/confidentialite">Politique de confidentialité</Link>
-          <Link href="/cgu">Conditions générales d’utilisation</Link>
           <Link href="/cookies">Gestion des cookies</Link>
           <CookieSettingsButton />
         </nav>

@@ -13,88 +13,81 @@ export default function PrivacyPage() {
       <section className="page-hero compact">
         <div className="eyebrow">CONFIDENTIALITÉ</div>
         <h1>PROTECTION DES DONNÉES</h1>
-        <p>REMUS SYSTEMS limite la collecte de données au strict nécessaire au fonctionnement du site et au traitement des demandes.</p>
+        <p>REMUS SYSTEMS traite uniquement les données nécessaires au fonctionnement du site, aux échanges professionnels et à la mesure d’audience consentie.</p>
       </section>
 
       <section className="legal-copy">
         <h2>RESPONSABLE DU TRAITEMENT</h2>
         <p>
-          Le responsable du traitement est <strong>REMUS SYSTEMS</strong>, SAS en cours d’immatriculation,
-          11 rue de la Vieille Ill, 67640 Fegersheim, France.
+          <strong>REMUS SYSTEMS</strong>, SASU au capital de 2 000 €, dont le siège social est situé 11 rue de la Vieille Ill,
+          67640 Fegersheim, France, est responsable des traitements réalisés au moyen du site.
         </p>
-        <p>Contact relatif aux données personnelles : <a href="mailto:contact@remussystems.fr">contact@remussystems.fr</a>.</p>
+        <p>Contact pour toute question relative aux données personnelles : <a href="mailto:contact@remus-systems.com">contact@remus-systems.com</a>.</p>
+        <p>REMUS SYSTEMS n’a pas désigné de délégué à la protection des données (DPO) à ce jour.</p>
 
         <h2>DONNÉES COLLECTÉES</h2>
         <p>
-          Lorsqu’un visiteur utilise le formulaire de contact, les données susceptibles d’être traitées sont son nom,
-          son entreprise lorsqu’elle est renseignée, son adresse e-mail et le contenu de son message.
+          Le formulaire de contact peut recueillir : nom, entreprise, adresse e-mail, numéro de téléphone lorsqu’il est renseigné,
+          ainsi que le contenu du message. Des données techniques et de navigation peuvent également être traitées lorsque vous
+          acceptez la mesure d’audience Google Analytics.
         </p>
-        <p>Le site ne propose actuellement ni newsletter, ni espace client, ni création de compte utilisateur.</p>
+        <p>Le site ne propose actuellement ni newsletter, ni espace client, ni création de compte, ni commande ou paiement en ligne.</p>
 
         <h2>FINALITÉS ET BASES JURIDIQUES</h2>
         <p>
-          Les données transmises via le formulaire sont utilisées uniquement pour recevoir la demande, y répondre,
-          assurer son suivi et, lorsque cela est pertinent, préparer des échanges précontractuels.
+          Les données du formulaire sont utilisées pour recevoir les demandes, y répondre et assurer le suivi des échanges professionnels.
+          Selon la nature de la demande, ces traitements reposent sur l’intérêt légitime de REMUS SYSTEMS à répondre aux sollicitations
+          professionnelles ou sur l’exécution de mesures précontractuelles demandées par l’interlocuteur.
         </p>
-        <p>
-          Selon la nature de la demande, le traitement repose sur l’intérêt légitime de REMUS SYSTEMS à répondre aux sollicitations
-          qui lui sont adressées ou sur l’exécution de mesures précontractuelles demandées par la personne concernée.
-        </p>
+        <p>La mesure d’audience Google Analytics repose sur votre consentement et reste désactivée tant que vous ne l’avez pas acceptée.</p>
 
-        <h2>DESTINATAIRES ET PRESTATAIRES</h2>
+        <h2>DESTINATAIRES ET PRESTATAIRES TECHNIQUES</h2>
+        <p>Les données sont accessibles uniquement aux personnes habilitées au sein de REMUS SYSTEMS et, lorsque cela est techniquement nécessaire, à ses prestataires.</p>
         <p>
-          Les informations sont destinées aux personnes habilitées au sein de REMUS SYSTEMS. Le site est hébergé par Vercel.
-          L’envoi technique des messages du formulaire est prévu via le service Resend. Ces prestataires peuvent traiter certaines
-          données techniques nécessaires à la fourniture de leurs services conformément à leurs propres engagements de protection des données.
-        </p>
-        <p>
-          Vercel : <a href="https://vercel.com/legal/privacy-notice" target="_blank" rel="noopener noreferrer">politique de confidentialité</a><br />
-          Resend : <a href="https://resend.com/legal" target="_blank" rel="noopener noreferrer">informations légales et confidentialité</a>
+          <strong>Vercel</strong> assure l’hébergement du site. <strong>IONOS</strong> fournit la messagerie professionnelle de REMUS SYSTEMS.
+          Le formulaire du site utilise actuellement <strong>Resend</strong> comme service technique d’acheminement afin de transmettre
+          les demandes à la messagerie de REMUS SYSTEMS. <strong>Google Analytics</strong> intervient uniquement après consentement pour la mesure d’audience.
         </p>
 
         <h2>TRANSFERTS HORS DE L’ESPACE ÉCONOMIQUE EUROPÉEN</h2>
         <p>
-          Certains prestataires techniques sont établis aux États-Unis. Lorsque des données sont transférées hors de l’Espace économique européen,
-          ces transferts doivent être encadrés par les mécanismes de protection prévus par la réglementation applicable et par les engagements contractuels des prestataires concernés.
+          Certains prestataires techniques peuvent traiter des données depuis des pays situés hors de l’Espace économique européen.
+          Lorsque cela est nécessaire, ces transferts doivent reposer sur les mécanismes et garanties prévus par la réglementation applicable.
         </p>
 
-        <h2>DURÉE DE CONSERVATION</h2>
+        <h2>DURÉES DE CONSERVATION</h2>
         <p>
-          Les demandes de contact sont conservées pendant le temps nécessaire à leur traitement et à leur suivi. Lorsque les échanges relèvent
-          d’une prospection ou d’une relation précontractuelle sans suite, les données ne sont pas destinées à être conservées au-delà de la durée nécessaire,
-          et au maximum trois ans à compter du dernier contact pertinent, sauf obligation légale imposant une durée différente.
+          Les demandes de contact sont conservées pendant le temps nécessaire à leur traitement et à leur suivi. Pour les échanges de prospection
+          ou précontractuels n’aboutissant pas à une relation commerciale, les données sont conservées au maximum trois ans à compter du dernier
+          contact pertinent, sauf obligation légale ou nécessité particulière justifiant une durée différente.
         </p>
+        <p>Les préférences relatives aux cookies sont conservées localement dans le navigateur jusqu’à leur modification ou suppression.</p>
 
         <h2>VOS DROITS</h2>
         <p>
-          Conformément à la réglementation applicable, vous pouvez, selon votre situation, demander l’accès à vos données,
-          leur rectification, leur effacement, la limitation du traitement, vous opposer à certains traitements ou exercer votre droit à la portabilité.
+          Selon les conditions prévues par la réglementation, vous disposez notamment de droits d’accès, de rectification, d’effacement,
+          de limitation, d’opposition et, lorsque applicable, de portabilité de vos données. Vous pouvez également retirer à tout moment
+          un consentement donné pour l’avenir.
         </p>
         <p>
-          Pour exercer vos droits : <a href="mailto:contact@remussystems.fr">contact@remussystems.fr</a>.
-          Vous disposez également du droit d’introduire une réclamation auprès de la CNIL.
+          Pour exercer vos droits : <a href="mailto:contact@remus-systems.com">contact@remus-systems.com</a>. Vous pouvez également introduire
+          une réclamation auprès de la CNIL si vous estimez que vos droits ne sont pas respectés.
         </p>
 
-        <h2>MESURE D’AUDIENCE, COOKIES ET TRACEURS</h2>
+        <h2>COOKIES ET MESURE D’AUDIENCE</h2>
         <p>
-          REMUS SYSTEMS utilise Google Analytics 4 afin de mesurer la fréquentation du site, uniquement lorsque le visiteur
-          a donné son consentement. La balise Google Analytics n’est pas chargée avant cet accord. Les finalités publicitaires
-          de Google ne sont pas activées par REMUS SYSTEMS dans cette intégration.
-        </p>
-        <p>
-          Le consentement peut être refusé ou retiré à tout moment depuis la page <a href="/cookies">Gestion des cookies</a>
-          ou grâce au lien de paramétrage présent dans le pied de page.
+          Google Analytics 4 est chargé uniquement après votre accord. Les finalités publicitaires ne sont pas activées dans l’intégration actuelle.
+          Vous pouvez refuser ou retirer votre consentement à tout moment depuis la page <a href="/cookies">Gestion des cookies</a>.
         </p>
 
-        <h2>DONNÉES DE MESURE D’AUDIENCE</h2>
+        <h2>SÉCURITÉ</h2>
         <p>
-          Après consentement, Google Analytics peut traiter des informations techniques et de navigation telles que les pages consultées,
-          les événements de navigation, le type d’appareil, des informations de navigateur et la provenance de la visite afin de produire
-          des statistiques d’utilisation du site. Google agit en qualité de prestataire pour ce service et peut également être soumis à ses propres obligations.
+          REMUS SYSTEMS met en œuvre des mesures organisationnelles et techniques raisonnables destinées à protéger les données traitées via le site.
+          Aucun système connecté à Internet ne pouvant offrir une sécurité absolue, ces mesures sont adaptées à la nature des traitements et aux risques identifiés.
         </p>
-        <p>
-          Google : <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">politique de confidentialité</a>.
-        </p>
+
+        <h2>MISE À JOUR</h2>
+        <p>Cette politique peut évoluer afin de refléter les changements du site, des outils utilisés ou des obligations applicables.</p>
       </section>
     </main>
   );
