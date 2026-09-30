@@ -9380,7 +9380,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 /* =========================================================
    REMUS V3 — LOGO TRANSPARENT 2026
-   Ajustement final : légèrement plus grand, plus haut et décalé à droite.
+   Ajustement final : logo remonté, taille et décalage horizontal conservés.
    ========================================================= */
 .remus-header-logo {
   width: 130px !important;
@@ -9399,16 +9399,16 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   object-fit: contain !important;
   filter: none !important;
   opacity: 1 !important;
-  transform: translate(10px, 10px) !important;
+  transform: translate(10px, 0px) !important;
   mix-blend-mode: normal !important;
 }
 @media (max-width: 1100px) {
   .remus-header-logo { width: 104px !important; height: 96px !important; flex-basis: 104px !important; }
-  .remus-header-logo-img { width: 104px !important; max-width: 104px !important; transform: translate(8px, 8px) !important; }
+  .remus-header-logo-img { width: 104px !important; max-width: 104px !important; transform: translate(8px, 0px) !important; }
 }
 @media (max-width: 900px) {
   .remus-header-logo { width: 92px !important; height: 86px !important; flex-basis: 92px !important; }
-  .remus-header-logo-img { width: 92px !important; max-width: 92px !important; transform: translate(6px, 6px) !important; }
+  .remus-header-logo-img { width: 92px !important; max-width: 92px !important; transform: translate(6px, 0px) !important; }
 }
 
 /* =========================================================
