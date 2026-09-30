@@ -39,22 +39,19 @@ export const metadata: Metadata = {
 const steps = [
   {
     title: "COMPRENDRE",
-    text: "Nous analysons votre environnement dans son ensemble afin d’identifier les acteurs, les processus, les flux, les contraintes et les dépendances qui structurent réellement votre système.L’objectif est de comprendre non seulement chaque élément, mais surtout la manière dont ils interagissent entre eux.",
+    text: "Nous analysons votre environnement dans son ensemble afin d’identifier les acteurs, les processus, les flux, les contraintes et les dépendances qui structurent réellement votre système. L’objectif est de comprendre non seulement chaque élément, mais surtout la manière dont ils interagissent entre eux.",
   },
   {
     title: "DÉTECTER",
-    text: "Nous recherchons les incohérences, fragilités, tensions, dépendances critiques et signaux faibles susceptibles d’affecter le fonctionnement du système.
-L’analyse permet de faire apparaître des problèmes qui peuvent rester invisibles lorsqu’ils sont observés séparément.",
+    text: "Nous recherchons les incohérences, fragilités, tensions, dépendances critiques et signaux faibles susceptibles d’affecter le fonctionnement du système. L’analyse permet de faire apparaître des problèmes qui peuvent rester invisibles lorsqu’ils sont observés séparément.",
   },
   {
     title: "PRIORISER",
-    text: "Nous évaluons les points identifiés selon leur impact, leur niveau de criticité, leurs interactions et leur capacité à provoquer des effets en cascade.
-L’objectif est de distinguer ce qui est simplement perfectible de ce qui nécessite une attention ou une action prioritaire.",
+    text: "Nous évaluons les points identifiés selon leur impact, leur niveau de criticité, leurs interactions et leur capacité à provoquer des effets en cascade. L’objectif est de distinguer ce qui est simplement perfectible de ce qui nécessite une attention ou une action prioritaire.",
   },
   {
     title: "RECOMMANDER",
-    text: "Nous transformons l’analyse en pistes d’action concrètes, hiérarchisées et adaptées à votre environnement opérationnel.
-Les recommandations visent à réduire les fragilités, améliorer la maîtrise du système et sécuriser les décisions à venir.",
+    text: "Nous transformons l’analyse en pistes d’action concrètes, hiérarchisées et adaptées à votre environnement opérationnel. Les recommandations visent à réduire les fragilités, améliorer la maîtrise du système et sécuriser les décisions à venir.",
   },
 ];
 
