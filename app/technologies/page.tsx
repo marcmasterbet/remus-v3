@@ -37,22 +37,18 @@ export const metadata: Metadata = {
 
 const capabilities = [
   {
-    icon: "lock",
     title: "INTÉGRATION INTELLIGENTE",
     text: "Fusion de l’expertise humaine et des capacités de l’IA dans des environnements critiques."
   },
   {
-    icon: "layers",
     title: "ANALYSE AVANCÉE",
     text: "Traitement de données complexes pour une compréhension fine et contextualisée."
   },
   {
-    icon: "dot",
     title: "DÉCISION AUGMENTÉE",
     text: "Aide à la décision en temps réel pour des actions pertinentes et sécurisées."
   },
   {
-    icon: "hex",
     title: "SYSTÈMES ADAPTATIFS",
     text: "Des solutions évolutives qui apprennent, s’ajustent et créent de la valeur durable."
   }
@@ -118,12 +114,6 @@ export default function TechnologiesPage() {
             className="limes-capability"
             key={item.title}
           >
-            <div
-              className={`limes-capability-icon limes-capability-icon--${item.icon}`}
-            >
-              <span />
-            </div>
-
             <div>
               <h2>{item.title}</h2>
               <p>{item.text}</p>

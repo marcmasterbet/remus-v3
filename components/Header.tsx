@@ -25,7 +25,7 @@ export default function Header() {
   const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/references", "/a-propos", "/contact"];
   const scrollNavEnabled = scrollNavPages.some((page) => page === "/" ? pathname === "/" : pathname.startsWith(page));
   const articlePage = pathname.startsWith("/references/");
-  const topOnlyHeaderPage = articlePage || pathname === "/audit-remus";
+  const topOnlyHeaderPage = articlePage || pathname === "/audit-remus" || pathname === "/technologies";
   const legalPage = ["/mentions-legales", "/confidentialite", "/cookies"].includes(pathname);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function Header() {
       const currentScrollY = window.scrollY;
 
       if (topOnlyHeaderPage) {
-        // Articles et Audit REMUS : le header complet n’est visible qu’au sommet.
+        // Articles, Audit REMUS et Technologies : le header complet n’est visible qu’au sommet.
         // Une remontée au milieu de la page ne le fait pas réapparaître.
         setNavHidden(currentScrollY > 12);
       } else {

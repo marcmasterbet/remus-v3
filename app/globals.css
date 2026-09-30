@@ -9706,3 +9706,39 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .site-header {
   transform: translateY(-12px) !important;
 }
+
+
+/* =========================================================
+   REMUS — TECHNOLOGIES : alignement validé Accueil / Audit
+   Correction ciblée : même marge, même hauteur de départ,
+   cuivre REMUS et cartes sans pictogrammes.
+   ========================================================= */
+.limes-page .limes-hero-exact {
+  padding-top: 0 !important;
+}
+.limes-page .limes-hero-exact .limes-copy-exact {
+  width: min(46%, 650px) !important;
+  padding: 160px 0 90px clamp(28px, 2.8vw, 54px) !important;
+}
+.limes-page .limes-hero-exact .limes-eyebrow {
+  color: #CA7B3D !important;
+}
+.limes-page .limes-hero-exact .limes-rule,
+.limes-page .limes-small-rule {
+  background: #CA7B3D !important;
+}
+.limes-page .limes-capability {
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 0 !important;
+  padding-left: 24px !important;
+}
+.limes-page .limes-capability-icon {
+  display: none !important;
+}
+
+@media (max-width: 900px) {
+  .limes-page .limes-hero-exact .limes-copy-exact {
+    width: 100% !important;
+    padding: 120px 20px 70px !important;
+  }
+}
