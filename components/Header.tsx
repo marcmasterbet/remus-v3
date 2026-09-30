@@ -20,10 +20,12 @@ export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [navHidden, setNavHidden] = useState(false);
+  const [legalLogoHidden, setLegalLogoHidden] = useState(false);
 
   const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/references", "/a-propos", "/contact"];
   const scrollNavEnabled = scrollNavPages.some((page) => page === "/" ? pathname === "/" : pathname.startsWith(page));
   const articlePage = pathname.startsWith("/references/");
+  const legalPage = ["/mentions-legales", "/confidentialite", "/cookies"].includes(pathname);
 
   useEffect(() => {
     setMobileOpen(false);
@@ -35,6 +37,18 @@ export default function Header() {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  useEffect(() => {
+    if (!legalPage) {
+      setLegalLogoHidden(false);
+      return;
+    }
+
+    const handleLegalScroll = () => setLegalLogoHidden(window.scrollY > 12);
+    handleLegalScroll();
+    window.addEventListener("scroll", handleLegalScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleLegalScroll);
+  }, [legalPage]);
 
   useEffect(() => {
     if (!scrollNavEnabled) {
@@ -70,10 +84,10 @@ export default function Header() {
   }, [scrollNavEnabled, pathname, articlePage]);
 
   return (
-    <header className={`site-header ${articlePage && navHidden ? "is-article-scroll-hidden" : ""}`}>
+    <header className={`site-header ${(articlePage && navHidden) || (legalPage && legalLogoHidden) ? "is-article-scroll-hidden" : ""}`}>
       <Link
         href="/"
-        className={`remus-header-logo ${scrollNavEnabled && navHidden ? "is-scroll-hidden" : ""}`}
+        className={`remus-header-logo ${(scrollNavEnabled && navHidden) || legalLogoHidden ? "is-scroll-hidden" : ""}`}
         aria-label="REMUS Systems — Accueil"
       >
         <Image
