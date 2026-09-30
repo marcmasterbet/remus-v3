@@ -9383,19 +9383,19 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
    Ajustement final : logo remonté, taille et décalage horizontal conservés.
    ========================================================= */
 .remus-header-logo {
-  width: 130px !important;
+  width: 145px !important;
   height: 112px !important;
   overflow: visible !important;
   display: flex !important;
   align-items: center !important;
   justify-content: flex-start !important;
   background: transparent !important;
-  flex: 0 0 130px !important;
+  flex: 0 0 145px !important;
 }
 .remus-header-logo-img {
-  width: 130px !important;
+  width: 145px !important;
   height: auto !important;
-  max-width: 130px !important;
+  max-width: 145px !important;
   object-fit: contain !important;
   filter: none !important;
   opacity: 1 !important;
@@ -9403,12 +9403,12 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   mix-blend-mode: normal !important;
 }
 @media (max-width: 1100px) {
-  .remus-header-logo { width: 104px !important; height: 96px !important; flex-basis: 104px !important; }
-  .remus-header-logo-img { width: 104px !important; max-width: 104px !important; transform: translate(8px, 0px) !important; }
+  .remus-header-logo { width: 116px !important; height: 96px !important; flex-basis: 116px !important; }
+  .remus-header-logo-img { width: 116px !important; max-width: 116px !important; transform: translate(8px, 0px) !important; }
 }
 @media (max-width: 900px) {
-  .remus-header-logo { width: 92px !important; height: 86px !important; flex-basis: 92px !important; }
-  .remus-header-logo-img { width: 92px !important; max-width: 92px !important; transform: translate(6px, 0px) !important; }
+  .remus-header-logo { width: 102px !important; height: 86px !important; flex-basis: 102px !important; }
+  .remus-header-logo-img { width: 102px !important; max-width: 102px !important; transform: translate(6px, 0px) !important; }
 }
 
 /* =========================================================
