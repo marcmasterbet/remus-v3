@@ -63,7 +63,7 @@ export default function Header() {
       const currentScrollY = window.scrollY;
 
       if (topOnlyHeaderPage) {
-        // Articles, Audit REMUS et Technologies : le header complet n’est visible qu’au sommet.
+        // Articles, Audit REMUS, Technologies, Solutions et R&D : le header complet n’est visible qu’au sommet.
         // Une remontée au milieu de la page ne le fait pas réapparaître.
         setNavHidden(currentScrollY > 12);
       } else {
