@@ -9783,3 +9783,31 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     padding-right: 20px !important;
   }
 }
+
+/* =========================================================
+   REMUS — SOLUTIONS : marge gauche alignée sur Accueil / Audit / Technologies
+   La classe remus-inner-page ajoutait déjà 28px de retrait avant le padding
+   de la page. On neutralise ce double retrait uniquement pour Solutions.
+   ========================================================= */
+.solutions-page.remus-inner-page {
+  width: 100% !important;
+  max-width: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.solutions-page .solutions-hero,
+.solutions-page .solutions-closing,
+.solutions-page .solutions-grid {
+  padding-left: clamp(28px, 2.8vw, 54px) !important;
+  padding-right: clamp(28px, 2.8vw, 54px) !important;
+}
+
+@media (max-width: 900px) {
+  .solutions-page .solutions-hero,
+  .solutions-page .solutions-closing,
+  .solutions-page .solutions-grid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
