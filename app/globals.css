@@ -9890,7 +9890,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .rd-rebuilt-intro p,
 .rd-rebuilt-axis p,
 .rd-rebuilt-closing p {
-  color: #fff;
+  color: #FFFFFF !important;
 }
 
 .rd-rebuilt-intro p {
@@ -9967,19 +9967,6 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   max-width: 920px;
   font-size: 15px;
   line-height: 1.8;
-}
-
-/* R&D — tous les textes neutres en blanc pur. Les accents cuivre restent inchangés. */
-.rd-rebuilt-page .rd-rebuilt-content p,
-.rd-rebuilt-page .rd-rebuilt-content h1,
-.rd-rebuilt-page .rd-rebuilt-content h2,
-.rd-rebuilt-page .rd-rebuilt-content h3 {
-  color: #FFFFFF;
-}
-
-.rd-rebuilt-page .rd-rebuilt-kicker,
-.rd-rebuilt-page .rd-rebuilt-content h1 strong {
-  color: #CA7B3D;
 }
 
 @media (max-width: 900px) {
