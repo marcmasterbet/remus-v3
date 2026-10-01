@@ -10038,8 +10038,8 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .rd-final-row {
-  background: rgba(0, 0, 0, 0.08) !important;
-  border-color: rgba(255, 255, 255, 0.24) !important;
+  background: rgba(255, 255, 255, 0.10) !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
   backdrop-filter: blur(2px) !important;
   -webkit-backdrop-filter: blur(2px) !important;
 }
@@ -10047,7 +10047,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .rd-final-row:hover {
   transform: translateX(8px) translateY(-2px);
   border-color: var(--rd-copper) !important;
-  background: rgba(0, 0, 0, 0.14) !important;
+  background: rgba(255, 255, 255, 0.16) !important;
 }
 
 @media (max-width: 900px) {
