@@ -38,7 +38,9 @@ const axes = [
 export default function RDPage() {
   return (
     <main className="remus-inner-page rd-page rd-final">
-      <section className="rd-final-hero">
+      <section className="rd-final-hero" aria-label="Recherche et développement REMUS Systems" />
+
+      <section className="rd-final-content">
         <div className="rd-final-copy">
           <div className="panel-kicker">RECHERCHE &amp; DÉVELOPPEMENT</div>
           <span className="micro-line" />
