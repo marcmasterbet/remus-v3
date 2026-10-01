@@ -9929,8 +9929,9 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .rd-rebuilt-axis:hover {
   transform: translateY(-4px);
-  background: rgba(0,0,0,.13);
-  border-color: rgba(202,123,61,.78);
+  background: rgba(0,0,0,.62);
+  border-color: rgba(255,255,255,.82);
+  box-shadow: none;
 }
 
 .rd-rebuilt-axis h3 {
@@ -9943,6 +9944,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 .rd-rebuilt-axis p {
   margin: 0;
+  color: #fff !important;
   font-size: 14px;
   line-height: 1.65;
 }
