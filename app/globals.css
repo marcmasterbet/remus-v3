@@ -6555,7 +6555,7 @@ form.contact-form {
     min-height: auto !important;
     display: flex !important;
     flex-direction: column !important;
-    padding-top: 46px !important;
+    padding-top: 38px !important;
     padding-bottom: 26px !important;
   }
 
@@ -10012,17 +10012,17 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 
 /* REMUS R&D — image dégagée, contenu sous le visuel, cartes translucides */
 .rd-final-hero {
-  min-height: 92vh !important;
+  min-height: 82vh !important;
   padding: 0 !important;
   display: block !important;
   background: transparent !important;
 }
 
 .rd-final-content {
-  padding: 72px var(--rd-left) 34px !important;
-  background: rgba(0, 0, 0, 0.10) !important;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  padding: 54px var(--rd-left) 34px !important;
+  background: transparent !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .rd-final-content .rd-final-copy {
@@ -10031,28 +10031,28 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .rd-final-axes {
-  padding-top: 34px !important;
-  background: rgba(0, 0, 0, 0.10) !important;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  padding-top: 28px !important;
+  background: transparent !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .rd-final-row {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-color: rgba(255, 255, 255, 0.30) !important;
-  backdrop-filter: blur(3px) !important;
-  -webkit-backdrop-filter: blur(3px) !important;
+  background: rgba(0, 0, 0, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.24) !important;
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
 }
 
 .rd-final-row:hover {
   transform: translateX(8px) translateY(-2px);
   border-color: var(--rd-copper) !important;
-  background: rgba(255, 255, 255, 0.12) !important;
+  background: rgba(0, 0, 0, 0.14) !important;
 }
 
 @media (max-width: 900px) {
   .rd-final-hero {
-    min-height: 72svh !important;
+    min-height: 66svh !important;
   }
 
   .rd-final-content {
