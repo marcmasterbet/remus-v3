@@ -41,9 +41,8 @@ export default function ReferencesPage() {
         </header>
 
         <div className="references-v3-grid">
-          {articles.map((article, index) => (
+          {articles.map((article) => (
             <article className="references-v3-card" key={article.slug}>
-              <span className="references-v3-number">0{index + 1}</span>
               <h3>{article.title}</h3>
               <Link href={`/references/${article.slug}`}>
                 Lire l’article <span aria-hidden="true">→</span>
