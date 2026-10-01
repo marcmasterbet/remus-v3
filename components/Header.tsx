@@ -65,7 +65,7 @@ export default function Header() {
       if (topOnlyHeaderPage) {
         // Articles, Audit REMUS et Technologies : le header complet n’est visible qu’au sommet.
         // Une remontée au milieu de la page ne le fait pas réapparaître.
-        setNavHidden(currentScrollY > 1);
+        setNavHidden(currentScrollY > 12);
       } else {
         if (currentScrollY <= 12) {
           setNavHidden(false);

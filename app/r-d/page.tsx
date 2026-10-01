@@ -2,18 +2,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Recherche & Développement",
-  description: "La R&D de REMUS Systems explore les interactions entre l’humain, l’IA et les systèmes complexes pour concevoir des architectures plus intelligentes et résilientes.",
+  description: "La R&D de REMUS Systems explore les interactions entre l’humain, l’IA et les systèmes complexes.",
   alternates: { canonical: "/r-d" },
-  openGraph: {
-    title: "Recherche & Développement | REMUS Systems",
-    description: "La R&D de REMUS Systems explore les interactions entre l’humain, l’IA et les systèmes complexes.",
-    url: "https://www.remussystems.fr/r-d",
-    type: "website",
-    locale: "fr_FR",
-    siteName: "REMUS Systems",
-    images: [{ url: "/visuals/rd-v3-background.jpeg", alt: "Recherche & Développement — REMUS Systems" }],
-  },
-  robots: { index: true, follow: true },
 };
 
 const axes = [
@@ -37,46 +27,40 @@ const axes = [
 
 export default function RDPage() {
   return (
-    <main className="remus-inner-page rd-page rd-final">
-      <section className="rd-final-hero" aria-label="Recherche et développement REMUS Systems" />
+    <main className="rd-rebuilt-page">
+      <section className="rd-rebuilt-visual" aria-label="Recherche et développement REMUS Systems" />
 
-      <section className="rd-final-content">
-        <div className="rd-final-copy">
-          <div className="panel-kicker">RECHERCHE &amp; DÉVELOPPEMENT</div>
-          <span className="micro-line" />
+      <section className="rd-rebuilt-content">
+        <div className="rd-rebuilt-kicker">RECHERCHE &amp; DÉVELOPPEMENT</div>
+        <span className="rd-rebuilt-rule" />
 
-          <h1>
-            Explorer aujourd’hui
-            <br />
-            <span>pour comprendre demain.</span>
-          </h1>
+        <h1>
+          Explorer aujourd’hui<br />
+          <strong>pour comprendre demain.</strong>
+        </h1>
 
-          <div className="rd-final-intro">
-            <p>
-              La R&amp;D de REMUS Systems explore les interactions entre l’humain, l’IA et les systèmes complexes pour mieux comprendre ce qui relie, influence, fragilise ou transforme un environnement.
-            </p>
-            <p>
-              Notre objectif n’est pas seulement d’innover, mais de concevoir des architectures plus intelligentes, plus résilientes et plus adaptées aux enjeux réels, afin d’éclairer l’action et d’améliorer la qualité des décisions.
-            </p>
-          </div>
+        <div className="rd-rebuilt-intro">
+          <p>
+            La R&amp;D de REMUS Systems explore les interactions entre l’humain, l’IA et les systèmes complexes pour mieux comprendre ce qui relie, influence, fragilise ou transforme un environnement.
+          </p>
+          <p>
+            Notre objectif n’est pas seulement d’innover, mais de concevoir des architectures plus intelligentes, plus résilientes et plus adaptées aux enjeux réels, afin d’éclairer l’action et d’améliorer la qualité des décisions.
+          </p>
         </div>
-      </section>
 
-      <section className="rd-final-axes">
-        <div className="panel-kicker">NOS AXES DE RECHERCHE</div>
-        <span className="micro-line" />
+        <h2 className="rd-rebuilt-axes-title">NOS AXES DE RECHERCHE</h2>
 
-        <div className="rd-final-list">
+        <div className="rd-rebuilt-axes">
           {axes.map((axis) => (
-            <article className="rd-final-row" key={axis.title}>
-              <h2>{axis.title}</h2>
+            <article className="rd-rebuilt-axis" key={axis.title}>
+              <h3>{axis.title}</h3>
               <p>{axis.text}</p>
             </article>
           ))}
         </div>
 
-        <div className="rd-final-conclusion">
-          <strong>Chez REMUS, la recherche n’est pas séparée de l’action.</strong>
+        <div className="rd-rebuilt-closing">
+          <h2>Chez REMUS, la recherche n’est pas séparée de l’action.</h2>
           <p>
             Elle alimente directement nos méthodes, nos audits et nos architectures afin de transformer la compréhension en capacité concrète d’analyse, de conception et de décision.
           </p>
