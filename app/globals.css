@@ -9921,7 +9921,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   min-height: 104px;
   padding: 24px 34px;
   border: 1px solid rgba(255,255,255,.72);
-  background: rgba(0,0,0,.08);
+  background: rgba(0,0,0,.62);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: transform .24s ease, background .24s ease, border-color .24s ease;
