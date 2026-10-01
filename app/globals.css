@@ -102,7 +102,8 @@ button, input, textarea { font: inherit; }
   transition: .2s ease;
 }
 .button:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(105,62,28,.08); }
-.button-copper { background: linear-gradient(110deg, #a85620, #cb7b37); color: white; }
+.button-copper { background: #CA7B3D; color: #FFFFFF; }
+.button-copper:hover { background: #CA7B3D; color: #FFFFFF; }
 .button-outline { background: rgba(255,255,255,.35); color: var(--black); }
 
 .hero {
@@ -8795,14 +8796,29 @@ body:has(.home-clean-v3) .site-header {
 }
 .home-clean-v3-actions a {
   padding: 14px 18px !important;
-  border: 1px solid rgba(201,121,66,.65) !important;
-  background: rgba(0,0,0,.12) !important;
-  color: #fff !important;
+  border: 1px solid #CA7B3D !important;
+  background: #CA7B3D !important;
+  color: #FFFFFF !important;
   text-decoration: none !important;
   font-size: 11px !important;
   font-weight: 700 !important;
   letter-spacing: .08em !important;
-  backdrop-filter: blur(2px) !important;
+  backdrop-filter: none !important;
+  transition: transform .2s ease !important;
+}
+.home-clean-v3-actions a:nth-child(2) {
+  border-color: #FFFFFF !important;
+  background: #FFFFFF !important;
+  color: #2B211B !important;
+}
+.home-clean-v3-actions a:hover {
+  background: #CA7B3D !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+.home-clean-v3-actions a:nth-child(2):hover {
+  background: #FFFFFF !important;
+  color: #2B211B !important;
 }
 .home-clean-v3-grid {
   display: grid !important;
@@ -9288,10 +9304,12 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 .references-v3-list-head span {
-  color: #A94F16;
-  font-size: 11px;
+  display: block;
+  margin: 0 0 20px;
+  color: #FFFFFF;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: .18em;
+  letter-spacing: .13em;
 }
 
 .references-v3-list-head h2 {
