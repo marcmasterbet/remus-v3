@@ -10243,3 +10243,82 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
     opacity:1 !important;
   }
 }
+
+/* =========================================================
+   REMUS V3 — MOBILE IMAGE RESTORE
+   Correction structurelle : conserver les visuels sur téléphone,
+   puis afficher le contenu sous le visuel. Aucun impact desktop.
+   ========================================================= */
+@media (max-width: 700px) {
+  /* Ne jamais supprimer les images de fond des sections/pages mobile. */
+  .audit-remus-page > section,
+  .limes-page > section,
+  .solutions-page > section,
+  .rd-rebuilt-page > section,
+  .references-v3 > section,
+  .about-page > section,
+  .contact-page > section {
+    background-image: initial !important;
+  }
+
+  /* Pages dont le visuel est porté directement par le conteneur. */
+  .audit-remus-page {
+    background-color:#050505 !important;
+    background-image:url('/visuals/audit-remus-v2-bg.jpg') !important;
+    background-size:auto 58svh !important;
+    background-position:62% top !important;
+    background-repeat:no-repeat !important;
+    background-attachment:scroll !important;
+  }
+  .limes-page {
+    background-color:#050505 !important;
+    background-image:url('/visuals/limes-hero-v2.jpeg') !important;
+    background-size:auto 58svh !important;
+    background-position:62% top !important;
+    background-repeat:no-repeat !important;
+    background-attachment:scroll !important;
+  }
+
+  /* Pages dont le visuel est porté par ::before : le remettre devant le fond noir. */
+  .solutions-page::before,
+  .rd-rebuilt-page::before,
+  .references-v3::before,
+  .about-page::before,
+  .contact-page::before {
+    z-index:0 !important;
+    top:0 !important;
+    right:0 !important;
+    bottom:auto !important;
+    left:0 !important;
+    height:58svh !important;
+    position:absolute !important;
+    display:block !important;
+    opacity:1 !important;
+  }
+  .solutions-page > *,
+  .rd-rebuilt-page > *,
+  .references-v3 > *,
+  .about-page > *,
+  .contact-page > * {
+    position:relative !important;
+    z-index:1 !important;
+  }
+
+  /* R&D possède aussi un voile : il reste limité au visuel. */
+  .rd-rebuilt-page::after {
+    z-index:0 !important;
+    top:0 !important;
+    bottom:auto !important;
+    height:58svh !important;
+    position:absolute !important;
+  }
+
+  /* Accueil : garantir que l'image reste visible avant le contenu. */
+  .home-clean-v3-bg {
+    display:block !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    z-index:0 !important;
+  }
+  .home-clean-v3-content { z-index:1 !important; }
+}
