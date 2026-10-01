@@ -9969,6 +9969,19 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   line-height: 1.8;
 }
 
+/* R&D — tous les textes neutres en blanc pur. Les accents cuivre restent inchangés. */
+.rd-rebuilt-page .rd-rebuilt-content p,
+.rd-rebuilt-page .rd-rebuilt-content h1,
+.rd-rebuilt-page .rd-rebuilt-content h2,
+.rd-rebuilt-page .rd-rebuilt-content h3 {
+  color: #FFFFFF;
+}
+
+.rd-rebuilt-page .rd-rebuilt-kicker,
+.rd-rebuilt-page .rd-rebuilt-content h1 strong {
+  color: #CA7B3D;
+}
+
 @media (max-width: 900px) {
   .rd-rebuilt-visual { min-height: 54vh; }
   .rd-rebuilt-content { width: calc(100% - 40px); padding-bottom: 54px; }
