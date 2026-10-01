@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -98,6 +99,10 @@ export default function IAGouvernanceDecisionnellePage() {
             <strong>Alexandre Flamand</strong>
             <span>Architecte en systèmes complexes</span>
           </footer>
+          <nav className="remus-article-next" aria-label="Navigation entre les articles">
+            <Link href="/references/allier-technologie-impact-durable">ARTICLE SUIVANT <span aria-hidden="true">→</span></Link>
+          </nav>
+
         </div>
       </section>
     </main>

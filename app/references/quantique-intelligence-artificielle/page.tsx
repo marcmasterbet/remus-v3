@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -117,6 +118,10 @@ export default function QuantiqueIntelligenceArtificiellePage() {
           <p>Lorsqu’une technologie en rencontre une autre, un nouveau problème apparaît souvent entre les deux. C’est là que commence le travail d’architecture.</p>
           <div className="remus-article-author"><strong>Alexandre Flamand</strong><span>Architecte en systèmes complexes</span></div>
           <div className="remus-article-references"><strong>Références</strong><p>Alexeev, Y. et al. (2025). « Artificial intelligence for quantum computing ». <em>Nature Communications</em>.</p><p>Acampora, G. et al. (2025). « Quantum computing and artificial intelligence: status and perspectives ». Livre blanc de synthèse.</p></div>
+          <nav className="remus-article-next" aria-label="Navigation entre les articles">
+            <Link href="/">RETOUR À L’ACCUEIL <span aria-hidden="true">→</span></Link>
+          </nav>
+
         </div>
       </section>
     </main>

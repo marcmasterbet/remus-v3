@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
 
@@ -58,6 +59,10 @@ export default function AllierTechnologieImpactDurablePage() {
             <strong>Anticiper.</strong>
             <strong>Préserver.</strong>
           </div>
+          <nav className="remus-article-next" aria-label="Navigation entre les articles">
+            <Link href="/references/quantique-intelligence-artificielle">ARTICLE SUIVANT <span aria-hidden="true">→</span></Link>
+          </nav>
+
         </div>
       </section>
     </main>

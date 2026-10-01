@@ -19,14 +19,7 @@ const navItems = [
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [navHidden, setNavHidden] = useState(false);
-  const [legalLogoHidden, setLegalLogoHidden] = useState(false);
-
-  const scrollNavPages = ["/", "/audit-remus", "/technologies", "/solutions", "/r-d", "/references", "/a-propos", "/contact"];
-  const scrollNavEnabled = scrollNavPages.some((page) => page === "/" ? pathname === "/" : pathname.startsWith(page));
-  const articlePage = pathname.startsWith("/references/");
-  const topOnlyHeaderPage = articlePage || pathname === "/audit-remus" || pathname === "/technologies" || pathname === "/solutions" || pathname === "/r-d" || pathname === "/contact";
-  const legalPage = ["/mentions-legales", "/confidentialite", "/cookies"].includes(pathname);
+  const [headerHidden, setHeaderHidden] = useState(false);
 
   useEffect(() => {
     setMobileOpen(false);
@@ -40,55 +33,18 @@ export default function Header() {
   }, [mobileOpen]);
 
   useEffect(() => {
-    if (!legalPage) {
-      setLegalLogoHidden(false);
-      return;
-    }
-
-    const handleLegalScroll = () => setLegalLogoHidden(window.scrollY > 12);
-    handleLegalScroll();
-    window.addEventListener("scroll", handleLegalScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleLegalScroll);
-  }, [legalPage]);
-
-  useEffect(() => {
-    if (!scrollNavEnabled) {
-      setNavHidden(false);
-      return;
-    }
-
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (topOnlyHeaderPage) {
-        // Articles, Audit REMUS et Technologies : le header complet n’est visible qu’au sommet.
-        // Une remontée au milieu de la page ne le fait pas réapparaître.
-        setNavHidden(currentScrollY > 12);
-      } else {
-        if (currentScrollY <= 12) {
-          setNavHidden(false);
-        } else if (currentScrollY > lastScrollY) {
-          setNavHidden(true);
-        } else if (currentScrollY < lastScrollY) {
-          setNavHidden(false);
-        }
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
+    // Règle unique : sur chaque page, le header complet n'est visible qu'au sommet réel.
+    const handleScroll = () => setHeaderHidden(window.scrollY > 0);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollNavEnabled, pathname, topOnlyHeaderPage]);
+  }, [pathname]);
 
   return (
-    <header className={`site-header ${(topOnlyHeaderPage && navHidden) || (legalPage && legalLogoHidden) ? "is-article-scroll-hidden" : ""}`}>
+    <header className={`site-header ${headerHidden ? "is-article-scroll-hidden" : ""}`}>
       <Link
         href="/"
-        className={`remus-header-logo ${(scrollNavEnabled && navHidden) || legalLogoHidden ? "is-scroll-hidden" : ""}`}
+        className={`remus-header-logo ${headerHidden ? "is-scroll-hidden" : ""}`}
         aria-label="REMUS Systems — Accueil"
       >
         <Image
@@ -101,7 +57,7 @@ export default function Header() {
         />
       </Link>
 
-      <nav className={`main-nav ${scrollNavEnabled && navHidden ? "is-scroll-hidden" : ""}`} aria-label="Navigation principale">
+      <nav className={`main-nav ${headerHidden ? "is-scroll-hidden" : ""}`} aria-label="Navigation principale">
         {navItems.map((item) => {
           const active =
             item.href === "/"
