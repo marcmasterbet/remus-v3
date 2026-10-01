@@ -9167,7 +9167,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 /* REMUS V3 — CONTACT IMMERSIF */
 .contact-page{position:relative!important;isolation:isolate!important;min-height:100vh!important;background:transparent!important;color:#fff!important}
 .contact-page::before{content:"";position:fixed;inset:0;z-index:-2;background-image:url("/visuals/contact-v3-background.webp");background-size:cover;background-repeat:no-repeat;background-position:center calc(50% + 180px)}
-.contact-page .contact-hero{min-height:100vh!important;padding:150px clamp(34px,4.5vw,88px) 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
+.contact-page .contact-hero{min-height:100vh!important;padding:150px clamp(28px,2.8vw,54px) 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
 .contact-page .contact-hero-top{display:block!important;min-height:68vh!important}
 .contact-page .contact-intro{width:min(620px,42vw)!important;margin:0!important;position:relative!important;z-index:2!important}
 .contact-page .contact-eyebrow{color:#A94F16!important}
@@ -9181,8 +9181,8 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 .contact-page .contact-form-heading h2{color:#fff!important;margin-top:14px!important;font-size:clamp(34px,3.1vw,54px)!important}
 .contact-page .contact-form{background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important;gap:20px!important}
 .contact-page .contact-form label{color:#fff!important;gap:10px!important}
-.contact-page .contact-form input:not([type="checkbox"]),.contact-page .contact-form textarea{color:#fff!important;background:rgba(0,0,0,.24)!important;border:1px solid rgba(255,255,255,.42)!important;border-radius:2px!important;box-shadow:none!important;padding:15px 16px!important;transition:border-color .2s ease,background-color .2s ease!important}
-.contact-page .contact-form input:not([type="checkbox"]):focus,.contact-page .contact-form textarea:focus{background:rgba(0,0,0,.34)!important;border-color:#CA7B3D!important;outline:none!important}
+.contact-page .contact-form input:not([type="checkbox"]),.contact-page .contact-form textarea{color:#fff!important;background:rgba(0,0,0,.30)!important;border:1px solid rgba(255,255,255,.72)!important;border-radius:2px!important;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06)!important;padding:15px 16px!important;transition:border-color .2s ease,background-color .2s ease!important}
+.contact-page .contact-form input:not([type="checkbox"]):focus,.contact-page .contact-form textarea:focus{background:rgba(0,0,0,.38)!important;border-color:#CA7B3D!important;outline:none!important}
 .contact-page .contact-form textarea{min-height:170px!important}
 .contact-page .contact-form input::placeholder,.contact-page .contact-form textarea::placeholder{color:rgba(255,255,255,.62)!important}
 .contact-page .contact-privacy-check,.contact-page .contact-privacy-check span,.contact-page .contact-privacy-check a,.contact-page .form-status{color:#fff!important}
