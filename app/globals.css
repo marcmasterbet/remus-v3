@@ -10041,3 +10041,133 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   .remus-article-next { justify-content: stretch; }
   .remus-article-next a { width: 100%; min-width: 0; }
 }
+
+/* =========================================================
+   REMUS V3 — MOBILE FINAL 2026
+   Refonte responsive dédiée <= 700px. Le desktop reste intact.
+   Une seule couche visuelle par page, aucune image de section superposée.
+   ========================================================= */
+@media (max-width: 700px) {
+  html { overflow-x: hidden !important; }
+  body { overflow-x: hidden !important; background:#050505 !important; }
+  main, section, article, aside, form { max-width:100% !important; box-sizing:border-box !important; }
+  img { max-width:100%; height:auto; }
+
+  /* Header mobile sombre et compact */
+  .site-header {
+    position: absolute !important;
+    top:0 !important; left:0 !important; right:0 !important;
+    height:88px !important; min-height:88px !important;
+    padding:0 18px !important;
+    background:linear-gradient(to bottom,rgba(0,0,0,.82),rgba(0,0,0,0)) !important;
+    border:0 !important;
+    transform:none !important;
+  }
+  .remus-header-logo { width:94px !important; height:78px !important; flex-basis:94px !important; }
+  .remus-header-logo-img { width:94px !important; max-width:94px !important; transform:none !important; }
+  .mobile-menu-toggle { border-color:rgba(255,255,255,.55) !important; background:rgba(0,0,0,.42) !important; }
+  .mobile-menu-toggle span { background:#fff !important; }
+  .mobile-menu { background:#070707 !important; }
+  .mobile-menu-nav a { color:#fff !important; border-color:rgba(255,255,255,.14) !important; font-size:clamp(17px,5vw,22px) !important; }
+  .mobile-menu-signature { color:#fff !important; }
+
+  /* Typographie et boutons */
+  .button, .button-copper, .audit-main-button, .limes-button,
+  .home-clean-v3-actions a, .contact-page .contact-submit,
+  .remus-article-next a {
+    min-height:52px !important;
+    max-width:100% !important;
+    white-space:normal !important;
+    text-align:center !important;
+  }
+  p { overflow-wrap:break-word; }
+
+  /* ACCUEIL : une seule image, contenu linéaire */
+  .home-clean-v3 { min-height:100svh !important; overflow:hidden !important; background:#050505 !important; }
+  .home-clean-v3-bg { position:fixed !important; inset:0 !important; width:100% !important; height:100svh !important; object-fit:cover !important; object-position:68% center !important; z-index:0 !important; }
+  .home-clean-v3::after { content:""; position:fixed; inset:0; z-index:0; pointer-events:none; background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.28)),linear-gradient(0deg,rgba(0,0,0,.50),transparent 55%); }
+  .home-clean-v3-content { position:relative !important; z-index:1 !important; padding:112px 18px 42px !important; }
+  .home-clean-v3-intro { min-height:auto !important; padding:20px 0 58px !important; }
+  .home-clean-v3-intro h1 { font-size:clamp(38px,11.2vw,54px) !important; line-height:1.02 !important; }
+  .home-clean-v3-lead { font-size:15px !important; line-height:1.7 !important; max-width:100% !important; }
+  .home-clean-v3-actions { display:grid !important; grid-template-columns:1fr !important; gap:12px !important; width:100% !important; }
+  .home-clean-v3-actions a { width:100% !important; }
+  .home-clean-v3-grid { grid-template-columns:1fr !important; gap:14px !important; }
+  .home-clean-v3-grid article,.home-clean-v3-grid aside { min-height:0 !important; padding:26px 22px !important; background:rgba(0,0,0,.60) !important; backdrop-filter:blur(3px); }
+
+  /* Pages immersives : supprimer toutes les anciennes images de blocs. */
+  .audit-remus-page, .limes-page, .solutions-page, .rd-rebuilt-page,
+  .references-v3, .about-page, .contact-page { overflow:hidden !important; background:#050505 !important; }
+  .audit-remus-page > section, .limes-page > section, .solutions-page > section,
+  .rd-rebuilt-page > section, .references-v3 > section, .about-page > section,
+  .contact-page > section { background-image:none !important; }
+
+  /* AUDIT */
+  .audit-remus-page { background-position:62% top !important; background-size:auto 100svh !important; background-attachment:fixed !important; }
+  .audit-premium-hero { min-height:auto !important; padding:112px 18px 54px !important; display:block !important; }
+  .audit-premium-copy { width:100% !important; max-width:100% !important; }
+  .audit-premium-copy h1 { font-size:clamp(38px,11vw,56px) !important; line-height:1.04 !important; }
+  .audit-premium-visual,.audit-cube-image,.audit-visual-light { display:none !important; }
+  .audit-approach { padding:38px 18px 60px !important; }
+  .audit-steps { grid-template-columns:1fr !important; gap:14px !important; }
+  .audit-step { min-height:0 !important; background:rgba(0,0,0,.62) !important; }
+
+  /* TECHNOLOGIES */
+  .limes-page { background-position:62% top !important; }
+  .limes-page .limes-hero-exact .limes-copy-exact { width:100% !important; padding:112px 18px 58px !important; }
+  .limes-copy-exact h1 { font-size:clamp(38px,11vw,56px) !important; line-height:1.04 !important; }
+  .limes-actions { display:grid !important; grid-template-columns:1fr !important; gap:12px !important; }
+  .limes-button { width:100% !important; }
+  .limes-capabilities { padding:20px 18px 60px !important; }
+  .limes-capability,.limes-capability-statement { min-height:0 !important; padding:24px 20px !important; background:rgba(0,0,0,.60) !important; }
+
+  /* SOLUTIONS : un seul fond fixe et cartes lisibles */
+  .solutions-page::before { position:absolute !important; height:100svh !important; bottom:auto !important; background-position:58% center !important; filter:brightness(.68) !important; }
+  .solutions-page .solutions-hero { min-height:auto !important; padding:112px 18px 52px !important; }
+  .solutions-hero-copy { width:100% !important; max-width:100% !important; }
+  .solutions-hero-copy h1 { font-size:clamp(38px,11vw,56px) !important; line-height:1.04 !important; }
+  .solutions-grid { grid-template-columns:1fr !important; gap:14px !important; padding:18px 18px 54px !important; }
+  .solution-card { min-height:0 !important; padding:25px 20px !important; background:rgba(0,0,0,.64) !important; backdrop-filter:blur(3px) !important; }
+  .solutions-closing { padding:38px 18px 64px !important; }
+
+  /* R&D : l'image occupe le hero uniquement, puis fond sombre continu */
+  .rd-rebuilt-page::before { position:absolute !important; height:100svh !important; bottom:auto !important; background-position:64% top !important; filter:brightness(.88) !important; }
+  .rd-rebuilt-page::after { position:absolute !important; height:100svh !important; bottom:auto !important; background:linear-gradient(to bottom,rgba(0,0,0,.10),rgba(0,0,0,.70)) !important; }
+  .rd-rebuilt-visual { min-height:52svh !important; }
+  .rd-rebuilt-content { width:100% !important; margin:0 !important; padding:20px 18px 60px !important; background:#050505 !important; }
+  .rd-rebuilt-content h1 { font-size:clamp(38px,11vw,54px) !important; }
+  .rd-rebuilt-axis { grid-template-columns:1fr !important; min-height:0 !important; gap:10px !important; padding:22px 20px !important; background:rgba(255,255,255,.055) !important; }
+
+  /* RÉFÉRENCES */
+  .references-v3::before { position:absolute !important; height:100svh !important; bottom:auto !important; background-position:64% center !important; filter:brightness(.72) !important; }
+  .references-v3-hero { min-height:100svh !important; padding:112px 18px 58px !important; align-items:flex-end !important; }
+  .references-v3-copy h1 { font-size:clamp(40px,11.5vw,58px) !important; line-height:1.02 !important; }
+  .references-v3-list { position:relative !important; z-index:1 !important; padding:48px 18px 64px !important; background:#050505 !important; }
+  .references-v3-grid { grid-template-columns:1fr !important; gap:14px !important; }
+  .references-v3-card { min-height:0 !important; padding:26px 22px !important; }
+
+  /* QUI SOMMES-NOUS */
+  .about-page::before { position:absolute !important; height:100svh !important; bottom:auto !important; background-position:68% center !important; filter:brightness(.68) !important; }
+  .about-page .about-hero { min-height:100svh !important; padding:112px 18px 56px !important; display:flex !important; align-items:flex-end !important; }
+  .about-page .about-simple-content { width:100% !important; max-width:100% !important; padding:24px 20px !important; background:rgba(0,0,0,.58) !important; }
+  .about-page h1 { font-size:clamp(38px,11vw,54px) !important; line-height:1.04 !important; }
+
+  /* CONTACT : hero image puis formulaire sur fond sombre, jamais image sous les champs */
+  .contact-page::before { position:absolute !important; height:100svh !important; bottom:auto !important; background-position:62% center !important; filter:brightness(.72) !important; }
+  .contact-page .contact-hero { min-height:0 !important; padding:112px 18px 60px !important; }
+  .contact-page .contact-hero-top { min-height:68svh !important; display:flex !important; align-items:flex-end !important; }
+  .contact-page .contact-intro { width:100% !important; padding:22px 18px !important; background:rgba(0,0,0,.52) !important; }
+  .contact-page .contact-intro h1 { margin:20px 0 !important; font-size:clamp(40px,12vw,58px) !important; }
+  .contact-page .contact-form-column.contact-form-column--below { width:100% !important; margin:0 !important; padding:46px 0 20px !important; background:#050505 !important; }
+  .contact-page .contact-form { gap:16px !important; }
+  .contact-page .contact-form input:not([type="checkbox"]),.contact-page .contact-form textarea { width:100% !important; font-size:16px !important; }
+  .contact-page .contact-privacy-check { align-items:flex-start !important; line-height:1.45 !important; }
+
+  /* ARTICLES */
+  .remus-article-cover { padding:96px 0 0 !important; }
+  .remus-article-cover-image { width:100% !important; max-height:none !important; object-fit:cover !important; }
+  .remus-article-paper,.remus-article-conclusion { padding-left:18px !important; padding-right:18px !important; }
+
+  /* Footer */
+  .footer { overflow:hidden !important; }
+}
