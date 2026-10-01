@@ -9173,7 +9173,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 /* REMUS V3 — CONTACT IMMERSIF */
 .contact-page{position:relative!important;isolation:isolate!important;min-height:100vh!important;background:transparent!important;color:#fff!important}
 .contact-page::before{content:"";position:fixed;inset:0;z-index:-2;background-image:url("/visuals/contact-v3-background.webp");background-size:cover;background-repeat:no-repeat;background-position:center calc(50% + 180px)}
-.contact-page .contact-hero{min-height:100vh!important;padding:150px 28px 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
+.contact-page .contact-hero{width:100%!important;max-width:none!important;margin:0!important;min-height:100vh!important;padding:150px clamp(28px,2.8vw,54px) 90px!important;background:transparent!important;border:0!important;outline:0!important;box-shadow:none!important}
 .contact-page .contact-hero-top{display:block!important;min-height:68vh!important}
 .contact-page .contact-intro{width:min(620px,42vw)!important;margin:0!important;position:relative!important;z-index:2!important}
 .contact-page .contact-eyebrow{color:#A94F16!important}
