@@ -10326,3 +10326,51 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   }
   .home-clean-v3-content { z-index:1 !important; }
 }
+
+/* Confirmation d'envoi du formulaire REMUS : uniquement après réponse API positive. */
+.contact-page .contact-success {
+  width: 100%;
+  min-height: 370px;
+  padding: 54px 20px 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  color: #fff;
+}
+.contact-page .contact-success-icon {
+  width: 84px;
+  height: 84px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #CA7B3D;
+  border-radius: 50%;
+  color: #CA7B3D;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1;
+}
+.contact-page .contact-success h2 {
+  max-width: 680px;
+  margin: 6px 0 0;
+  color: #fff;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.14;
+  font-weight: 600;
+}
+.contact-page .contact-success p {
+  max-width: 640px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(16px, 1.5vw, 19px);
+  line-height: 1.65;
+}
+.contact-page .contact-success .contact-success-reassurance {
+  color: #e5e5e5;
+}
+@media (max-width: 600px) {
+  .contact-page .contact-success { min-height: 340px; padding: 42px 8px 52px; gap: 18px; }
+  .contact-page .contact-success-icon { width: 70px; height: 70px; font-size: 42px; }
+}

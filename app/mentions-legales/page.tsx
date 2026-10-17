@@ -27,7 +27,7 @@ export default function LegalPage() {
         <p><strong>SIRET :</strong> en cours d’attribution</p>
         <p><strong>TVA intracommunautaire :</strong> non attribuée à ce jour</p>
         <p><strong>Présidente :</strong> Séverine KAYSER</p>
-        <p><strong>Adresse électronique :</strong> <a href="mailto:contact@remus-systems.com">contact@remus-systems.com</a></p>
+        <p><strong>Adresse électronique :</strong> <a href="mailto:contact@remussystems.fr">contact@remussystems.fr</a></p>
 
         <h2>DIRECTION DE LA PUBLICATION</h2>
         <p><strong>Directrice de la publication :</strong> Séverine KAYSER, Présidente de REMUS SYSTEMS.</p>
@@ -46,7 +46,7 @@ export default function LegalPage() {
         </p>
 
         <h2>MESSAGERIE</h2>
-        <p>La messagerie professionnelle associée à l’adresse <strong>contact@remus-systems.com</strong> est fournie par IONOS.</p>
+        <p>La messagerie professionnelle associée à l’adresse <strong>contact@remussystems.fr</strong> est fournie par IONOS.</p>
 
         <h2>SITE WEB</h2>
         <p><strong>Développement et gestion du site web :</strong> Marc Bretzner.</p>

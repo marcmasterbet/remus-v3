@@ -6,6 +6,7 @@ import Link from "next/link";
 export default function ContactForm() {
   const [status, setStatus] = useState("");
   const [sending, setSending] = useState(false);
+  const [sent, setSent] = useState(false);
 
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -37,12 +38,25 @@ export default function ContactForm() {
       }
 
       form.reset();
-      setStatus("Votre demande a bien été envoyée. Merci, nous vous répondrons dès que possible.");
+      setSent(true);
     } catch {
-      setStatus("L’envoi est momentanément indisponible. Contactez-nous à contact@remus-systems.com.");
+      setStatus("L’envoi est momentanément indisponible. Contactez-nous à contact@remussystems.fr.");
     } finally {
       setSending(false);
     }
+  }
+
+  if (sent) {
+    return (
+      <div className="contact-success" role="status" aria-live="polite">
+        <div className="contact-success-icon" aria-hidden="true">✓</div>
+        <h2>Votre message a bien été envoyé.</h2>
+        <p>Merci pour votre prise de contact avec REMUS SYSTEMS.</p>
+        <p className="contact-success-reassurance">
+          Notre équipe a bien reçu votre demande et reviendra vers vous dans les meilleurs délais.
+        </p>
+      </div>
+    );
   }
 
   return (

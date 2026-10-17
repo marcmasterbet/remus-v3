@@ -58,7 +58,7 @@ export default function CookiesPage() {
         </p>
 
         <h2>CONTACT</h2>
-        <p>Pour toute question relative aux cookies ou à la confidentialité : <a href="mailto:contact@remus-systems.com">contact@remus-systems.com</a>.</p>
+        <p>Pour toute question relative aux cookies ou à la confidentialité : <a href="mailto:contact@remussystems.fr">contact@remussystems.fr</a>.</p>
       </section>
     </main>
   );

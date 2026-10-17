@@ -22,7 +22,7 @@ export default function PrivacyPage() {
           <strong>REMUS SYSTEMS</strong>, SASU au capital de 2 000 €, dont le siège social est situé 11 rue de la Vieille Ill,
           67640 Fegersheim, France, est responsable des traitements réalisés au moyen du site.
         </p>
-        <p>Contact pour toute question relative aux données personnelles : <a href="mailto:contact@remus-systems.com">contact@remus-systems.com</a>.</p>
+        <p>Contact pour toute question relative aux données personnelles : <a href="mailto:contact@remussystems.fr">contact@remussystems.fr</a>.</p>
         <p>REMUS SYSTEMS n’a pas désigné de délégué à la protection des données (DPO) à ce jour.</p>
 
         <h2>DONNÉES COLLECTÉES</h2>
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
           un consentement donné pour l’avenir.
         </p>
         <p>
-          Pour exercer vos droits : <a href="mailto:contact@remus-systems.com">contact@remus-systems.com</a>. Vous pouvez également introduire
+          Pour exercer vos droits : <a href="mailto:contact@remussystems.fr">contact@remussystems.fr</a>. Vous pouvez également introduire
           une réclamation auprès de la CNIL si vous estimez que vos droits ne sont pas respectés.
         </p>
 
