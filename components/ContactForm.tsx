@@ -13,6 +13,7 @@ export default function ContactForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
 
+    setSent(false);
     setSending(true);
     setStatus("");
 
@@ -44,18 +45,6 @@ export default function ContactForm() {
     } finally {
       setSending(false);
     }
-  }
-
-  if (sent) {
-    return (
-      <div className="contact-success" role="status" aria-live="polite">
-        <h2>Votre message a bien été envoyé.</h2>
-        <p>Merci pour votre prise de contact avec REMUS SYSTEMS.</p>
-        <p className="contact-success-reassurance">
-          Notre équipe a bien reçu votre demande et reviendra vers vous dans les meilleurs délais.
-        </p>
-      </div>
-    );
   }
 
   return (
@@ -106,6 +95,13 @@ export default function ContactForm() {
         {sending ? "ENVOI EN COURS…" : "ENVOYER LA DEMANDE →"}
       </button>
       {status ? <p className="form-status" aria-live="polite">{status}</p> : null}
+      {sent ? (
+        <div className="contact-success-below" role="status" aria-live="polite">
+          <h2>Votre message a bien été envoyé.</h2>
+          <p>Merci pour votre prise de contact avec REMUS SYSTEMS.</p>
+          <p>Notre équipe a bien reçu votre demande et reviendra vers vous dans les meilleurs délais.</p>
+        </div>
+      ) : null}
     </form>
   );
 }
