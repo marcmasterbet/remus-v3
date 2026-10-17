@@ -32,14 +32,14 @@ export default function ContactForm() {
       const result = await response.json();
 
       if (!response.ok) {
-        setStatus(result.error || "Impossible d’envoyer votre demande pour le moment.");
+        setStatus(result.error || "L’envoi a échoué. Veuillez réessayer ou nous contacter par e-mail.");
         return;
       }
 
       form.reset();
       setStatus("Votre demande a bien été envoyée. Merci, nous vous répondrons dès que possible.");
     } catch {
-      setStatus("Impossible d’envoyer votre demande pour le moment. Vous pouvez écrire à contact@remus-systems.com.");
+      setStatus("L’envoi est momentanément indisponible. Contactez-nous à contact@remus-systems.com.");
     } finally {
       setSending(false);
     }
