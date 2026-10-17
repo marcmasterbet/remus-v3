@@ -49,7 +49,6 @@ export default function ContactForm() {
   if (sent) {
     return (
       <div className="contact-success" role="status" aria-live="polite">
-        <div className="contact-success-icon" aria-hidden="true">✓</div>
         <h2>Votre message a bien été envoyé.</h2>
         <p>Merci pour votre prise de contact avec REMUS SYSTEMS.</p>
         <p className="contact-success-reassurance">
