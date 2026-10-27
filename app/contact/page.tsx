@@ -1,38 +1,13 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 import ContactForm from "../../components/ContactForm";
 
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact",
   description: "Contactez REMUS Systems pour échanger autour de vos enjeux, de votre projet ou d’un besoin d’accompagnement.",
-  alternates: {
-    canonical: "/contact",
-  },
-  openGraph: {
-    title: "Contact | REMUS Systems",
-    description: "Contactez REMUS Systems pour échanger autour de vos enjeux, de votre projet ou d’un besoin d’accompagnement.",
-    url: "https://www.remussystems.fr/contact",
-    type: "website",
-    locale: "fr_FR",
-    siteName: "REMUS Systems",
-    images: [
-      {
-        url: "/visuals/hero-remus.png",
-        alt: "REMUS Systems",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact | REMUS Systems",
-    description: "Contactez REMUS Systems pour échanger autour de vos enjeux, de votre projet ou d’un besoin d’accompagnement.",
-    images: ["/visuals/hero-remus.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  path: "/contact",
+});
 
 
 export default function ContactPage() {

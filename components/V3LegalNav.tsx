@@ -29,6 +29,7 @@ export default function V3LegalNav() {
     <nav className={`v3-legal-nav ${enabled && hidden ? "is-scroll-hidden" : ""}`} aria-label="Informations légales">
       <Link href="/mentions-legales">Mentions légales</Link>
       <Link href="/confidentialite">Confidentialité</Link>
+      <Link href="/cgu">CGU</Link>
       <Link href="/cookies">Cookies</Link>
     </nav>
   );

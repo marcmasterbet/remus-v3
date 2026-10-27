@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Recherche & Développement",
-  description: "La R&D de REMUS Systems explore les interactions entre l’humain, l’IA et les systèmes complexes.",
-  alternates: { canonical: "/r-d" },
-};
+  description: "La R&D de REMUS Systems explore les interactions entre l’humain, l’IA et les systèmes complexes pour mieux comprendre ce qui les relie, les fragilise ou les transforme.",
+  path: "/r-d",
+});
 
 const axes = [
   {

@@ -1,15 +1,28 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata, articleJsonLd } from "../../../lib/seo";
+import Link from "next/link";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "IA et gouvernance décisionnelle | REMUS SYSTEMS",
+export const metadata: Metadata = pageMetadata({
+  title: "IA et gouvernance décisionnelle",
   description: "Une IA peut proposer. Mais qui autorise l’action ? Une analyse REMUS SYSTEMS sur l’IA, l’architecture et la gouvernance décisionnelle.",
-};
+  path: "/references/ia-gouvernance-decisionnelle",
+  type: "article",
+  image: { url: "/visuals/articles/ia-gouvernance-decisionnelle.webp", alt: "Architecture complexe suspendue au-dessus d’une personne" },
+});
+
+const jsonLd = articleJsonLd({
+  title: "IA et gouvernance décisionnelle",
+  description: "Une IA peut proposer. Mais qui autorise l’action ? Une analyse REMUS SYSTEMS sur l’IA, l’architecture et la gouvernance décisionnelle.",
+  path: "/references/ia-gouvernance-decisionnelle",
+  image: "/visuals/articles/ia-gouvernance-decisionnelle.webp",
+  author: { name: "Alexandre Flamand", jobTitle: "Architecte en systèmes complexes" },
+});
 
 export default function IAGouvernanceDecisionnellePage() {
   return (
     <main className="remus-article">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="remus-article-cover" aria-label="Illustration de l’article">
         <Image
           src="/visuals/articles/ia-gouvernance-decisionnelle.webp"

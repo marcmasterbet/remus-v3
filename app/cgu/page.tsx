@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Conditions générales d’utilisation",
-  description: "Conditions générales d’utilisation du site REMUS SYSTEMS.",
-  alternates: { canonical: "/cgu" },
-  robots: { index: true, follow: true },
-};
+  description: "Conditions générales d’utilisation du site REMUS Systems : accès, contenus, propriété intellectuelle et droit applicable.",
+  path: "/cgu",
+});
 
 export default function CguPage() {
   return (

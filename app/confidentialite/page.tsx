@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Politique de confidentialité",
   description: "Politique de confidentialité et protection des données personnelles de REMUS SYSTEMS.",
-  alternates: { canonical: "/confidentialite" },
-  robots: { index: true, follow: true },
-};
+  path: "/confidentialite",
+});
 
 export default function PrivacyPage() {
   return (
@@ -45,8 +45,8 @@ export default function PrivacyPage() {
         <p>Les données sont accessibles uniquement aux personnes habilitées au sein de REMUS SYSTEMS et, lorsque cela est techniquement nécessaire, à ses prestataires.</p>
         <p>
           <strong>Vercel</strong> assure l’hébergement du site. <strong>IONOS</strong> fournit la messagerie professionnelle de REMUS SYSTEMS.
-          Le formulaire du site utilise actuellement <strong>Resend</strong> comme service technique d’acheminement afin de transmettre
-          les demandes à la messagerie de REMUS SYSTEMS. <strong>Google Analytics</strong> intervient uniquement après consentement pour la mesure d’audience.
+          Les messages envoyés depuis le formulaire du site sont transmis à la messagerie de REMUS SYSTEMS par le serveur
+          d’envoi sécurisé d’IONOS. <strong>Google Analytics</strong> intervient uniquement après consentement pour la mesure d’audience.
         </p>
 
         <h2>TRANSFERTS HORS DE L’ESPACE ÉCONOMIQUE EUROPÉEN</h2>

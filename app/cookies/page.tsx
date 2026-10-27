@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 import CookieSettingsButton from "../../components/CookieSettingsButton";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Gestion des cookies",
   description: "Informations et paramètres relatifs aux cookies et traceurs utilisés par REMUS SYSTEMS.",
-  alternates: { canonical: "/cookies" },
-  robots: { index: true, follow: true },
-};
+  path: "/cookies",
+});
 
 export default function CookiesPage() {
   return (

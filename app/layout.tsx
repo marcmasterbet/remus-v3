@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from "../lib/seo";
 import "./globals.css";
 import Header from "../components/Header";
 import CookieConsent from "../components/CookieConsent";
@@ -6,16 +7,18 @@ import GoogleAnalytics from "../components/GoogleAnalytics";
 import V3LegalNav from "../components/V3LegalNav";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.remussystems.fr"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "REMUS Systems",
-    template: "%s | REMUS Systems"
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
   },
   description:
     "REMUS Systems analyse les systèmes complexes, leurs interactions, leurs fragilités et leurs dynamiques de fonctionnement.",
-  alternates: {
-    canonical: "/",
-  },
+  applicationName: SITE_NAME,
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  formatDetection: { telephone: false, email: false, address: false },
   robots: {
     index: true,
     follow: true,
@@ -29,26 +32,64 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "512x512" },
     ],
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "REMUS Systems",
-    description: "Quand les systèmes se rencontrent.",
-    url: "https://www.remussystems.fr",
-    siteName: "REMUS Systems",
+    siteName: SITE_NAME,
     type: "website",
     locale: "fr_FR",
-    images: [{ url: "/visuals/hero-remus.png", alt: "REMUS Systems" }],
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: SITE_NAME }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "REMUS Systems",
-    description: "Quand les systèmes se rencontrent.",
-    images: ["/visuals/hero-remus.png"],
-  }
+    images: [DEFAULT_OG_IMAGE],
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0a0a0a",
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      url: `${SITE_URL}/`,
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/visuals/remus-logo-final.png` },
+      email: "contact@remussystems.fr",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "11 rue de la Vieille Ill",
+        postalCode: "67640",
+        addressLocality: "Fegersheim",
+        addressRegion: "Grand Est",
+        addressCountry: "FR",
+      },
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        email: "contact@remussystems.fr",
+        availableLanguage: ["fr"],
+        url: `${SITE_URL}/contact`,
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      url: `${SITE_URL}/`,
+      name: SITE_NAME,
+      inLanguage: "fr-FR",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -57,7 +98,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: "{\"@context\": \"https://schema.org\", \"@graph\": [{\"@type\": \"Organization\", \"@id\": \"https://www.remussystems.fr/#organization\", \"name\": \"REMUS Systems\", \"url\": \"https://www.remussystems.fr/\", \"email\": \"contact@remussystems.fr\", \"address\": {\"@type\": \"PostalAddress\", \"streetAddress\": \"11 rue de la Vieille Ill\", \"postalCode\": \"67640\", \"addressLocality\": \"Fegersheim\", \"addressCountry\": \"FR\"}}, {\"@type\": \"WebSite\", \"@id\": \"https://www.remussystems.fr/#website\", \"url\": \"https://www.remussystems.fr/\", \"name\": \"REMUS Systems\", \"inLanguage\": \"fr-FR\", \"publisher\": {\"@id\": \"https://www.remussystems.fr/#organization\"}}]}" }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
       </head>
       <body>

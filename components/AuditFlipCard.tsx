@@ -30,6 +30,7 @@ export default function AuditFlipCard({ title, seoTitle, hook, details }: AuditF
       onClick={toggle}
       onKeyDown={onKeyDown}
     >
+      <span className="audit-flip-frame" aria-hidden="true" />
       <div className="audit-flip-inner">
         <div className="audit-flip-face audit-flip-front" aria-hidden={flipped}>
           <h2 className="audit-step-label">{title}</h2>

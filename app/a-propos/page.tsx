@@ -1,38 +1,13 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 import Link from "next/link";
 
 
-export const metadata: Metadata = {
-  title: "À propos",
+export const metadata: Metadata = pageMetadata({
+  title: "À propos : qui sommes-nous ?",
   description: "Découvrez REMUS Systems, son équipe, sa vision et l’origine d’une approche centrée sur les systèmes, leurs interactions et les technologies de demain.",
-  alternates: {
-    canonical: "/a-propos",
-  },
-  openGraph: {
-    title: "À propos | REMUS Systems",
-    description: "Découvrez REMUS Systems, son équipe, sa vision et l’origine d’une approche centrée sur les systèmes, leurs interactions et les technologies de demain.",
-    url: "https://www.remussystems.fr/a-propos",
-    type: "website",
-    locale: "fr_FR",
-    siteName: "REMUS Systems",
-    images: [
-      {
-        url: "/visuals/hero-remus.png",
-        alt: "REMUS Systems",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "À propos | REMUS Systems",
-    description: "Découvrez REMUS Systems, son équipe, sa vision et l’origine d’une approche centrée sur les systèmes, leurs interactions et les technologies de demain.",
-    images: ["/visuals/hero-remus.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  path: "/a-propos",
+});
 
 
 export default function AboutPage() {

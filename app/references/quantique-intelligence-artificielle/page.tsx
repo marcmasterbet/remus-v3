@@ -1,15 +1,28 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata, articleJsonLd } from "../../../lib/seo";
+import Link from "next/link";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Quantique et intelligence artificielle | REMUS SYSTEMS",
+export const metadata: Metadata = pageMetadata({
+  title: "Quantique et intelligence artificielle",
   description: "Et si leur véritable point de rencontre était l’architecture ? Une analyse REMUS SYSTEMS sur les architectures hybrides entre calcul classique, IA et quantique.",
-};
+  path: "/references/quantique-intelligence-artificielle",
+  type: "article",
+  image: { url: "/visuals/articles/quantique-intelligence-artificielle.webp", alt: "Architecture de calcul quantique et réseau lumineux cuivre" },
+});
+
+const jsonLd = articleJsonLd({
+  title: "Quantique et intelligence artificielle",
+  description: "Et si leur véritable point de rencontre était l’architecture ? Une analyse REMUS SYSTEMS sur les architectures hybrides entre calcul classique, IA et quantique.",
+  path: "/references/quantique-intelligence-artificielle",
+  image: "/visuals/articles/quantique-intelligence-artificielle.webp",
+  author: { name: "Alexandre Flamand", jobTitle: "Architecte en systèmes complexes" },
+});
 
 export default function QuantiqueIntelligenceArtificiellePage() {
   return (
     <main className="remus-article remus-article-long">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="remus-article-cover" aria-label="Illustration de l’article">
         <Image src="/visuals/articles/quantique-intelligence-artificielle.webp" alt="Architecture de calcul quantique et réseau lumineux cuivre" width={1920} height={819} priority className="remus-article-cover-image" />
       </section>

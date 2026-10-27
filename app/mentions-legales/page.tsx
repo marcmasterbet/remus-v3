@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Mentions légales",
-  description: "Mentions légales du site REMUS SYSTEMS.",
-  alternates: { canonical: "/mentions-legales" },
-  robots: { index: true, follow: true },
-};
+  description: "Mentions légales du site REMUS Systems : éditeur, direction de la publication, hébergement et propriété intellectuelle.",
+  path: "/mentions-legales",
+});
 
 export default function LegalPage() {
   return (

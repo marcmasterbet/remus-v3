@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 import Link from "next/link";
+
+export const metadata: Metadata = pageMetadata({
+  title: "Références : analyses et réflexions",
+  description: "Analyses de REMUS Systems sur l’IA et la gouvernance décisionnelle, la technologie au service d’un impact durable, le quantique et l’intelligence artificielle.",
+  path: "/references",
+});
 
 const articles = [
   {
@@ -43,8 +51,8 @@ export default function ReferencesPage() {
         <div className="references-v3-grid">
           {articles.map((article) => (
             <article className="references-v3-card" key={article.slug}>
-              <h3>{article.title}</h3>
-              <Link href={`/references/${article.slug}`}>
+              <h2>{article.title}</h2>
+              <Link href={`/references/${article.slug}`} aria-label={`Lire l’article : ${article.title.toLowerCase()}`}>
                 Lire l’article <span aria-hidden="true">→</span>
               </Link>
             </article>

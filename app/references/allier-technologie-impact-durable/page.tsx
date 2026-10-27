@@ -1,15 +1,27 @@
-import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata, articleJsonLd } from "../../../lib/seo";
+import Link from "next/link";
 import Image from "next/image";
 
-export const metadata: Metadata = {
-  title: "Allier technologie et impact durable | REMUS SYSTEMS",
-  description: "Innover ne suffit pas. Une technologie n’a de valeur que si elle améliore durablement ce qu’elle touche.",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Allier technologie et impact durable",
+  description: "Innover ne suffit pas : une technologie n’a de valeur que si elle améliore durablement ce qu’elle touche. Une analyse REMUS Systems sur l’innovation responsable.",
+  path: "/references/allier-technologie-impact-durable",
+  type: "article",
+  image: { url: "/visuals/articles/allier-technologie-impact-durable.webp", alt: "Turbine technologique et réseau lumineux cuivre" },
+});
+
+const jsonLd = articleJsonLd({
+  title: "Allier technologie et impact durable",
+  description: "Innover ne suffit pas : une technologie n’a de valeur que si elle améliore durablement ce qu’elle touche. Une analyse REMUS Systems sur l’innovation responsable.",
+  path: "/references/allier-technologie-impact-durable",
+  image: "/visuals/articles/allier-technologie-impact-durable.webp",
+});
 
 export default function AllierTechnologieImpactDurablePage() {
   return (
     <main className="remus-article">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="remus-article-cover" aria-label="Illustration de l’article">
         <Image
           src="/visuals/articles/allier-technologie-impact-durable.webp"

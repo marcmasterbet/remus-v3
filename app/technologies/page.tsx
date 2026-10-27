@@ -1,38 +1,13 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 import Link from "next/link";
 
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Technologies | LIMES & systèmes complexes",
   description: "Découvrez LIMES, la technologie REMUS Systems qui associe intelligence humaine et artificielle pour analyser, décider et agir dans des systèmes complexes.",
-  alternates: {
-    canonical: "/technologies",
-  },
-  openGraph: {
-    title: "Technologies | LIMES & systèmes complexes",
-    description: "Découvrez LIMES, la technologie REMUS Systems qui associe intelligence humaine et artificielle pour analyser, décider et agir dans des systèmes complexes.",
-    url: "https://www.remussystems.fr/technologies",
-    type: "website",
-    locale: "fr_FR",
-    siteName: "REMUS Systems",
-    images: [
-      {
-        url: "/visuals/hero-remus.png",
-        alt: "REMUS Systems",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Technologies | LIMES & systèmes complexes",
-    description: "Découvrez LIMES, la technologie REMUS Systems qui associe intelligence humaine et artificielle pour analyser, décider et agir dans des systèmes complexes.",
-    images: ["/visuals/hero-remus.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  path: "/technologies",
+});
 
 
 const capabilities = [

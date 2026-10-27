@@ -1,40 +1,16 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../../lib/seo";
 import Image from "next/image";
 import Link from "next/link";
 import AuditFlipCard from "../../components/AuditFlipCard";
 
 
-export const metadata: Metadata = {
-  title: "Audit REMUS | Analyse systémique avec LIMES",
-  description: "L’Audit REMUS, soutenu par le moteur LIMES, analyse les interactions, incohérences, fragilités et dynamiques qui façonnent les systèmes.",
-  alternates: {
-    canonical: "/audit-remus",
-  },
-  openGraph: {
-    title: "Audit REMUS | Analyse systémique avec LIMES",
-    description: "L’Audit REMUS, soutenu par le moteur LIMES, analyse les interactions, incohérences, fragilités et dynamiques qui façonnent les systèmes.",
-    url: "https://www.remussystems.fr/audit-remus",
-    type: "website",
-    locale: "fr_FR",
-    siteName: "REMUS Systems",
-    images: [
-      {
-        url: "/visuals/hero-remus.png",
-        alt: "REMUS Systems",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Audit REMUS | Analyse systémique avec LIMES",
-    description: "L’Audit REMUS, soutenu par le moteur LIMES, analyse les interactions, incohérences, fragilités et dynamiques qui façonnent les systèmes.",
-    images: ["/visuals/hero-remus.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Audit organisationnel et analyse systémique | REMUS Systems",
+  description: "L’Audit REMUS cartographie votre organisation, détecte les fragilités et dépendances critiques, hiérarchise les risques et vous livre un plan d’action concret.",
+  path: "/audit-remus",
+  absoluteTitle: true,
+});
 
 
 type Step = {
@@ -105,7 +81,7 @@ export default function AuditRemusPage() {
         <div className="audit-premium-visual">
 
           <Image
-            src="/visuals/audit-remus-v2-bg.jpg"
+            src="/visuals/audit-remus-v2-bg.webp"
             alt="Architecture systémique REMUS — interactions, dépendances, données, processus et humain & IA"
             fill
             priority

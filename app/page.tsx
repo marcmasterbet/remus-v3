@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../lib/seo";
+import Image from "next/image";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Systèmes complexes, architectures technologiques & résilience",
+export const metadata: Metadata = pageMetadata({
+  title: "REMUS Systems | Systèmes complexes, architectures & résilience",
   description: "REMUS Systems conçoit des architectures technologiques avancées pour sécuriser, comprendre et piloter les systèmes complexes.",
-  alternates: { canonical: "/" },
-};
+  path: "/",
+  absoluteTitle: true,
+});
 
 const features = [
   ["SÉCURITÉ & RÉSILIENCE", "Protection avancée des systèmes critiques et des infrastructures sensibles."],
@@ -17,11 +20,15 @@ const features = [
 export default function Home() {
   return (
     <main className="home-clean-v3">
-      <img
+      <Image
         className="home-clean-v3-bg"
-        src="/visuals/remus-v2-earth-network-hd.jpg"
+        src="/visuals/remus-v2-earth-network-hd.webp"
         alt=""
         aria-hidden="true"
+        fill
+        priority
+        sizes="100vw"
+        quality={80}
       />
 
       <div className="home-clean-v3-content">

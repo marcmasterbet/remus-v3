@@ -7590,7 +7590,7 @@ form.contact-form {
   background: linear-gradient(0deg, #050607 0%, transparent 100%);
 }
 .home-reference .home-network img {
-  content: url('/visuals/home-v2-earth.png');
+  content: url('/visuals/home-v2-earth.webp');
   object-fit: cover;
   object-position: 58% center;
   mix-blend-mode: normal;
@@ -7864,7 +7864,7 @@ body:has(.home-reference) .footer-bottom {
 /* REMUS V2 — optimisation de netteté du hero (15-09-2026)
    Pas de zoom CSS : la source HD est réduite par le navigateur, jamais agrandie artificiellement. */
 .home-reference .home-network img {
-  content: url('/visuals/remus-v2-earth-network-hd.jpg') !important;
+  content: url('/visuals/remus-v2-earth-network-hd.webp') !important;
   transform: none !important;
   filter: contrast(1.025) saturate(.96) brightness(.74) !important;
   image-rendering: auto !important;
@@ -8610,12 +8610,12 @@ body:has(.audit-remus-page) .site-header {
   background-size:cover !important;
   background-attachment:fixed !important;
 }
-.home-reference { background-image:url('/visuals/remus-v2-earth-network-hd.jpg') !important; }
-.audit-remus-page { background-image:url('/visuals/audit-remus-v2-bg.jpg') !important; }
-.limes-page { background-image:url('/visuals/limes-hero-v2.jpeg') !important; }
-.solutions-page { background-image:url('/visuals/solutions-remus.png') !important; }
-.rd-page { background-image:url('/visuals/rd-hero.png') !important; }
-.about-page { background-image:url('/visuals/remus-v2-earth-network-hd.jpg') !important; }
+.home-reference { background-image:url('/visuals/remus-v2-earth-network-hd.webp') !important; }
+.audit-remus-page { background-image:url('/visuals/audit-remus-v2-bg.webp') !important; }
+.limes-page { background-image:url('/visuals/limes-hero-v2.webp') !important; }
+.solutions-page { background-image:url('/visuals/solutions-remus.webp') !important; }
+.rd-page { background-image:url('/visuals/rd-hero.webp') !important; }
+.about-page { background-image:url('/visuals/remus-v2-earth-network-hd.webp') !important; }
 .contact-page { background-image:url('/visuals/remus-mail.jpg') !important; }
 
 /* No opaque section panels: the image remains visible throughout. */
@@ -9038,7 +9038,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-image: url("/visuals/rd-v3-background.jpeg");
+  background-image: url("/visuals/rd-v3-background.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -9346,7 +9346,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   letter-spacing: .16em;
 }
 
-.references-v3-card h3 {
+.references-v3-card h2 {
   margin: 0 0 34px;
   color: #FFFFFF;
   font-size: clamp(22px,2vw,31px);
@@ -9855,7 +9855,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: url("/visuals/rd-v3-background.jpeg") center top / cover no-repeat;
+  background: url("/visuals/rd-v3-background.webp") center top / cover no-repeat;
 }
 
 .rd-rebuilt-page::after {
@@ -10264,7 +10264,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   /* Pages dont le visuel est porté directement par le conteneur. */
   .audit-remus-page {
     background-color:#050505 !important;
-    background-image:url('/visuals/audit-remus-v2-bg.jpg') !important;
+    background-image:url('/visuals/audit-remus-v2-bg.webp') !important;
     background-size:auto 58svh !important;
     background-position:62% top !important;
     background-repeat:no-repeat !important;
@@ -10272,7 +10272,7 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   }
   .limes-page {
     background-color:#050505 !important;
-    background-image:url('/visuals/limes-hero-v2.jpeg') !important;
+    background-image:url('/visuals/limes-hero-v2.webp') !important;
     background-size:auto 58svh !important;
     background-position:62% top !important;
     background-repeat:no-repeat !important;
@@ -10386,6 +10386,9 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   perspective: 1400px;
   cursor: pointer;
   outline: none;
+  overflow: visible !important;
+  height: auto !important;
+  position: relative !important;
 }
 .audit-remus-page .audit-step.audit-flip::before,
 .audit-remus-page .audit-step.audit-flip::after { display: none !important; }
@@ -10406,18 +10409,31 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   min-height: 320px;
   padding: 34px 32px 28px;
   background: rgba(10,10,10,.82);
-  border: 1px solid rgba(255,255,255,.72);
+  border: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  transition: border-color .25s ease, box-shadow .25s ease;
+  box-sizing: border-box;
+  height: 100%;
 }
 .audit-remus-page .audit-flip-back {
   transform: rotateY(180deg);
   background: rgba(18,12,8,.92);
-  border-color: rgba(201,121,66,.65);
 }
-.audit-remus-page .audit-flip:hover .audit-flip-face,
-.audit-remus-page .audit-flip:focus-visible .audit-flip-face {
+
+/* Cadre fixe (hors 3D) : la bordure reste nette sur tous les écrans et zooms. */
+.audit-flip-frame {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border: 1px solid rgba(255,255,255,.72);
+  transition: border-color .3s ease, box-shadow .3s ease;
+}
+.audit-remus-page .audit-flip.is-flipped .audit-flip-frame {
+  border-color: rgba(201,121,66,.75);
+}
+.audit-remus-page .audit-flip:hover .audit-flip-frame,
+.audit-remus-page .audit-flip:focus-visible .audit-flip-frame {
   border-color: #C97942;
   box-shadow: 0 18px 40px rgba(0,0,0,.35);
 }
@@ -10447,3 +10463,38 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 @media (prefers-reduced-motion: reduce) {
   .audit-flip-inner { transition: none; }
 }
+
+/* =========================================================
+   PAGE 404
+   ========================================================= */
+.not-found-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 140px 6vw 100px;
+  background: #0a0a0a;
+}
+.not-found-content { max-width: 640px; text-align: left; }
+.not-found-code {
+  color: #C97942;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.not-found-content h1 {
+  margin: 22px 0 18px;
+  color: #f4f1ed;
+  font-size: clamp(32px, 4vw, 54px);
+  font-weight: 300;
+  line-height: 1.12;
+}
+.not-found-content p { color: rgba(244,241,237,.72); line-height: 1.7; }
+.not-found-links { display: flex; flex-wrap: wrap; gap: 26px; margin-top: 34px; }
+.not-found-links a {
+  color: #C97942;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-decoration: none;
+}
+.not-found-links a:hover { color: #e09a66; }
