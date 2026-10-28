@@ -10549,20 +10549,25 @@ main .flip-card.flip-card p.flip-card-details {
   main.home-clean-v3 .flip-card.flip-card .flip-card-seo { font-size: 16px !important; }
 }
 
-/* R&D : axes en bandes pleine largeur qui se retournent */
-main.rd-rebuilt-page .flip-card .flip-card-face {
-  min-height: 0;
-  padding: 26px 34px 22px;
-  background: rgba(0,0,0,.62);
+/* R&D : axes en cartes carrées (4 colonnes, 2 sur tablette, 1 sur mobile) */
+main.rd-rebuilt-page .rd-rebuilt-axes {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 20px !important;
 }
-main.rd-rebuilt-page .flip-card .flip-card-back { background: rgba(18,12,8,.9); }
-main.rd-rebuilt-page .flip-card.flip-card p.flip-card-details {
-  max-width: 1100px !important;
-  font-size: 14px !important;
-  line-height: 1.75 !important;
+@media (max-width: 1180px) {
+  main.rd-rebuilt-page .rd-rebuilt-axes { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 }
-main.rd-rebuilt-page .flip-card-cue { padding-top: 16px; }
 @media (max-width: 620px) {
-  main.rd-rebuilt-page .flip-card .flip-card-face { padding: 24px 20px 20px; }
-  main.rd-rebuilt-page .flip-card.flip-card p.flip-card-details { font-size: 13px !important; }
+  main.rd-rebuilt-page .rd-rebuilt-axes { grid-template-columns: 1fr !important; gap: 14px !important; }
+}
+main.rd-rebuilt-page .flip-card .flip-card-face { background: rgba(0,0,0,.62); }
+main.rd-rebuilt-page .flip-card .flip-card-back { background: rgba(18,12,8,.9); }
+@media (min-width: 621px) {
+  main.rd-rebuilt-page .flip-card .flip-card-face { padding: 30px 28px 26px; min-height: 320px; }
+  main.rd-rebuilt-page .flip-card.flip-card p.flip-card-details {
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+  }
+  main.rd-rebuilt-page .flip-card.flip-card .flip-card-seo { font-size: 16px !important; }
 }
