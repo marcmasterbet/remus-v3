@@ -10571,3 +10571,6 @@ main.rd-rebuilt-page .flip-card .flip-card-back { background: rgba(18,12,8,.9); 
   }
   main.rd-rebuilt-page .flip-card.flip-card .flip-card-seo { font-size: 16px !important; }
 }
+
+/* R&D : suppression du trait au-dessus du bloc final */
+main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
