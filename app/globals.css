@@ -10355,73 +10355,67 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
 }
 
 /* =========================================================
-   AUDIT — étapes : titre SEO (H3), accroche, détail au clic
+   CARTES RETOURNABLES (Audit, Technologies, Solutions)
+   Recto : nom (H2) + titre SEO (H3) + accroche. Verso : texte détaillé.
    ========================================================= */
-.audit-remus-page .audit-step h3.audit-step-seo {
-  margin: 18px 0 0 !important;
-  color: #f4f1ed !important;
-  font-size: 17px !important;
-  font-weight: 500 !important;
-  line-height: 1.35 !important;
-  letter-spacing: 0 !important;
-}
-.audit-remus-page .audit-step p.audit-step-hook {
-  margin: 12px 0 0 !important;
-  color: rgba(244,241,237,.85) !important;
-  font-size: 14px !important;
-  line-height: 1.6 !important;
-}
-.audit-remus-page .audit-steps {
+.audit-remus-page .audit-steps,
+.home-clean-v3 .home-clean-v3-grid,
+.rd-rebuilt-page .rd-rebuilt-axes,
+.limes-page .limes-capabilities,
+.solutions-page .solutions-grid {
   align-items: stretch !important;
 }
 
-/* --- Cartes retournables --- */
-.audit-remus-page .audit-step.audit-flip {
+main .flip-card.flip-card {
+  position: relative !important;
+  display: block !important;
   padding: 0 !important;
   min-height: 0 !important;
+  height: auto !important;
+  margin: 0 !important;
   background: transparent !important;
   border: 0 !important;
   box-shadow: none !important;
   transform: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  overflow: visible !important;
   perspective: 1400px;
   cursor: pointer;
   outline: none;
-  overflow: visible !important;
-  height: auto !important;
-  position: relative !important;
 }
-.audit-remus-page .audit-step.audit-flip::before,
-.audit-remus-page .audit-step.audit-flip::after { display: none !important; }
+main .flip-card.flip-card::before,
+main .flip-card.flip-card::after { display: none !important; }
 
-.audit-flip-inner {
+.flip-card-inner {
   display: grid;
   height: 100%;
   grid-template-rows: 1fr;
   transform-style: preserve-3d;
   transition: transform .7s cubic-bezier(.2,.75,.25,1);
 }
-.audit-flip.is-flipped .audit-flip-inner { transform: rotateY(180deg); }
+.flip-card.is-flipped .flip-card-inner { transform: rotateY(180deg); }
 
-.audit-remus-page .audit-flip-face {
+main .flip-card .flip-card-face {
   grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
   min-height: 320px;
   padding: 34px 32px 28px;
   background: rgba(10,10,10,.82);
   border: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  box-sizing: border-box;
-  height: 100%;
 }
-.audit-remus-page .audit-flip-back {
+main .flip-card .flip-card-back {
   transform: rotateY(180deg);
   background: rgba(18,12,8,.92);
 }
 
 /* Cadre fixe (hors 3D) : la bordure reste nette sur tous les écrans et zooms. */
-.audit-flip-frame {
+.flip-card-frame {
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -10429,16 +10423,62 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   border: 1px solid rgba(255,255,255,.72);
   transition: border-color .3s ease, box-shadow .3s ease;
 }
-.audit-remus-page .audit-flip.is-flipped .audit-flip-frame {
-  border-color: rgba(201,121,66,.75);
-}
-.audit-remus-page .audit-flip:hover .audit-flip-frame,
-.audit-remus-page .audit-flip:focus-visible .audit-flip-frame {
+main .flip-card.is-flipped .flip-card-frame { border-color: rgba(201,121,66,.75); }
+main .flip-card.flip-card.is-static { cursor: default; }
+main .flip-card:not(.is-static):hover .flip-card-frame,
+main .flip-card:focus-visible .flip-card-frame {
   border-color: #C97942;
   box-shadow: 0 18px 40px rgba(0,0,0,.35);
 }
 
-.audit-flip-cue {
+main .flip-card.flip-card .flip-card-label {
+  position: static !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: #f4f1ed !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  letter-spacing: .09em !important;
+}
+main .flip-card.flip-card .flip-card-label::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  margin-top: 17px;
+  background: #C97942;
+}
+main .flip-card.flip-card .flip-card-seo {
+  position: static !important;
+  margin: 18px 0 0 !important;
+  padding: 0 !important;
+  color: #f4f1ed !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+main .flip-card.flip-card p.flip-card-hook {
+  position: static !important;
+  max-width: none !important;
+  margin: 12px 0 0 !important;
+  padding: 0 !important;
+  color: rgba(244,241,237,.85) !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+main .flip-card.flip-card p.flip-card-details {
+  position: static !important;
+  max-width: none !important;
+  margin: 14px 0 0 !important;
+  padding: 0 !important;
+  color: rgba(244,241,237,.85) !important;
+  font-size: 13px !important;
+  line-height: 1.75 !important;
+}
+.flip-card-cue {
   margin-top: auto;
   padding-top: 22px;
   color: #C97942;
@@ -10447,21 +10487,18 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   letter-spacing: .15em;
   text-transform: uppercase;
 }
-.audit-flip-back-label {
+.flip-card-back-label {
   color: #C97942;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .15em;
 }
-.audit-remus-page .audit-step p.audit-flip-details {
-  margin: 14px 0 0 !important;
-  color: rgba(244,241,237,.85) !important;
-  font-size: 13px !important;
-  line-height: 1.75 !important;
-}
 
+@media (max-width: 620px) {
+  main .flip-card .flip-card-face { min-height: 0; padding: 28px 24px 24px; }
+}
 @media (prefers-reduced-motion: reduce) {
-  .audit-flip-inner { transition: none; }
+  .flip-card-inner { transition: none; }
 }
 
 /* =========================================================
@@ -10498,3 +10535,34 @@ body .limes-page .limes-hero-exact .limes-copy-exact p {
   text-decoration: none;
 }
 .not-found-links a:hover { color: #e09a66; }
+
+/* Technologies : cartes plus étroites (5 colonnes) -> typographie compacte */
+@media (min-width: 621px) {
+  main.limes-page .flip-card .flip-card-face,
+  main.home-clean-v3 .flip-card .flip-card-face { padding: 28px 24px 24px; min-height: 300px; }
+  main.limes-page .flip-card.flip-card p.flip-card-details,
+  main.home-clean-v3 .flip-card.flip-card p.flip-card-details {
+    font-size: 12.5px !important;
+    line-height: 1.65 !important;
+  }
+  main.limes-page .flip-card.flip-card .flip-card-seo,
+  main.home-clean-v3 .flip-card.flip-card .flip-card-seo { font-size: 16px !important; }
+}
+
+/* R&D : axes en bandes pleine largeur qui se retournent */
+main.rd-rebuilt-page .flip-card .flip-card-face {
+  min-height: 0;
+  padding: 26px 34px 22px;
+  background: rgba(0,0,0,.62);
+}
+main.rd-rebuilt-page .flip-card .flip-card-back { background: rgba(18,12,8,.9); }
+main.rd-rebuilt-page .flip-card.flip-card p.flip-card-details {
+  max-width: 1100px !important;
+  font-size: 14px !important;
+  line-height: 1.75 !important;
+}
+main.rd-rebuilt-page .flip-card-cue { padding-top: 16px; }
+@media (max-width: 620px) {
+  main.rd-rebuilt-page .flip-card .flip-card-face { padding: 24px 20px 20px; }
+  main.rd-rebuilt-page .flip-card.flip-card p.flip-card-details { font-size: 13px !important; }
+}

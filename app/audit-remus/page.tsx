@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { pageMetadata } from "../../lib/seo";
 import Image from "next/image";
 import Link from "next/link";
-import AuditFlipCard from "../../components/AuditFlipCard";
+import FlipCard, { type FlipCardContent } from "../../components/FlipCard";
 
 
 export const metadata: Metadata = pageMetadata({
@@ -13,14 +13,7 @@ export const metadata: Metadata = pageMetadata({
 });
 
 
-type Step = {
-  title: string;
-  seoTitle: string;
-  hook: string;
-  details: string;
-};
-
-const steps: Step[] = [
+const steps: FlipCardContent[] = [
   {
     title: "COMPRENDRE",
     seoTitle: "Analyse systémique de votre organisation",
@@ -106,7 +99,7 @@ export default function AuditRemusPage() {
         <div className="audit-steps">
 
           {steps.map((step) => (
-            <AuditFlipCard key={step.title} {...step} />
+            <FlipCard key={step.title} className="audit-step" {...step} />
           ))}
 
         </div>

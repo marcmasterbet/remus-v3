@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "../../lib/seo";
 import Link from "next/link";
+import FlipCard, { type FlipCardContent } from "../../components/FlipCard";
 
 
 export const metadata: Metadata = pageMetadata({
@@ -10,37 +11,43 @@ export const metadata: Metadata = pageMetadata({
 });
 
 
-const solutions = [
+const solutions: FlipCardContent[] = [
   {
     title: "SÉCURITÉ & RÉSILIENCE",
-    lead: "Préserver ce qui doit continuer à fonctionner.",
-    text: "Identifier les vulnérabilités, dépendances sensibles et points critiques afin d’anticiper les ruptures, réduire les fragilités et renforcer la continuité du système."
+    seoTitle: "Sécurité, résilience et continuité d’activité",
+    hook: "Préserver ce qui doit continuer à fonctionner.",
+    details: "Une organisation résiliente n’est pas une organisation sans incident : c’est une organisation qui continue de fonctionner quand l’imprévu survient. Nous identifions les vulnérabilités, les dépendances sensibles et les points critiques de votre système afin d’anticiper les ruptures avant qu’elles ne se produisent. Panne technique, défaillance d’un fournisseur, perte d’une compétence clé : chaque scénario est étudié pour réduire son impact. Vous renforcez ainsi la continuité de votre activité et la résilience de votre organisation, tout en protégeant ce qui est vraiment essentiel.",
   },
   {
     title: "ARCHITECTURES MODULAIRES",
-    lead: "Concevoir des systèmes capables d’évoluer.",
-    text: "Structurer des architectures interopérables et adaptables, pensées pour intégrer de nouvelles contraintes, technologies ou usages sans remettre en cause l’ensemble du système."
+    seoTitle: "Architectures modulaires, interopérables et évolutives",
+    hook: "Concevoir des systèmes capables d’évoluer.",
+    details: "Un système rigide devient vite un frein. Nous concevons des architectures modulaires où chaque composant peut être ajouté, remplacé ou amélioré sans remettre en cause l’ensemble. Grâce à leur interopérabilité, vos outils, vos données et vos processus communiquent entre eux, même lorsqu’ils proviennent de sources différentes. Nouvelle réglementation, nouvelle technologie, nouveaux usages : votre système s’adapte au lieu de se reconstruire. Vous limitez les coûts de transformation et gardez la liberté de faire évoluer votre organisation à votre rythme.",
   },
   {
     title: "SUPERVISION INTELLIGENTE",
-    lead: "Transformer l’information en compréhension.",
-    text: "Relier les données, événements et signaux dispersés afin de faire émerger une lecture exploitable du système et d’améliorer la rapidité comme la qualité des décisions."
+    seoTitle: "Supervision intelligente et pilotage en temps réel",
+    hook: "Transformer l’information en compréhension.",
+    details: "Les informations utiles existent souvent déjà, mais elles sont dispersées entre plusieurs outils, services ou sources. Notre supervision intelligente relie ces données, événements et signaux pour offrir une lecture claire et exploitable de votre système. Plutôt que de multiplier les tableaux de bord, vous disposez d’une vue consolidée qui met en avant ce qui demande votre attention. Résultat : vous détectez plus tôt les anomalies, comprenez plus vite leur origine et améliorez à la fois la rapidité et la qualité de vos décisions grâce à un pilotage en temps réel.",
   },
   {
     title: "DÉCISION AUGMENTÉE",
-    lead: "Renforcer l’analyse sans remplacer l’humain.",
-    text: "Associer expertise humaine, données et intelligence artificielle pour éclairer les choix, comparer les scénarios et agir avec davantage de précision dans des environnements complexes."
+    seoTitle: "Décision augmentée : l’humain au cœur de l’analyse",
+    hook: "Renforcer l’analyse sans remplacer l’humain.",
+    details: "Face à des situations complexes, les meilleures décisions naissent de la rencontre entre l’expérience humaine et la puissance de l’analyse. Nous associons l’expertise de vos équipes, vos données et l’intelligence artificielle pour comparer différents scénarios, mesurer leurs conséquences et identifier les options les plus solides. L’IA apporte des éléments objectifs et une vision élargie ; l’humain apporte le jugement, le contexte et la responsabilité du choix final. Vous décidez avec davantage de précision, même dans des environnements incertains ou en forte évolution.",
   },
   {
     title: "SYSTÈMES ADAPTATIFS",
-    lead: "Faire évoluer la solution avec son environnement.",
-    text: "Concevoir des systèmes capables de s’ajuster aux usages, aux contraintes opérationnelles et aux changements de contexte sans perdre leur cohérence ni leur maîtrise."
+    seoTitle: "Des systèmes qui s’adaptent à vos contraintes opérationnelles",
+    hook: "Faire évoluer la solution avec son environnement.",
+    details: "Un système efficace aujourd’hui peut devenir inadapté demain. Nous concevons des solutions adaptatives capables de s’ajuster aux usages réels, aux contraintes opérationnelles et aux changements de contexte, sans perdre leur cohérence ni votre maîtrise. Les règles, les priorités et les paramètres évoluent selon les retours du terrain, tout en restant compréhensibles et contrôlables par vos équipes. Votre solution reste pertinente dans la durée, accompagne la croissance de votre organisation et vous évite des refontes coûteuses.",
   },
   {
     title: "GOUVERNANCE & ORCHESTRATION",
-    lead: "Faire travailler les différentes composantes dans la même direction.",
-    text: "Structurer les responsabilités, les flux d’information, les règles d’interaction et les mécanismes d’arbitrage afin de maintenir une vision commune et une action coordonnée."
-  }
+    seoTitle: "Gouvernance et orchestration des systèmes complexes",
+    hook: "Faire travailler chaque composante dans la même direction.",
+    details: "Plus une organisation est complexe, plus le risque est grand que chacun avance dans une direction différente. Nous structurons les responsabilités, les flux d’information, les règles d’interaction et les mécanismes d’arbitrage pour que vos équipes, vos outils et vos partenaires agissent de manière coordonnée. Cette gouvernance claire évite les doublons, les zones grises et les conflits de priorités. L’orchestration de l’ensemble garantit une vision commune, une action cohérente et une organisation capable de tenir le cap, même en période de changement.",
+  },
 ];
 
 export default function SolutionsPage() {
@@ -93,12 +100,8 @@ export default function SolutionsPage() {
       </section>
 
       <section className="solutions-grid panel-shell">
-        {solutions.map(({ title, lead, text }) => (
-          <article className="solution-card" key={title}>
-            <h2>{title}</h2>
-            <p className="solution-lead">{lead}</p>
-            <p>{text}</p>
-          </article>
+        {solutions.map((item) => (
+          <FlipCard key={item.title} className="solution-card" {...item} />
         ))}
       </section>
 

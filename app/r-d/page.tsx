@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "../../lib/seo";
+import FlipCard, { type FlipCardContent } from "../../components/FlipCard";
 
 export const metadata: Metadata = pageMetadata({
   title: "Recherche & Développement",
@@ -7,22 +8,30 @@ export const metadata: Metadata = pageMetadata({
   path: "/r-d",
 });
 
-const axes = [
+const axes: FlipCardContent[] = [
   {
     title: "INTERACTIONS HUMAIN – IA",
-    text: "Comprendre comment l’humain et l’intelligence artificielle peuvent coopérer de manière utile, lisible et maîtrisée.",
+    seoTitle: "Recherche sur l’interaction humain-IA et l’IA de confiance",
+    hook: "Faire coopérer l’humain et l’IA de façon utile, lisible et maîtrisée.",
+    details: "Une IA performante n’a de valeur que si les personnes qui l’utilisent la comprennent et lui font confiance. Nos travaux portent sur l’interaction humain-machine : comment présenter les résultats d’une IA pour qu’ils soient lisibles, comment expliquer ses recommandations, et comment garantir que l’humain garde le contrôle des décisions importantes. Nous étudions notamment l’IA explicable, le juste partage des rôles entre l’opérateur et la machine, et les situations où l’IA doit s’effacer. L’objectif : une IA de confiance, qui renforce les compétences humaines au lieu de les contourner.",
   },
   {
     title: "ARCHITECTURES ADAPTATIVES",
-    text: "Concevoir des systèmes capables d’évoluer sans perdre leur cohérence face aux changements de contexte, d’usage ou de contrainte.",
+    seoTitle: "Recherche sur les architectures adaptatives et résilientes",
+    hook: "Des systèmes qui évoluent sans perdre leur cohérence.",
+    details: "Comment un système peut-il se transformer en permanence tout en restant stable et contrôlable ? C’est la question au cœur de nos recherches sur les architectures adaptatives. Nous explorons les méthodes qui permettent à un système d’intégrer de nouvelles contraintes, de nouveaux usages ou de nouvelles technologies sans perte de cohérence ni de performance. Ces travaux portent sur la modularité, l’auto-ajustement et les mécanismes de contrôle qui encadrent l’évolution. Ils alimentent directement nos solutions et anticipent les besoins des organisations confrontées à des environnements de plus en plus instables.",
   },
   {
     title: "DÉTECTION PRÉCOCE",
-    text: "Faire émerger les signaux faibles, fragilités et dérives avant qu’ils ne deviennent des points de rupture.",
+    seoTitle: "Recherche sur la détection des signaux faibles et l’anticipation des risques",
+    hook: "Repérer les signaux faibles avant qu’ils ne deviennent des ruptures.",
+    details: "Les crises ne surgissent presque jamais sans prévenir : elles sont précédées de signaux discrets, souvent noyés dans la masse d’informations. Nos recherches visent à mieux détecter les signaux faibles, les dérives lentes et les fragilités émergentes au sein des systèmes complexes. Nous développons des approches qui croisent analyse de données, modélisation et expertise humaine pour distinguer un simple bruit d’une tendance réellement préoccupante. Ces travaux permettent une anticipation des risques plus fiable et laissent aux organisations le temps d’agir avant le point de rupture.",
   },
   {
     title: "GOUVERNANCE DES SYSTÈMES",
-    text: "Structurer la décision, les responsabilités et les flux d’action dans des environnements complexes.",
+    seoTitle: "Recherche sur la gouvernance des systèmes complexes",
+    hook: "Structurer la décision dans des environnements complexes.",
+    details: "Lorsque les décisions impliquent de nombreux acteurs, des outils automatisés et des informations en continu, qui décide, sur quelle base et avec quelle responsabilité ? Nos travaux sur la gouvernance des systèmes complexes étudient la manière d’organiser la décision, les responsabilités et les flux d’action pour qu’ils restent clairs et efficaces. Nous nous intéressons particulièrement à la place de l’IA dans ces processus : traçabilité des choix, règles d’arbitrage, contrôle humain. L’enjeu est de construire des organisations à la fois agiles, responsables et capables de rendre compte de leurs décisions.",
   },
 ];
 
@@ -53,10 +62,7 @@ export default function RDPage() {
 
         <div className="rd-rebuilt-axes">
           {axes.map((axis) => (
-            <article className="rd-rebuilt-axis" key={axis.title}>
-              <h3>{axis.title}</h3>
-              <p>{axis.text}</p>
-            </article>
+            <FlipCard key={axis.title} className="rd-rebuilt-axis" headingLevel={3} {...axis} />
           ))}
         </div>
 
