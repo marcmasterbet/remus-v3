@@ -50,13 +50,9 @@ export default function CartePage() {
         />
 
         <footer className="carte-footer">
-          <span className="carte-footer-name">
-            {CONTACT_CARD.firstName} {CONTACT_CARD.lastName} — {CONTACT_CARD.jobTitle}
-          </span>
           {CONTACT_CARD.phone ? (
             <a href={`tel:${CONTACT_CARD.phone.replace(/\s/g, "")}`}>{CONTACT_CARD.phoneDisplay}</a>
           ) : null}
-          <a href={`mailto:${CONTACT_CARD.email}`}>{CONTACT_CARD.email}</a>
           <a href="/">remussystems.fr</a>
         </footer>
       </div>
