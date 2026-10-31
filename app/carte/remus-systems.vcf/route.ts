@@ -31,7 +31,6 @@ export function GET() {
     ...(c.phone ? [`TEL;TYPE=CELL,VOICE:${c.phone.replace(/\s/g, "")}`] : []),
     `URL;TYPE=WORK:${c.website}`,
     ...(c.linkedin ? [`X-SOCIALPROFILE;TYPE=linkedin:${c.linkedin}`, `URL;TYPE=LinkedIn:${c.linkedin}`] : []),
-    `ADR;TYPE=WORK:;;${esc(c.street)};${esc(c.city)};${esc(c.region)};${esc(c.postalCode)};${esc(c.country)}`,
     `PHOTO;ENCODING=b;TYPE=JPEG:${CONTACT_PHOTO_JPEG_BASE64}`,
     `REV:${new Date().toISOString()}`,
     "END:VCARD",

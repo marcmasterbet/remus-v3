@@ -21,11 +21,6 @@ export const CONTACT_CARD = {
   /** Numéro tel qu'affiché sur la page. */
   phoneDisplay: "06 33 79 32 12",
   website: `${SITE_URL}/`,
-  street: "11 rue de la Vieille Ill",
-  postalCode: "67640",
-  city: "Fegersheim",
-  region: "Grand Est",
-  country: "France",
   /** Lien de la page LinkedIn (facultatif). */
   linkedin: "",
 };

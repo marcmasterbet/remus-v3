@@ -55,16 +55,10 @@ Variable Vercel conseillée :
 Aucun traceur publicitaire n’est activé par cette intégration.
 
 ## Favicon REMUS
-Le favicon final est basé sur le visuel REMUS noir/cuivre validé.
-
-Fichiers installés :
-- `app/icon.png`
-- `app/favicon.ico`
+Fichiers (déclarés dans `app/layout.tsx`) :
 - `public/favicon.ico`
-- `public/favicon.png`
-- `public/apple-touch-icon.png`
-
-Next.js détecte automatiquement `app/icon.png` et `app/favicon.ico`.
+- `public/favicon.png` (512 × 512)
+- `public/apple-touch-icon.png` (180 × 180)
 
 ## Carte de visite — QR code
 Le QR code des cartes de visite ouvre https://www.remussystems.fr/carte.

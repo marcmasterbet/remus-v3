@@ -26,7 +26,7 @@ export default function CartePage() {
         fill
         priority
         sizes="100vw"
-        quality={75}
+        quality={80}
       />
 
       <div className="carte-content">
