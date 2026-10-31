@@ -1,35 +1,11 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { MailConfigError, clean, clientIp, emailPattern, rateLimited, sendSiteMail } from "../../../lib/mailer";
 
 export const runtime = "nodejs";
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-// Limite simple anti-abus : 5 envois par adresse IP toutes les 10 minutes (par instance serveur).
-const RATE_LIMIT = 5;
-const RATE_WINDOW_MS = 10 * 60 * 1000;
-const hits = new Map<string, { count: number; start: number }>();
-
-function rateLimited(ip: string) {
-  const now = Date.now();
-  for (const [key, entry] of hits) {
-    if (now - entry.start > RATE_WINDOW_MS) hits.delete(key);
-  }
-  const entry = hits.get(ip);
-  if (!entry) {
-    hits.set(ip, { count: 1, start: now });
-    return false;
-  }
-  entry.count += 1;
-  return entry.count > RATE_LIMIT;
-}
-
-function clean(value: unknown, maxLength: number) {
-  return typeof value === "string" ? value.trim().slice(0, maxLength) : "";
-}
 
 export async function POST(request: Request) {
   try {
-    const ip = (request.headers.get("x-forwarded-for") || "").split(",")[0].trim() || "inconnue";
-    if (rateLimited(ip)) {
+    if (rateLimited(clientIp(request))) {
       return NextResponse.json({ error: "Trop de demandes envoyées. Merci de réessayer dans quelques minutes." }, { status: 429 });
     }
 
@@ -50,30 +26,9 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Merci de vérifier votre nom, votre e-mail et votre message." }, { status: 400 });
     }
 
-    const host = process.env.SMTP_HOST || "smtp.ionos.fr";
-    const port = Number(process.env.SMTP_PORT || 465);
-    const user = process.env.SMTP_USER;
-    const password = process.env.SMTP_PASSWORD;
-    const to = process.env.CONTACT_TO_EMAIL || "contact@remussystems.fr";
-    if (!user || !password || !Number.isInteger(port) || port < 1 || port > 65535) {
-      console.error("Configuration SMTP manquante ou invalide");
-      return NextResponse.json({ error: "L’envoi est momentanément indisponible. Écrivez à contact@remussystems.fr." }, { status: 503 });
-    }
-
-    const transporter = nodemailer.createTransport({
-      host,
-      port,
-      secure: port === 465,
-      auth: { user, pass: password },
-      connectionTimeout: 10000,
-      greetingTimeout: 10000,
-      socketTimeout: 15000,
-    });
-    await transporter.sendMail({
-      from: user,
-      to,
+    await sendSiteMail({
       replyTo: email,
-      subject: `Contact site REMUS — ${company || name}`.replace(/[\r\n]/g, " "),
+      subject: `Contact site REMUS — ${company || name}`,
       text: [
         `Nom : ${name}`, `Entreprise : ${company || "Non renseignée"}`,
         `E-mail : ${email}`, `Téléphone : ${phone || "Non renseigné"}`,
@@ -82,6 +37,10 @@ export async function POST(request: Request) {
     });
     return NextResponse.json({ ok: true });
   } catch (error) {
+    if (error instanceof MailConfigError) {
+      console.error(error.message);
+      return NextResponse.json({ error: "L’envoi est momentanément indisponible. Écrivez à contact@remussystems.fr." }, { status: 503 });
+    }
     console.error("Erreur d'envoi SMTP", error);
     return NextResponse.json({ error: "L’envoi a échoué. Écrivez directement à contact@remussystems.fr." }, { status: 502 });
   }

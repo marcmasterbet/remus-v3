@@ -65,3 +65,12 @@ Fichiers installés :
 - `public/apple-touch-icon.png`
 
 Next.js détecte automatiquement `app/icon.png` et `app/favicon.ico`.
+
+## Carte de visite — QR code
+Le QR code des cartes de visite ouvre https://www.remussystems.fr/carte.
+
+- **Ne jamais supprimer ni renommer la page `/carte`** (dossier `app/carte`) : le QR code imprimé pointe dessus.
+- Coordonnées de la fiche contact (nom, fonction, téléphone, e-mail, adresse, LinkedIn) : `lib/contact-card.ts`.
+  Les modifier met à jour la fiche téléchargée **sans changer le QR code**.
+- La page est en `noindex` (hors Google) et absente du sitemap : elle sert uniquement aux cartes.
+- Le formulaire de la page utilise le même envoi IONOS que la page Contact.

@@ -10574,3 +10574,325 @@ main.rd-rebuilt-page .flip-card .flip-card-back { background: rgba(18,12,8,.9); 
 
 /* R&D : suppression du trait au-dessus du bloc final */
 main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
+
+/* =========================================================
+   PAGE CARTE DE VISITE (/carte) — ouverte par le QR code
+   ========================================================= */
+.carte-page {
+  position: relative;
+  min-height: 100svh;
+  overflow: clip;
+  background: #050505;
+  color: #f4f1ed;
+}
+.carte-page .carte-bg {
+  position: fixed !important;
+  inset: 0;
+  z-index: 0;
+  object-fit: cover;
+  object-position: 62% center;
+  filter: brightness(.55);
+}
+.carte-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.35)),
+    linear-gradient(0deg, rgba(0,0,0,.65), transparent 60%);
+}
+.carte-content {
+  position: relative;
+  z-index: 1;
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 150px 0 90px;
+}
+.carte-kicker {
+  margin: 0;
+  color: #C97942;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.carte-rule {
+  display: block;
+  width: 46px;
+  height: 1px;
+  margin: 22px 0 26px;
+  background: #C97942;
+}
+.carte-page h1 {
+  margin: 0;
+  color: #f4f1ed;
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 600;
+  line-height: 1.04;
+  letter-spacing: -.01em;
+}
+.carte-page h1 strong {
+  color: #C97942;
+  font-weight: 300;
+}
+.carte-lead {
+  max-width: 560px;
+  margin: 26px 0 0;
+  color: rgba(244,241,237,.82);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Les 3 actions */
+.carte-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 54px;
+}
+.carte-action {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 190px;
+  padding: 28px 28px 26px;
+  border: 1px solid rgba(255,255,255,.72);
+  background: rgba(10,10,10,.78);
+  color: #f4f1ed;
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color .3s ease, background .3s ease, box-shadow .3s ease, transform .3s ease;
+}
+.carte-action:hover,
+.carte-action:focus-visible {
+  border-color: #C97942;
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  transform: translateY(-3px);
+  outline: none;
+}
+.carte-action.is-open {
+  border-color: #C97942;
+  background: rgba(18,12,8,.9);
+}
+.carte-action-num {
+  color: #C97942;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.carte-action-title {
+  color: #f4f1ed;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.carte-action-title::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 1px;
+  margin-top: 16px;
+  background: #C97942;
+}
+.carte-action-text {
+  color: rgba(244,241,237,.8);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.carte-action-cue {
+  margin-top: auto;
+  color: #C97942;
+  font-size: 22px;
+  line-height: 1;
+}
+
+/* Panneau formulaire */
+.carte-panel {
+  margin-top: 18px;
+  padding: 40px 42px 44px;
+  border: 1px solid rgba(201,121,66,.75);
+  background: rgba(10,10,10,.88);
+  scroll-margin-top: 24px;
+  animation: carteReveal .35s ease;
+}
+.carte-panel[hidden] { display: none; }
+@keyframes carteReveal {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+.carte-panel-kicker {
+  color: #C97942;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+.carte-panel h2 {
+  margin: 14px 0 0;
+  color: #f4f1ed !important;
+  font-size: clamp(24px, 2.6vw, 34px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.carte-panel-lead {
+  margin: 12px 0 0;
+  color: rgba(244,241,237,.75) !important;
+  font-size: 14px;
+}
+
+/* Formulaires (contact + rappel) dans la page carte */
+.carte-page .contact-form,
+.carte-form {
+  display: grid;
+  gap: 18px;
+  max-width: 760px;
+  margin-top: 30px;
+}
+.carte-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.carte-page .contact-form label,
+.carte-form label {
+  display: grid;
+  gap: 8px;
+  color: rgba(244,241,237,.85) !important;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.carte-optional {
+  color: rgba(244,241,237,.5);
+  font-weight: 400;
+  letter-spacing: .04em;
+  text-transform: none;
+}
+.carte-page .contact-form input:not([type="checkbox"]),
+.carte-page .contact-form textarea,
+.carte-form input:not([type="checkbox"]),
+.carte-form select,
+.carte-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid rgba(255,255,255,.35) !important;
+  border-radius: 0;
+  background: rgba(255,255,255,.04) !important;
+  color: #f4f1ed !important;
+  font: inherit;
+  font-size: 15px;
+  letter-spacing: 0;
+  text-transform: none;
+  color-scheme: dark;
+}
+.carte-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 42px !important;
+  background: rgba(255,255,255,.04) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23C97942' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 16px center / 12px 8px !important;
+}
+.carte-form select option { background: #111; color: #f4f1ed; }
+.carte-page .contact-form input:focus,
+.carte-page .contact-form textarea:focus,
+.carte-form input:focus,
+.carte-form select:focus,
+.carte-form textarea:focus {
+  border-color: #C97942 !important;
+  outline: none;
+}
+.carte-page .contact-form .contact-privacy-check,
+.carte-form .carte-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.55;
+}
+.carte-page .contact-form .contact-privacy-check input,
+.carte-form .carte-check input {
+  margin-top: 3px;
+  accent-color: #C97942;
+}
+.carte-page .contact-form a,
+.carte-form a { color: #C97942; }
+.carte-page .contact-form button,
+.carte-submit {
+  justify-self: start;
+  padding: 16px 26px;
+  border: 1px solid #CA7B3D !important;
+  background: #CA7B3D !important;
+  color: #fff !important;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  cursor: pointer;
+  transition: background .25s ease;
+}
+.carte-page .contact-form button:hover,
+.carte-submit:hover { background: #b0632a !important; }
+.carte-page .contact-form button:disabled,
+.carte-submit:disabled { opacity: .6; cursor: wait; }
+.carte-status,
+.carte-page .form-status { color: #e6a272 !important; font-size: 14px; }
+.carte-success,
+.carte-page .contact-success-below {
+  margin-top: 26px;
+  padding: 24px 26px;
+  border: 1px solid rgba(201,121,66,.6);
+  background: rgba(201,121,66,.08);
+}
+.carte-success h3,
+.carte-page .contact-success-below h2 {
+  margin: 0 0 10px;
+  color: #f4f1ed !important;
+  font-size: 18px;
+  font-weight: 500;
+}
+.carte-success p,
+.carte-page .contact-success-below p { margin: 6px 0 0; color: rgba(244,241,237,.8) !important; line-height: 1.6; }
+
+.carte-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 30px;
+  margin-top: 46px;
+  padding-top: 0;
+}
+.carte-footer a {
+  color: rgba(244,241,237,.75);
+  font-size: 13px;
+  letter-spacing: .06em;
+  text-decoration: none;
+}
+.carte-footer a:hover { color: #C97942; }
+
+@media (max-width: 900px) {
+  .carte-actions { grid-template-columns: 1fr; gap: 12px; margin-top: 38px; }
+  .carte-action { min-height: 0; padding: 22px 22px 20px; display: grid; grid-template-columns: 1fr auto; column-gap: 16px; row-gap: 6px; align-items: start; }
+  .carte-action-title::after { display: none; }
+  .carte-action-text { grid-column: 1; font-size: 13.5px; }
+  .carte-action-cue { grid-column: 2; grid-row: 1 / span 2; align-self: center; margin: 0; }
+}
+@media (max-width: 620px) {
+  .carte-content { width: calc(100% - 32px); padding: 120px 0 70px; }
+  .carte-page h1 { font-size: clamp(34px, 10.5vw, 46px); }
+  .carte-lead { font-size: 15px; }
+  .carte-panel { padding: 26px 20px 30px; }
+  .carte-form-row { grid-template-columns: 1fr; }
+  .carte-page .contact-form button, .carte-submit { justify-self: stretch; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carte-action, .carte-panel { transition: none; animation: none; }
+}
+.carte-footer-name { color: #f4f1ed; font-size: 13px; letter-spacing: .06em; }
