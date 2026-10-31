@@ -50,9 +50,6 @@ export default function CartePage() {
         />
 
         <footer className="carte-footer">
-          {CONTACT_CARD.phone ? (
-            <a href={`tel:${CONTACT_CARD.phone.replace(/\s/g, "")}`}>{CONTACT_CARD.phoneDisplay}</a>
-          ) : null}
           <a href="/">remussystems.fr</a>
         </footer>
       </div>

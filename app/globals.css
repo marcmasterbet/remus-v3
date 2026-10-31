@@ -6534,20 +6534,13 @@ main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
 }
 
 /* Formulaires (contact + rappel) dans la page carte */
-.carte-page .contact-form,
-.carte-form {
+.carte-page .contact-form{
   display: grid;
   gap: 18px;
   max-width: 760px;
   margin-top: 30px;
 }
-.carte-form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-.carte-page .contact-form label,
-.carte-form label {
+.carte-page .contact-form label{
   display: grid;
   gap: 8px;
   color: rgba(244,241,237,.85) !important;
@@ -6556,17 +6549,8 @@ main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
   letter-spacing: .12em;
   text-transform: uppercase;
 }
-.carte-optional {
-  color: rgba(244,241,237,.5);
-  font-weight: 400;
-  letter-spacing: .04em;
-  text-transform: none;
-}
 .carte-page .contact-form input:not([type="checkbox"]),
-.carte-page .contact-form textarea,
-.carte-form input:not([type="checkbox"]),
-.carte-form select,
-.carte-form textarea {
+.carte-page .contact-form textarea{
   width: 100%;
   box-sizing: border-box;
   padding: 13px 14px;
@@ -6580,23 +6564,12 @@ main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
   text-transform: none;
   color-scheme: dark;
 }
-.carte-form select {
-  appearance: none;
-  -webkit-appearance: none;
-  padding-right: 42px !important;
-  background: rgba(255,255,255,.04) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23C97942' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 16px center / 12px 8px !important;
-}
-.carte-form select option { background: #111; color: #f4f1ed; }
 .carte-page .contact-form input:focus,
-.carte-page .contact-form textarea:focus,
-.carte-form input:focus,
-.carte-form select:focus,
-.carte-form textarea:focus {
+.carte-page .contact-form textarea:focus{
   border-color: #C97942 !important;
   outline: none;
 }
-.carte-page .contact-form .contact-privacy-check,
-.carte-form .carte-check {
+.carte-page .contact-form .contact-privacy-check{
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -6606,15 +6579,12 @@ main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
   text-transform: none;
   line-height: 1.55;
 }
-.carte-page .contact-form .contact-privacy-check input,
-.carte-form .carte-check input {
+.carte-page .contact-form .contact-privacy-check input{
   margin-top: 3px;
   accent-color: #C97942;
 }
-.carte-page .contact-form a,
-.carte-form a { color: #C97942; }
-.carte-page .contact-form button,
-.carte-submit {
+.carte-page .contact-form a{ color: #C97942; }
+.carte-page .contact-form button {
   justify-self: start;
   padding: 16px 26px;
   border: 1px solid #C97942 !important;
@@ -6628,26 +6598,21 @@ main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
   transition: background .25s ease;
 }
 .carte-page .contact-form button:hover,
-.carte-submit:hover { background: #b0632a !important; }
-.carte-page .contact-form button:disabled,
-.carte-submit:disabled { opacity: .6; cursor: wait; }
-.carte-status,
+
+.carte-page .contact-form button:disabled { opacity: .6; cursor: wait; }
 .carte-page .form-status { color: #e6a272 !important; font-size: 14px; }
-.carte-success,
 .carte-page .contact-success-below {
   margin-top: 26px;
   padding: 24px 26px;
   border: 1px solid rgba(201,121,66,.6);
   background: rgba(201,121,66,.08);
 }
-.carte-success h3,
 .carte-page .contact-success-below h2 {
   margin: 0 0 10px;
   color: #f4f1ed !important;
   font-size: 18px;
   font-weight: 500;
 }
-.carte-success p,
 .carte-page .contact-success-below p { margin: 6px 0 0; color: rgba(244,241,237,.8) !important; line-height: 1.6; }
 
 .carte-footer {
@@ -6677,8 +6642,7 @@ main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
   .carte-page h1 { font-size: clamp(34px, 10.5vw, 46px); }
   .carte-lead { font-size: 15px; }
   .carte-panel { padding: 26px 20px 30px; }
-  .carte-form-row { grid-template-columns: 1fr; }
-  .carte-page .contact-form button, .carte-submit { justify-self: stretch; }
+  .carte-page .contact-form button { justify-self: stretch; }
 }
 @media (prefers-reduced-motion: reduce) {
   .carte-action, .carte-panel { transition: none; animation: none; }
@@ -6741,3 +6705,54 @@ main.rd-rebuilt-page .rd-rebuilt-closing { border-top: 0 !important; }
   main.home-clean-v3::after,
   main.rd-rebuilt-page::after { display: none !important; }
 }
+
+/* Carte : formulaire de contact — corrections prioritaires (iPhone) */
+.carte-page .contact-form label {
+  display: grid !important;
+  gap: 8px !important;
+  color: rgba(244,241,237,.85) !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: .12em !important;
+  text-transform: uppercase !important;
+}
+/* 16 px minimum : évite le zoom automatique de Safari iPhone sur les champs */
+.carte-page .contact-form input:not([type="checkbox"]),
+.carte-page .contact-form textarea {
+  width: 100% !important;
+  box-sizing: border-box !important;
+  padding: 13px 14px !important;
+  border: 1px solid rgba(255,255,255,.35) !important;
+  background: rgba(255,255,255,.04) !important;
+  color: #f4f1ed !important;
+  font-size: 16px !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+.carte-page .contact-form label.contact-privacy-check {
+  display: grid !important;
+  grid-template-columns: 20px minmax(0, 1fr) !important;
+  align-items: start !important;
+  gap: 12px !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  line-height: 1.55 !important;
+}
+.carte-page .contact-form label.contact-privacy-check input[type="checkbox"] {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 1px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  accent-color: #C97942;
+}
+.carte-page .contact-form button[type="submit"] {
+  justify-self: start !important;
+  width: auto !important;
+}
+@media (max-width: 620px) {
+  .carte-page .contact-form button[type="submit"] { justify-self: stretch !important; width: 100% !important; }
+}
+.carte-page .carte-panel .contact-form { margin-top: 28px !important; }
