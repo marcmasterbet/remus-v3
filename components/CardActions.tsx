@@ -23,11 +23,13 @@ export default function CardActions({ vcardHref, contactName }: { vcardHref: str
   return (
     <>
       <div className="carte-actions">
-        <a className="carte-action" href={vcardHref} download="REMUS-Systems.vcf" onClick={() => setSaved(true)}>
+        {/* Pas d'attribut download : l'iPhone ouvre la fiche dans sa fenêtre Contacts
+            (bouton « Créer un nouveau contact ») au lieu de la ranger dans Téléchargements. */}
+        <a className="carte-action" href={vcardHref} type="text/vcard" onClick={() => setSaved(true)}>
           <span className="carte-action-title">Enregistrer le contact</span>
           <span className="carte-action-text">
             {saved
-              ? "Fiche téléchargée : ouvrez-la pour l’ajouter à vos contacts."
+              ? "Fiche ouverte : appuyez sur « Créer un nouveau contact » pour l’enregistrer."
               : `Ajouter ${contactName} — REMUS Systems au répertoire de votre téléphone.`}
           </span>
           <span className="carte-action-cue" aria-hidden="true">↓</span>

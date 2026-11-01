@@ -40,7 +40,7 @@ export function GET() {
   return new Response(body, {
     headers: {
       "Content-Type": "text/vcard; charset=utf-8",
-      "Content-Disposition": 'attachment; filename="Alexandre-Flamand-REMUS.vcf"',
+      "Content-Disposition": 'inline; filename="Alexandre-Flamand-REMUS.vcf"',
       "Cache-Control": "public, max-age=3600",
     },
   });
