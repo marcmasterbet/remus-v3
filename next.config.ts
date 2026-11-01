@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
         destination: "/references/ia-gouvernance-decisionnelle",
         permanent: true,
       },
+      // Ancienne adresse de la carte de visite : renvoie vers la page de Séverine.
+      { source: "/carte", destination: "/carte/severine", permanent: false },
+      { source: "/carte/remus-systems.vcf", destination: "/carte/severine/severine-kayser.vcf", permanent: false },
     ];
   },
   async headers() {

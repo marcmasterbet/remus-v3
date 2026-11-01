@@ -1,0 +1,58 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import { pageMetadata } from "../../../lib/seo";
+import { CARD_PATH, CONTACT_CARD } from "../../../lib/contact-card";
+import CardActions from "../../../components/CardActions";
+
+/**
+ * Page ouverte par le QR code de la carte de visite de Séverine Kayser.
+ * L'adresse /carte/severine est imprimée dans le QR code : ne jamais la renommer ni la supprimer.
+ */
+export const metadata: Metadata = pageMetadata({
+  title: "Carte de visite — Séverine Kayser",
+  description: "Enregistrez le contact de Séverine Kayser (REMUS Systems) ou écrivez-nous.",
+  path: CARD_PATH,
+  noindex: true,
+});
+
+export default function CartePage() {
+  return (
+    <main className="carte-page">
+      <Image
+        className="carte-bg"
+        src="/visuals/remus-v2-earth-network-hd.webp"
+        alt=""
+        aria-hidden="true"
+        fill
+        priority
+        sizes="100vw"
+        quality={80}
+      />
+
+      <div className="carte-content">
+        <header className="carte-intro">
+          <p className="carte-kicker">REMUS SYSTEMS</p>
+          <span className="carte-rule" aria-hidden="true" />
+          <h1>
+            Quand les systèmes
+            <br />
+            <strong>se rencontrent.</strong>
+          </h1>
+          <p className="carte-lead">
+            Merci pour votre intérêt. Enregistrez nos coordonnées ou
+            écrivez-nous : nous revenons vers vous rapidement.
+          </p>
+        </header>
+
+        <CardActions
+          vcardHref={`${CARD_PATH}/severine-kayser.vcf`}
+          contactName={`${CONTACT_CARD.firstName} ${CONTACT_CARD.lastName}`}
+        />
+
+        <footer className="carte-footer">
+          <a href="/">remussystems.fr</a>
+        </footer>
+      </div>
+    </main>
+  );
+}

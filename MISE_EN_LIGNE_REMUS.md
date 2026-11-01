@@ -61,10 +61,15 @@ Fichiers (déclarés dans `app/layout.tsx`) :
 - `public/apple-touch-icon.png` (180 × 180)
 
 ## Carte de visite — QR code
-Le QR code des cartes de visite ouvre https://www.remussystems.fr/carte.
+Chaque carte de visite a son propre QR code et sa propre page :
 
-- **Ne jamais supprimer ni renommer la page `/carte`** (dossier `app/carte`) : le QR code imprimé pointe dessus.
-- Coordonnées de la fiche contact (nom, fonction, téléphone, e-mail, adresse, LinkedIn) : `lib/contact-card.ts`.
-  Les modifier met à jour la fiche téléchargée **sans changer le QR code**.
-- La page est en `noindex` (hors Google) et absente du sitemap : elle sert uniquement aux cartes.
+| Personne | QR code / page | Fiche contact | Coordonnées à modifier |
+|---|---|---|---|
+| Séverine Kayser | https://www.remussystems.fr/carte/severine | `/carte/severine/severine-kayser.vcf` | `lib/contact-card.ts` |
+| Alexandre Flamand | https://www.remussystems.fr/carte/alexandre | `/carte/alexandre/alexandre-flamand.vcf` | `lib/contact-card-alexandre.ts` |
+
+- **Ne jamais supprimer ni renommer `/carte/severine` ni `/carte/alexandre`** (dossiers `app/carte/...`) : les QR codes imprimés pointent dessus.
+- Modifier les coordonnées dans les fichiers ci-dessus met à jour la fiche téléchargée **sans changer le QR code**.
+- L'ancienne adresse `/carte` renvoie vers la page de Séverine (`next.config.ts`).
+- Les pages sont en `noindex` (hors Google) et absentes du sitemap : elles servent uniquement aux cartes.
 - Le formulaire de la page utilise le même envoi IONOS que la page Contact.

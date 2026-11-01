@@ -1,12 +1,13 @@
 /**
- * Coordonnées de la carte de visite REMUS Systems.
- * Modifier ici met à jour la fiche contact téléchargée depuis le QR code,
+ * Coordonnées de la carte de visite de Séverine Kayser.
+ * Modifier ici met à jour la fiche contact téléchargée depuis son QR code,
  * SANS changer le QR code (il pointe toujours vers CARD_URL).
+ * La carte d'Alexandre Flamand est dans lib/contact-card-alexandre.ts.
  */
 import { SITE_URL } from "./seo";
 
-/** Adresse fixe encodée dans le QR code des cartes de visite : ne jamais la modifier. */
-export const CARD_PATH = "/carte";
+/** Adresse fixe encodée dans le QR code de Séverine : ne jamais la modifier. */
+export const CARD_PATH = "/carte/severine";
 export const CARD_URL = `${SITE_URL}${CARD_PATH}`;
 
 export const CONTACT_CARD = {
